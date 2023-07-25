@@ -11,7 +11,7 @@ import { InputTextarea } from 'primereact/inputtextarea';
 import {AxiosResponse} from 'axios';
 import React, {useEffect, useState} from 'react';
 import {Calendar, CalendarChangeEvent} from 'primereact/calendar';
-import { format } from 'date-fns';
+import { format, isValid } from 'date-fns';
 import {InputNumberChangeEvent} from 'primereact/inputnumber';
 import { InputSwitch } from 'primereact/inputswitch';
 import {MultiSelect} from 'primereact/multiselect';
@@ -25,13 +25,12 @@ import  {UtilisateurDto}  from '../../../../../../controller/model/Utilisateur.m
 const Create = ({visible, onClose, add, showToast, list}) => {
 
     const emptyItem = new UtilisateurDto();
+    console.log({emptyItem})
     const [items, setItems] = useState<UtilisateurDto[]>([list]);
     const [item, setItem] = useState<UtilisateurDto>(emptyItem);
     const [submitted, setSubmitted] = useState(false);
     const [activeIndex, setActiveIndex] = useState<number>(0);
     const [activeTab, setActiveTab] = useState(0);
-
-
 
 
     useEffect(() => {
@@ -58,15 +57,8 @@ const Create = ({visible, onClose, add, showToast, list}) => {
         onClose();
     };
 
-
-    const isFormValid = () => {
-        let errorMessages = new Array<string>();
-        if(item.email == null)
-            errorMessages.push("email is required")
-        if(item.name == null)
-            errorMessages.push("name is required")
-        return errorMessages.length != 0 ;
-    }
+    const isFormValid = () =>  item.email !== '' && item.name !== '';
+    
     const saveItem = async () => {
         setSubmitted(true);
         if (isFormValid()) {
