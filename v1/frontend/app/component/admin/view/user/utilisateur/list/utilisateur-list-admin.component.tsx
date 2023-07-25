@@ -53,29 +53,30 @@ const List = () => {
 
     const showSearch = () => { setFindByCriteriaShow(!findByCriteriaShow); };
 
-    const handleValidateClick = () => {setIsSearchTriggered(true);};
+    const handleValidateClick = () => {fetchItems(criteria)};
 
     const handleCancelClick = () => {
         setCriteria(new UtilisateurCriteria());
-        setIsSearchTriggered(true);
+        fetchItems(new UtilisateurCriteria());
+        setIsSearchTriggered(false);
     };
 
     useEffect(() => {
-        const fetchData = async () => {
+      /*  const fetchData = async () => {
             try {
                 const [] = await Promise.all<>([
                 ]);
             } catch (error) {
                 console.error(error);
             }
-        };
+        };*/
         if (isSearchTriggered) {
-            fetchItems(criteria);
-            setIsSearchTriggered(false);
+            // fetchItems(criteria);
+            // setIsSearchTriggered(false);
         }
-        fetchData();
+        //fetchData();
         fetchItems(criteria);
-    }, [isSearchTriggered]);
+    }, []);
 
     const fetchItems = async (criteria) => {
         try {

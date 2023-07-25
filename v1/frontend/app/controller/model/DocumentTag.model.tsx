@@ -10,4 +10,9 @@ export class DocumentTagDto extends BaseDto{
     public document: DocumentDto ;
     public tag: TagDto ;
 
+
+    constructor(tag: TagDto) {
+        super();
+        this.tag = tag;
+    }
 }

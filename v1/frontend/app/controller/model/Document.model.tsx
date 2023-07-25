@@ -22,12 +22,7 @@ export class DocumentDto extends BaseDto{
     public description: string;
    public archive: null | boolean;
    public versionne: null | boolean;
-    public uploadDateMax: string ;
-    public uploadDateMin: string ;
-    public dateLastUpdateMax: string ;
-    public dateLastUpdateMin: string ;
-    public sizeMax: string ;
-    public sizeMin: string ;
+
     public documentType: DocumentTypeDto ;
     public utilisateur: UtilisateurDto ;
     public entiteAdministrative: EntiteAdministrativeDto ;

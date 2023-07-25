@@ -15,4 +15,11 @@ export class UtilisateurCriteria  extends  BaseCriteria {
     public nameLike: string;
 
 
+    constructor() {
+        super();
+        this.email = '';
+        this.emailLike = '';
+        this.name = '';
+        this.nameLike = '';
+    }
 }

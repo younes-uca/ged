@@ -84,7 +84,7 @@ const Create = ({visible, onClose, add, showToast, list}) => {
     const [documentManagementGroupes, setDocumentManagementGroupes] = useState<DocumentManagementGroupeDto>(new DocumentManagementGroupeDto());
     const [documentManagementUtilisateurs, setDocumentManagementUtilisateurs] = useState<DocumentManagementUtilisateurDto>(new DocumentManagementUtilisateurDto());
     const [documentAcessShares, setDocumentAcessShares] = useState<DocumentAcessShareDto>(new DocumentAcessShareDto());
-    const [documentTags, setDocumentTags] = useState<DocumentTagDto>(new DocumentTagDto());
+    const [documentTags, setDocumentTags] = useState<DocumentTagDto[]>(new Array<DocumentTagDto>());
 
     useEffect(() => {
         const fetchData = async () => {
@@ -103,6 +103,7 @@ const Create = ({visible, onClose, add, showToast, list}) => {
                 setGroupes(groupesResponse.data);
                 setDocumentTypes(documentTypesResponse.data);
                 setTags(tagsResponse.data);
+                setDocumentTags(tags.map(e=>new DocumentTagDto(e)));
                 setAcessManagements(acessManagementsResponse.data);
                 setAcessShares(acessSharesResponse.data);
             } catch (error) {

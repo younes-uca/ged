@@ -58,14 +58,14 @@ const Create = ({visible, onClose, add, showToast, list}) => {
         onClose();
     };
 
-
     const isFormValid = () => {
         let errorMessages = new Array<string>();
-        if(item.email == null)
+        if(item.email == '')
             errorMessages.push("email is required")
-        if(item.name == null)
+        if(item.name == '')
             errorMessages.push("name is required")
-        return errorMessages.length != 0 ;
+        console.log({errorMessages})
+        return errorMessages.length == 0 ;
     }
     const saveItem = async () => {
         setSubmitted(true);
