@@ -1,6 +1,6 @@
-import {BaseDto} from '../../zynerator/dto/BaseDto.model';
+import {BaseDto} from 'app/zynerator/dto/BaseDto.model';
 
-import {UtilisateurDto} from '../../controller/model/Utilisateur.model';
+import {UtilisateurDto} from 'app/controller/model/Utilisateur.model';
 
 export class EntiteAdministrativeDto extends BaseDto{
 
@@ -12,11 +12,11 @@ export class EntiteAdministrativeDto extends BaseDto{
 
 
     constructor() {
-    super();
+        super();
 
-        code = '';
-        libelle = '';
-        utilisateur = new UtilisateurDto() ;
+        this.code = '';
+        this.libelle = '';
+        this.utilisateur = new UtilisateurDto() ;
 
         }
 

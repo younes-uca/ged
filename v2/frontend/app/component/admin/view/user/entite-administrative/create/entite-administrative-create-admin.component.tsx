@@ -2,7 +2,6 @@ import {Button} from 'primereact/button';
 import {Column} from 'primereact/column';
 import {Dropdown} from 'primereact/dropdown';
 import {TabView, TabPanel} from 'primereact/tabview';
-import {DataTable} from 'primereact/datatable';
 import {Dialog} from 'primereact/dialog';
 import {InputNumber, InputNumberChangeEvent} from 'primereact/inputnumber';
 import {InputText} from 'primereact/inputtext';
@@ -17,13 +16,13 @@ import { InputSwitch } from 'primereact/inputswitch';
 import {MultiSelect} from 'primereact/multiselect';
 
 
-import {MessageService} from '../../../../../../controller/service/MessageService';
+import {MessageService} from 'app/controller/service/MessageService';
 
-import {EntiteAdministrativeService} from '../../../../../../controller/service/EntiteAdministrative.service';
-import  {EntiteAdministrativeDto}  from '../../../../../../controller/model/EntiteAdministrative.model';
+import {EntiteAdministrativeService} from 'app/controller/service/EntiteAdministrative.service';
+import  {EntiteAdministrativeDto}  from 'app/controller/model/EntiteAdministrative.model';
 
-import {UtilisateurDto} from '../../../../../../controller/model/Utilisateur.model';
-import {UtilisateurService} from '../../../../../../controller/service/Utilisateur.service';
+import {UtilisateurDto} from 'app/controller/model/Utilisateur.model';
+import {UtilisateurService} from 'app/controller/service/Utilisateur.service';
 const Create = ({visible, onClose, add, showToast, list}) => {
 
     const emptyItem = new EntiteAdministrativeDto();

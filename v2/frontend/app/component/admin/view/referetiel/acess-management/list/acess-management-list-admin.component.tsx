@@ -17,11 +17,11 @@ import {InputNumber} from 'primereact/inputnumber';
 import {Dropdown} from 'primereact/dropdown';
 import {AxiosResponse} from 'axios';
 
-import {MessageService} from '../../../../../../controller/service/MessageService';
+import {MessageService} from 'app/controller/service/MessageService';
 
-import {AcessManagementService} from '../../../../../../controller/service/AcessManagement.service';
-import {AcessManagementDto}  from '../../../../../../controller/model/AcessManagement.model';
-import {AcessManagementCriteria} from '../../../../../../controller/criteria/AcessManagementCriteria.model';
+import {AcessManagementService} from 'app/controller/service/AcessManagement.service';
+import {AcessManagementDto}  from 'app/controller/model/AcessManagement.model';
+import {AcessManagementCriteria} from 'app/controller/criteria/AcessManagementCriteria.model';
 
 
 import Edit from '../edit/acess-management-edit-admin.component';

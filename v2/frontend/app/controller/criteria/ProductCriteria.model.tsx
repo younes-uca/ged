@@ -1,4 +1,4 @@
-import {BaseCriteria} from '../../zynerator/criteria/BaseCriteria.model';
+import {BaseCriteria} from 'app/zynerator/criteria/BaseCriteria.model';
 
 
 
@@ -12,19 +12,19 @@ export class ProductCriteria  extends  BaseCriteria {
     public codeLike: string;
     public reference: string;
     public referenceLike: string;
-     public purchaseCost: number;
-     public purchaseCostMin: number;
-     public purchaseCostMax: number;
+     public purchaseCost: null | number;
+     public purchaseCostMin: null | number;
+     public purchaseCostMax: null | number;
 
     constructor() {
         super();
-        code = '';
-        codeLike = '';
-        reference = '';
-        referenceLike = '';
-        purchaseCost = 0;
-        purchaseCostMin = 0;
-        purchaseCostMax = 0;
+        this.code = '';
+        this.codeLike = '';
+        this.reference = '';
+        this.referenceLike = '';
+        this.purchaseCost = null;
+        this.purchaseCostMin = null;
+        this.purchaseCostMax = null;
     }
 
 }

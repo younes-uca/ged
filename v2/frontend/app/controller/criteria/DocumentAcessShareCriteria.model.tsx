@@ -1,7 +1,7 @@
-import {BaseCriteria} from '../../zynerator/criteria/BaseCriteria.model';
+import {BaseCriteria} from 'app/zynerator/criteria/BaseCriteria.model';
 
-import {AcessShareCriteria} from 'AcessShareCriteria.model';
-import {DocumentCriteria} from 'DocumentCriteria.model';
+import {AcessShareCriteria} from './AcessShareCriteria.model';
+import {DocumentCriteria} from './DocumentCriteria.model';
 
 
 
@@ -17,10 +17,10 @@ export class DocumentAcessShareCriteria  extends  BaseCriteria {
 
     constructor() {
         super();
-        document = new DocumentCriteria() ;
-        public documents = new Array<DocumentCriteria>() ;
-        acessShare = new AcessShareCriteria() ;
-        public acessShares = new Array<AcessShareCriteria>() ;
+        this.document = new DocumentCriteria() ;
+        this.documents = new Array<DocumentCriteria>() ;
+        this.acessShare = new AcessShareCriteria() ;
+        this.acessShares = new Array<AcessShareCriteria>() ;
     }
 
 }

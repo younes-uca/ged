@@ -1,4 +1,4 @@
-import {BaseDto} from '../../zynerator/dto/BaseDto.model';
+import {BaseDto} from 'app/zynerator/dto/BaseDto.model';
 
 
 export class ProductDto extends BaseDto{
@@ -7,16 +7,16 @@ export class ProductDto extends BaseDto{
 
     public reference: string;
 
-    public purchaseCost: number;
+    public purchaseCost: null | number;
 
 
 
     constructor() {
-    super();
+        super();
 
-        code = '';
-        reference = '';
-        purchaseCost = 0;
+        this.code = '';
+        this.reference = '';
+        this.purchaseCost = null;
 
         }
 

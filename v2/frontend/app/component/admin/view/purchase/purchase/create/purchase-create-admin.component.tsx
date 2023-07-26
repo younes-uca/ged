@@ -17,21 +17,21 @@ import { InputSwitch } from 'primereact/inputswitch';
 import {MultiSelect} from 'primereact/multiselect';
 
 
-import {MessageService} from '../../../../../../controller/service/MessageService';
+import {MessageService} from 'app/controller/service/MessageService';
 
-import {PurchaseService} from '../../../../../../controller/service/Purchase.service';
-import  {PurchaseDto}  from '../../../../../../controller/model/Purchase.model';
+import {PurchaseService} from 'app/controller/service/Purchase.service';
+import  {PurchaseDto}  from 'app/controller/model/Purchase.model';
 
-import {ProductDto} from '../../../../../../controller/model/Product.model';
-import {ProductService} from '../../../../../../controller/service/Product.service';
-import {PurchaseTagDto} from '../../../../../../controller/model/PurchaseTag.model';
-import {PurchaseTagService} from '../../../../../../controller/service/PurchaseTag.service';
-import {TagDto} from '../../../../../../controller/model/Tag.model';
-import {TagService} from '../../../../../../controller/service/Tag.service';
-import {ClientDto} from '../../../../../../controller/model/Client.model';
-import {ClientService} from '../../../../../../controller/service/Client.service';
-import {PurchaseItemDto} from '../../../../../../controller/model/PurchaseItem.model';
-import {PurchaseItemService} from '../../../../../../controller/service/PurchaseItem.service';
+import {ClientDto} from 'app/controller/model/Client.model';
+import {ClientService} from 'app/controller/service/Client.service';
+import {PurchaseItemDto} from 'app/controller/model/PurchaseItem.model';
+import {PurchaseItemService} from 'app/controller/service/PurchaseItem.service';
+import {ProductDto} from 'app/controller/model/Product.model';
+import {ProductService} from 'app/controller/service/Product.service';
+import {TagDto} from 'app/controller/model/Tag.model';
+import {TagService} from 'app/controller/service/Tag.service';
+import {PurchaseTagDto} from 'app/controller/model/PurchaseTag.model';
+import {PurchaseTagService} from 'app/controller/service/PurchaseTag.service';
 const Create = ({visible, onClose, add, showToast, list}) => {
 
     const emptyItem = new PurchaseDto();
@@ -45,11 +45,11 @@ const Create = ({visible, onClose, add, showToast, list}) => {
     const [clients, setClients] = useState<ClientDto[]>([]);
     const [tags, setTags] = useState<TagDto[]>([]);
 
-    type ProductResponse = AxiosResponse<ProductDto[]>;
-    type PurchaseTagResponse = AxiosResponse<PurchaseTagDto[]>;
-    type TagResponse = AxiosResponse<TagDto[]>;
     type ClientResponse = AxiosResponse<ClientDto[]>;
     type PurchaseItemResponse = AxiosResponse<PurchaseItemDto[]>;
+    type ProductResponse = AxiosResponse<ProductDto[]>;
+    type TagResponse = AxiosResponse<TagDto[]>;
+    type PurchaseTagResponse = AxiosResponse<PurchaseTagDto[]>;
 
     const [purchaseItems, setPurchaseItems] = useState<PurchaseItemDto>(new PurchaseItemDto());
     const [purchaseTags, setPurchaseTags] = useState<PurchaseTagDto>(new PurchaseTagDto());
@@ -239,7 +239,9 @@ return(
                     </div>
                     <div className="field col-6">
                     <label htmlFor="purchaseTags">Tag</label>
-                    <MultiSelect value={item.purchaseTags} options={purchaseTags}  optionLabel="tag.libelle" display="chip" placeholder="Select tag"  maxSelectedLabels={3}  onChange={(e) => onMultiSelectChange(e, 'purchaseTags')} />
+                    {/*
+                        <MultiSelect value={item.purchaseTags} options={purchaseTags}  optionLabel="tag.libelle" display="chip" placeholder="Select tag"  maxSelectedLabels={3}  onChange={(e) => onMultiSelectChange(e, 'purchaseTags')} />
+                    */}
                     </div>
                 </div>
             </TabPanel>
@@ -276,7 +278,7 @@ return(
                     </DataTable>
                     </div>
                     </TabPanel>
-                < /TabView>
+                </TabView>
             </TabPanel>
         </TabView>
     </Dialog>

@@ -1,7 +1,7 @@
-import {BaseDto} from '../../zynerator/dto/BaseDto.model';
+import {BaseDto} from 'app/zynerator/dto/BaseDto.model';
 
-import {GroupeDto} from '../../controller/model/Groupe.model';
-import {UtilisateurDto} from '../../controller/model/Utilisateur.model';
+import {GroupeDto} from 'app/controller/model/Groupe.model';
+import {UtilisateurDto} from 'app/controller/model/Utilisateur.model';
 
 export class GroupeUtilisateurDto extends BaseDto{
 
@@ -10,10 +10,10 @@ export class GroupeUtilisateurDto extends BaseDto{
 
 
     constructor() {
-    super();
+        super();
 
-        groupe = new GroupeDto() ;
-        utilisateur = new UtilisateurDto() ;
+        this.groupe = new GroupeDto() ;
+        this.utilisateur = new UtilisateurDto() ;
 
         }
 

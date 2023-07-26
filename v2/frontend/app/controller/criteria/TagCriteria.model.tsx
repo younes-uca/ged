@@ -1,4 +1,4 @@
-import {BaseCriteria} from '../../zynerator/criteria/BaseCriteria.model';
+import {BaseCriteria} from 'app/zynerator/criteria/BaseCriteria.model';
 
 
 
@@ -15,10 +15,10 @@ export class TagCriteria  extends  BaseCriteria {
 
     constructor() {
         super();
-        code = '';
-        codeLike = '';
-        libelle = '';
-        libelleLike = '';
+        this.code = '';
+        this.codeLike = '';
+        this.libelle = '';
+        this.libelleLike = '';
     }
 
 }

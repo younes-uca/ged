@@ -14,7 +14,7 @@ import {Calendar, CalendarChangeEvent} from 'primereact/calendar';
 import { format } from 'date-fns';
 import { InputSwitch } from 'primereact/inputswitch';
 import {MultiSelect} from 'primereact/multiselect';
-import  {UtilisateurDto}  from '../../../../../../controller/model/Utilisateur.model';
+import  {UtilisateurDto}  from 'app/controller/model/Utilisateur.model';
 
 const View = ({visible,onClose,selectedItem}) => {
 

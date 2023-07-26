@@ -1,8 +1,8 @@
 import {NextPageWithLayout} from 'next';
 import {ReactNode} from 'react';
 
-import GroupesList from '../../../../../../app/component/admin/view/user/groupe/list/groupe-list-admin.component';
-import Layout from '../../../../../../layout/layout';
+import GroupesList from 'app/component/admin/view/user/groupe/list/groupe-list-admin.component';
+import Layout from 'layout/layout';
 
 const Groupes: NextPageWithLayout = () => {
     return <GroupesList />

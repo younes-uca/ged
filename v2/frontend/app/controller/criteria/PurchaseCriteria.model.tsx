@@ -1,8 +1,8 @@
-import {BaseCriteria} from '../../zynerator/criteria/BaseCriteria.model';
+import {BaseCriteria} from 'app/zynerator/criteria/BaseCriteria.model';
 
-import {PurchaseTagCriteria} from 'PurchaseTagCriteria.model';
-import {PurchaseItemCriteria} from 'PurchaseItemCriteria.model';
-import {ClientCriteria} from 'ClientCriteria.model';
+import {PurchaseTagCriteria} from './PurchaseTagCriteria.model';
+import {PurchaseItemCriteria} from './PurchaseItemCriteria.model';
+import {ClientCriteria} from './ClientCriteria.model';
 
 
 
@@ -18,9 +18,9 @@ export class PurchaseCriteria  extends  BaseCriteria {
     public purchaseDateTo: Date;
     public image: string;
     public imageLike: string;
-     public total: number;
-     public totalMin: number;
-     public totalMax: number;
+     public total: null | number;
+     public totalMin: null | number;
+     public totalMax: null | number;
     public description: string;
     public descriptionLike: string;
   public client: ClientCriteria ;
@@ -30,20 +30,20 @@ export class PurchaseCriteria  extends  BaseCriteria {
 
     constructor() {
         super();
-        reference = '';
-        referenceLike = '';
-        purchaseDate = null;
-        purchaseDateFrom  = null;
-        purchaseDateTo = null;
-        image = '';
-        imageLike = '';
-        total = 0;
-        totalMin = 0;
-        totalMax = 0;
-        description = '';
-        descriptionLike = '';
-        client = new ClientCriteria() ;
-        public clients = new Array<ClientCriteria>() ;
+        this.reference = '';
+        this.referenceLike = '';
+        this.purchaseDate = null;
+        this.purchaseDateFrom  = null;
+        this.purchaseDateTo = null;
+        this.image = '';
+        this.imageLike = '';
+        this.total = null;
+        this.totalMin = null;
+        this.totalMax = null;
+        this.description = '';
+        this.descriptionLike = '';
+        this.client = new ClientCriteria() ;
+        this.clients = new Array<ClientCriteria>() ;
     }
 
 }

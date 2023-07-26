@@ -1,4 +1,4 @@
-import {BaseCriteria} from '../../zynerator/criteria/BaseCriteria.model';
+import {BaseCriteria} from 'app/zynerator/criteria/BaseCriteria.model';
 
 
 
@@ -15,10 +15,10 @@ export class ClientCategoryCriteria  extends  BaseCriteria {
 
     constructor() {
         super();
-        reference = '';
-        referenceLike = '';
-        code = '';
-        codeLike = '';
+        this.reference = '';
+        this.referenceLike = '';
+        this.code = '';
+        this.codeLike = '';
     }
 
 }

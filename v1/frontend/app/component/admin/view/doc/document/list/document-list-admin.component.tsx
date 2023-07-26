@@ -17,7 +17,7 @@ import {InputNumber} from 'primereact/inputnumber';
 import {Dropdown} from 'primereact/dropdown';
 import {AxiosResponse} from 'axios';
 
-import {MessageService} from '../../../../../../controller/service/MessageService';
+import {MessageService} from 'app/controller/service/MessageService';
 
 import {DocumentService} from '../../../../../../controller/service/Document.service';
 import {DocumentDto}  from '../../../../../../controller/model/Document.model';

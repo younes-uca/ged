@@ -17,37 +17,37 @@ import { InputSwitch } from 'primereact/inputswitch';
 import {MultiSelect} from 'primereact/multiselect';
 
 
-import {MessageService} from '../../../../../../controller/service/MessageService';
+import {MessageService} from 'app/controller/service/MessageService';
 
-import {DocumentService} from '../../../../../../controller/service/Document.service';
-import  {DocumentDto}  from '../../../../../../controller/model/Document.model';
+import {DocumentService} from 'app/controller/service/Document.service';
+import  {DocumentDto}  from 'app/controller/model/Document.model';
 
-import {TagDto} from '../../../../../../controller/model/Tag.model';
-import {TagService} from '../../../../../../controller/service/Tag.service';
-import {UtilisateurDto} from '../../../../../../controller/model/Utilisateur.model';
-import {UtilisateurService} from '../../../../../../controller/service/Utilisateur.service';
-import {DocumentPartageUtilisateurDto} from '../../../../../../controller/model/DocumentPartageUtilisateur.model';
-import {DocumentPartageUtilisateurService} from '../../../../../../controller/service/DocumentPartageUtilisateur.service';
-import {DocumentTypeDto} from '../../../../../../controller/model/DocumentType.model';
-import {DocumentTypeService} from '../../../../../../controller/service/DocumentType.service';
-import {DocumentPartageGroupeDto} from '../../../../../../controller/model/DocumentPartageGroupe.model';
-import {DocumentPartageGroupeService} from '../../../../../../controller/service/DocumentPartageGroupe.service';
-import {DocumentManagementGroupeDto} from '../../../../../../controller/model/DocumentManagementGroupe.model';
-import {DocumentManagementGroupeService} from '../../../../../../controller/service/DocumentManagementGroupe.service';
-import {EntiteAdministrativeDto} from '../../../../../../controller/model/EntiteAdministrative.model';
-import {EntiteAdministrativeService} from '../../../../../../controller/service/EntiteAdministrative.service';
-import {DocumentTagDto} from '../../../../../../controller/model/DocumentTag.model';
-import {DocumentTagService} from '../../../../../../controller/service/DocumentTag.service';
-import {GroupeDto} from '../../../../../../controller/model/Groupe.model';
-import {GroupeService} from '../../../../../../controller/service/Groupe.service';
-import {AcessManagementDto} from '../../../../../../controller/model/AcessManagement.model';
-import {AcessManagementService} from '../../../../../../controller/service/AcessManagement.service';
-import {AcessShareDto} from '../../../../../../controller/model/AcessShare.model';
-import {AcessShareService} from '../../../../../../controller/service/AcessShare.service';
-import {DocumentManagementUtilisateurDto} from '../../../../../../controller/model/DocumentManagementUtilisateur.model';
-import {DocumentManagementUtilisateurService} from '../../../../../../controller/service/DocumentManagementUtilisateur.service';
-import {DocumentAcessShareDto} from '../../../../../../controller/model/DocumentAcessShare.model';
-import {DocumentAcessShareService} from '../../../../../../controller/service/DocumentAcessShare.service';
+import {DocumentTypeDto} from 'app/controller/model/DocumentType.model';
+import {DocumentTypeService} from 'app/controller/service/DocumentType.service';
+import {AcessShareDto} from 'app/controller/model/AcessShare.model';
+import {AcessShareService} from 'app/controller/service/AcessShare.service';
+import {DocumentTagDto} from 'app/controller/model/DocumentTag.model';
+import {DocumentTagService} from 'app/controller/service/DocumentTag.service';
+import {TagDto} from 'app/controller/model/Tag.model';
+import {TagService} from 'app/controller/service/Tag.service';
+import {GroupeDto} from 'app/controller/model/Groupe.model';
+import {GroupeService} from 'app/controller/service/Groupe.service';
+import {DocumentAcessShareDto} from 'app/controller/model/DocumentAcessShare.model';
+import {DocumentAcessShareService} from 'app/controller/service/DocumentAcessShare.service';
+import {DocumentPartageGroupeDto} from 'app/controller/model/DocumentPartageGroupe.model';
+import {DocumentPartageGroupeService} from 'app/controller/service/DocumentPartageGroupe.service';
+import {DocumentPartageUtilisateurDto} from 'app/controller/model/DocumentPartageUtilisateur.model';
+import {DocumentPartageUtilisateurService} from 'app/controller/service/DocumentPartageUtilisateur.service';
+import {DocumentManagementGroupeDto} from 'app/controller/model/DocumentManagementGroupe.model';
+import {DocumentManagementGroupeService} from 'app/controller/service/DocumentManagementGroupe.service';
+import {AcessManagementDto} from 'app/controller/model/AcessManagement.model';
+import {AcessManagementService} from 'app/controller/service/AcessManagement.service';
+import {UtilisateurDto} from 'app/controller/model/Utilisateur.model';
+import {UtilisateurService} from 'app/controller/service/Utilisateur.service';
+import {EntiteAdministrativeDto} from 'app/controller/model/EntiteAdministrative.model';
+import {EntiteAdministrativeService} from 'app/controller/service/EntiteAdministrative.service';
+import {DocumentManagementUtilisateurDto} from 'app/controller/model/DocumentManagementUtilisateur.model';
+import {DocumentManagementUtilisateurService} from 'app/controller/service/DocumentManagementUtilisateur.service';
 const Create = ({visible, onClose, add, showToast, list}) => {
 
     const emptyItem = new DocumentDto();
@@ -65,19 +65,19 @@ const Create = ({visible, onClose, add, showToast, list}) => {
     const [acessManagements, setAcessManagements] = useState<AcessManagementDto[]>([]);
     const [acessShares, setAcessShares] = useState<AcessShareDto[]>([]);
 
-    type TagResponse = AxiosResponse<TagDto[]>;
-    type UtilisateurResponse = AxiosResponse<UtilisateurDto[]>;
-    type DocumentPartageUtilisateurResponse = AxiosResponse<DocumentPartageUtilisateurDto[]>;
     type DocumentTypeResponse = AxiosResponse<DocumentTypeDto[]>;
-    type DocumentPartageGroupeResponse = AxiosResponse<DocumentPartageGroupeDto[]>;
-    type DocumentManagementGroupeResponse = AxiosResponse<DocumentManagementGroupeDto[]>;
-    type EntiteAdministrativeResponse = AxiosResponse<EntiteAdministrativeDto[]>;
-    type DocumentTagResponse = AxiosResponse<DocumentTagDto[]>;
-    type GroupeResponse = AxiosResponse<GroupeDto[]>;
-    type AcessManagementResponse = AxiosResponse<AcessManagementDto[]>;
     type AcessShareResponse = AxiosResponse<AcessShareDto[]>;
-    type DocumentManagementUtilisateurResponse = AxiosResponse<DocumentManagementUtilisateurDto[]>;
+    type DocumentTagResponse = AxiosResponse<DocumentTagDto[]>;
+    type TagResponse = AxiosResponse<TagDto[]>;
+    type GroupeResponse = AxiosResponse<GroupeDto[]>;
     type DocumentAcessShareResponse = AxiosResponse<DocumentAcessShareDto[]>;
+    type DocumentPartageGroupeResponse = AxiosResponse<DocumentPartageGroupeDto[]>;
+    type DocumentPartageUtilisateurResponse = AxiosResponse<DocumentPartageUtilisateurDto[]>;
+    type DocumentManagementGroupeResponse = AxiosResponse<DocumentManagementGroupeDto[]>;
+    type AcessManagementResponse = AxiosResponse<AcessManagementDto[]>;
+    type UtilisateurResponse = AxiosResponse<UtilisateurDto[]>;
+    type EntiteAdministrativeResponse = AxiosResponse<EntiteAdministrativeDto[]>;
+    type DocumentManagementUtilisateurResponse = AxiosResponse<DocumentManagementUtilisateurDto[]>;
 
     const [documentPartageGroupes, setDocumentPartageGroupes] = useState<DocumentPartageGroupeDto>(new DocumentPartageGroupeDto());
     const [documentPartageUtilisateurs, setDocumentPartageUtilisateurs] = useState<DocumentPartageUtilisateurDto>(new DocumentPartageUtilisateurDto());
@@ -545,7 +545,7 @@ return(
                     </DataTable>
                     </div>
                     </TabPanel>
-                < /TabView>
+                </TabView>
             </TabPanel>
             <TabPanel header="Document partage utilisateurs">
                 <TabView activeIndex={activeTab} onTabChange={(e) => setActiveTab(e.index)}>
@@ -580,7 +580,7 @@ return(
                     </DataTable>
                     </div>
                     </TabPanel>
-                < /TabView>
+                </TabView>
             </TabPanel>
             <TabPanel header="Document management groupes">
                 <TabView activeIndex={activeTab} onTabChange={(e) => setActiveTab(e.index)}>
@@ -615,7 +615,7 @@ return(
                     </DataTable>
                     </div>
                     </TabPanel>
-                < /TabView>
+                </TabView>
             </TabPanel>
             <TabPanel header="Document management utilisateurs">
                 <TabView activeIndex={activeTab} onTabChange={(e) => setActiveTab(e.index)}>
@@ -650,7 +650,7 @@ return(
                     </DataTable>
                     </div>
                     </TabPanel>
-                < /TabView>
+                </TabView>
             </TabPanel>
         </TabView>
     </Dialog>

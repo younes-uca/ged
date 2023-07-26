@@ -2,7 +2,6 @@ import {Button} from 'primereact/button';
 import {Column} from 'primereact/column';
 import {Dropdown} from 'primereact/dropdown';
 import {TabView, TabPanel} from 'primereact/tabview';
-import {DataTable} from 'primereact/datatable';
 import {Dialog} from 'primereact/dialog';
 import {InputNumber, InputNumberChangeEvent} from 'primereact/inputnumber';
 import {InputText} from 'primereact/inputtext';
@@ -16,10 +15,10 @@ import {InputNumberChangeEvent} from 'primereact/inputnumber';
 import { InputSwitch } from 'primereact/inputswitch';
 import {MultiSelect} from 'primereact/multiselect';
 
-import {MessageService} from '../../../../../../controller/service/MessageService';
+import {MessageService} from 'app/controller/service/MessageService';
 
-import {TagService} from '../../../../../../controller/service/Tag.service';
-import  {TagDto}  from '../../../../../../controller/model/Tag.model';
+import {TagService} from 'app/controller/service/Tag.service';
+import  {TagDto}  from 'app/controller/model/Tag.model';
 
 const Edit = ({visible, onClose, showToast, selectedItem, update}) => {
 
@@ -129,7 +128,7 @@ return(
                         {submitted && !item.libelle && <small className="p-invalid">Libelle is required.</small>}
                     </div>
                 </div>
-            < /TabPanel>
+            </TabPanel>
         </TabView>
     </Dialog>
 );

@@ -1,4 +1,4 @@
-import {BaseCriteria} from '../../zynerator/criteria/BaseCriteria.model';
+import {BaseCriteria} from 'app/zynerator/criteria/BaseCriteria.model';
 
 
 
@@ -15,10 +15,10 @@ export class UtilisateurCriteria  extends  BaseCriteria {
 
     constructor() {
         super();
-        email = '';
-        emailLike = '';
-        name = '';
-        nameLike = '';
+        this.email = '';
+        this.emailLike = '';
+        this.name = '';
+        this.nameLike = '';
     }
 
 }

@@ -1,7 +1,7 @@
-import {BaseDto} from '../../zynerator/dto/BaseDto.model';
+import {BaseDto} from 'app/zynerator/dto/BaseDto.model';
 
-import {TagDto} from '../../controller/model/Tag.model';
-import {DocumentDto} from '../../controller/model/Document.model';
+import {TagDto} from 'app/controller/model/Tag.model';
+import {DocumentDto} from 'app/controller/model/Document.model';
 
 export class DocumentTagDto extends BaseDto{
 
@@ -10,10 +10,10 @@ export class DocumentTagDto extends BaseDto{
 
 
     constructor() {
-    super();
+        super();
 
-        document = new DocumentDto() ;
-        tag = new TagDto() ;
+        this.document = new DocumentDto() ;
+        this.tag = new TagDto() ;
 
         }
 

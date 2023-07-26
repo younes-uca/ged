@@ -1,8 +1,8 @@
 import axios, { AxiosResponse } from "axios";
-import { API_URL } from '../../../layout/AppConfig';
-import {PaginatedList} from '../../zynerator/dto/PaginatedList.model';
-import {AcessShareDto} from '../../controller/model/AcessShare.model';
-import {AcessShareCriteria} from '../../controller/criteria/AcessShareCriteria.model';
+import { API_URL } from 'layout/AppConfig';
+import {PaginatedList} from 'app/zynerator/dto/PaginatedList.model';
+import {AcessShareDto} from 'app/controller/model/AcessShare.model';
+import {AcessShareCriteria} from 'app/controller/criteria/AcessShareCriteria.model';
 
 
 

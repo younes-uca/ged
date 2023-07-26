@@ -17,15 +17,15 @@ import { InputSwitch } from 'primereact/inputswitch';
 import {MultiSelect} from 'primereact/multiselect';
 
 
-import {MessageService} from '../../../../../../controller/service/MessageService';
+import {MessageService} from 'app/controller/service/MessageService';
 
-import {GroupeService} from '../../../../../../controller/service/Groupe.service';
-import  {GroupeDto}  from '../../../../../../controller/model/Groupe.model';
+import {GroupeService} from 'app/controller/service/Groupe.service';
+import  {GroupeDto}  from 'app/controller/model/Groupe.model';
 
-import {UtilisateurDto} from '../../../../../../controller/model/Utilisateur.model';
-import {UtilisateurService} from '../../../../../../controller/service/Utilisateur.service';
-import {GroupeUtilisateurDto} from '../../../../../../controller/model/GroupeUtilisateur.model';
-import {GroupeUtilisateurService} from '../../../../../../controller/service/GroupeUtilisateur.service';
+import {GroupeUtilisateurDto} from 'app/controller/model/GroupeUtilisateur.model';
+import {GroupeUtilisateurService} from 'app/controller/service/GroupeUtilisateur.service';
+import {UtilisateurDto} from 'app/controller/model/Utilisateur.model';
+import {UtilisateurService} from 'app/controller/service/Utilisateur.service';
 const Create = ({visible, onClose, add, showToast, list}) => {
 
     const emptyItem = new GroupeDto();
@@ -37,8 +37,8 @@ const Create = ({visible, onClose, add, showToast, list}) => {
 
     const [utilisateurs, setUtilisateurs] = useState<UtilisateurDto[]>([]);
 
-    type UtilisateurResponse = AxiosResponse<UtilisateurDto[]>;
     type GroupeUtilisateurResponse = AxiosResponse<GroupeUtilisateurDto[]>;
+    type UtilisateurResponse = AxiosResponse<UtilisateurDto[]>;
 
     const [groupeUtilisateurs, setGroupeUtilisateurs] = useState<GroupeUtilisateurDto>(new GroupeUtilisateurDto());
 

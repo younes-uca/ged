@@ -1,7 +1,7 @@
-import {BaseCriteria} from '../../zynerator/criteria/BaseCriteria.model';
+import {BaseCriteria} from 'app/zynerator/criteria/BaseCriteria.model';
 
-import {PurchaseCriteria} from 'PurchaseCriteria.model';
-import {ProductCriteria} from 'ProductCriteria.model';
+import {PurchaseCriteria} from './PurchaseCriteria.model';
+import {ProductCriteria} from './ProductCriteria.model';
 
 
 
@@ -10,12 +10,12 @@ export class PurchaseItemCriteria  extends  BaseCriteria {
 
     public id: number;
 
-     public price: number;
-     public priceMin: number;
-     public priceMax: number;
-     public quantity: number;
-     public quantityMin: number;
-     public quantityMax: number;
+     public price: null | number;
+     public priceMin: null | number;
+     public priceMax: null | number;
+     public quantity: null | number;
+     public quantityMin: null | number;
+     public quantityMax: null | number;
   public product: ProductCriteria ;
   public products: Array<ProductCriteria> ;
   public purchase: PurchaseCriteria ;
@@ -23,16 +23,16 @@ export class PurchaseItemCriteria  extends  BaseCriteria {
 
     constructor() {
         super();
-        price = 0;
-        priceMin = 0;
-        priceMax = 0;
-        quantity = 0;
-        quantityMin = 0;
-        quantityMax = 0;
-        product = new ProductCriteria() ;
-        public products = new Array<ProductCriteria>() ;
-        purchase = new PurchaseCriteria() ;
-        public purchases = new Array<PurchaseCriteria>() ;
+        this.price = null;
+        this.priceMin = null;
+        this.priceMax = null;
+        this.quantity = null;
+        this.quantityMin = null;
+        this.quantityMax = null;
+        this.product = new ProductCriteria() ;
+        this.products = new Array<ProductCriteria>() ;
+        this.purchase = new PurchaseCriteria() ;
+        this.purchases = new Array<PurchaseCriteria>() ;
     }
 
 }

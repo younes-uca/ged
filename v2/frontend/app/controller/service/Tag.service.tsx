@@ -1,8 +1,8 @@
 import axios, { AxiosResponse } from "axios";
-import { API_URL } from '../../../layout/AppConfig';
-import {PaginatedList} from '../../zynerator/dto/PaginatedList.model';
-import {TagDto} from '../../controller/model/Tag.model';
-import {TagCriteria} from '../../controller/criteria/TagCriteria.model';
+import { API_URL } from 'layout/AppConfig';
+import {PaginatedList} from 'app/zynerator/dto/PaginatedList.model';
+import {TagDto} from 'app/controller/model/Tag.model';
+import {TagCriteria} from 'app/controller/criteria/TagCriteria.model';
 
 
 

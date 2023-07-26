@@ -1,4 +1,4 @@
-import {BaseDto} from '../../zynerator/dto/BaseDto.model';
+import {BaseDto} from 'app/zynerator/dto/BaseDto.model';
 
 
 export class TagDto extends BaseDto{
@@ -10,10 +10,10 @@ export class TagDto extends BaseDto{
 
 
     constructor() {
-    super();
+        super();
 
-        code = '';
-        libelle = '';
+        this.code = '';
+        this.libelle = '';
 
         }
 

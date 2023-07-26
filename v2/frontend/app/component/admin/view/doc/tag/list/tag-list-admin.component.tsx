@@ -17,11 +17,11 @@ import {InputNumber} from 'primereact/inputnumber';
 import {Dropdown} from 'primereact/dropdown';
 import {AxiosResponse} from 'axios';
 
-import {MessageService} from '../../../../../../controller/service/MessageService';
+import {MessageService} from 'app/controller/service/MessageService';
 
-import {TagService} from '../../../../../../controller/service/Tag.service';
-import {TagDto}  from '../../../../../../controller/model/Tag.model';
-import {TagCriteria} from '../../../../../../controller/criteria/TagCriteria.model';
+import {TagService} from 'app/controller/service/Tag.service';
+import {TagDto}  from 'app/controller/model/Tag.model';
+import {TagCriteria} from 'app/controller/criteria/TagCriteria.model';
 
 
 import Edit from '../edit/tag-edit-admin.component';

@@ -1,8 +1,8 @@
-import {BaseDto} from '../../zynerator/dto/BaseDto.model';
+import {BaseDto} from 'app/zynerator/dto/BaseDto.model';
 
-import {GroupeDto} from '../../controller/model/Groupe.model';
-import {AcessManagementDto} from '../../controller/model/AcessManagement.model';
-import {DocumentDto} from '../../controller/model/Document.model';
+import {GroupeDto} from 'app/controller/model/Groupe.model';
+import {AcessManagementDto} from 'app/controller/model/AcessManagement.model';
+import {DocumentDto} from 'app/controller/model/Document.model';
 
 export class DocumentManagementGroupeDto extends BaseDto{
 
@@ -14,12 +14,12 @@ export class DocumentManagementGroupeDto extends BaseDto{
 
 
     constructor() {
-    super();
+        super();
 
-        dateManagement = null;
-        document = new DocumentDto() ;
-        groupe = new GroupeDto() ;
-        acessManagement = new AcessManagementDto() ;
+        this.dateManagement = null;
+        this.document = new DocumentDto() ;
+        this.groupe = new GroupeDto() ;
+        this.acessManagement = new AcessManagementDto() ;
 
         }
 

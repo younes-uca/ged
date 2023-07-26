@@ -17,14 +17,14 @@ import {InputNumber} from 'primereact/inputnumber';
 import {Dropdown} from 'primereact/dropdown';
 import {AxiosResponse} from 'axios';
 
-import {MessageService} from '../../../../../../controller/service/MessageService';
+import {MessageService} from 'app/controller/service/MessageService';
 
-import {ClientService} from '../../../../../../controller/service/Client.service';
-import {ClientDto}  from '../../../../../../controller/model/Client.model';
-import {ClientCriteria} from '../../../../../../controller/criteria/ClientCriteria.model';
+import {ClientService} from 'app/controller/service/Client.service';
+import {ClientDto}  from 'app/controller/model/Client.model';
+import {ClientCriteria} from 'app/controller/criteria/ClientCriteria.model';
 
-import {ClientCategoryDto} from '../../../../../../controller/model/ClientCategory.model';
-import {ClientCategoryService} from '../../../../../../controller/service/ClientCategory.service';
+import {ClientCategoryDto} from 'app/controller/model/ClientCategory.model';
+import {ClientCategoryService} from 'app/controller/service/ClientCategory.service';
 
 import Edit from '../edit/client-edit-admin.component';
 import Create from '../create/client-create-admin.component';

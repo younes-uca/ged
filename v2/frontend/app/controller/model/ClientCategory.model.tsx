@@ -1,4 +1,4 @@
-import {BaseDto} from '../../zynerator/dto/BaseDto.model';
+import {BaseDto} from 'app/zynerator/dto/BaseDto.model';
 
 
 export class ClientCategoryDto extends BaseDto{
@@ -10,10 +10,10 @@ export class ClientCategoryDto extends BaseDto{
 
 
     constructor() {
-    super();
+        super();
 
-        reference = '';
-        code = '';
+        this.reference = '';
+        this.code = '';
 
         }
 

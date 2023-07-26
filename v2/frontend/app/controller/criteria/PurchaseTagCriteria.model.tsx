@@ -1,7 +1,7 @@
-import {BaseCriteria} from '../../zynerator/criteria/BaseCriteria.model';
+import {BaseCriteria} from 'app/zynerator/criteria/BaseCriteria.model';
 
-import {PurchaseCriteria} from 'PurchaseCriteria.model';
-import {TagCriteria} from 'TagCriteria.model';
+import {PurchaseCriteria} from './PurchaseCriteria.model';
+import {TagCriteria} from './TagCriteria.model';
 
 
 
@@ -17,10 +17,10 @@ export class PurchaseTagCriteria  extends  BaseCriteria {
 
     constructor() {
         super();
-        purchase = new PurchaseCriteria() ;
-        public purchases = new Array<PurchaseCriteria>() ;
-        tag = new TagCriteria() ;
-        public tags = new Array<TagCriteria>() ;
+        this.purchase = new PurchaseCriteria() ;
+        this.purchases = new Array<PurchaseCriteria>() ;
+        this.tag = new TagCriteria() ;
+        this.tags = new Array<TagCriteria>() ;
     }
 
 }

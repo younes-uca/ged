@@ -17,11 +17,11 @@ import {InputNumber} from 'primereact/inputnumber';
 import {Dropdown} from 'primereact/dropdown';
 import {AxiosResponse} from 'axios';
 
-import {MessageService} from '../../../../../../controller/service/MessageService';
+import {MessageService} from 'app/controller/service/MessageService';
 
-import {AcessShareService} from '../../../../../../controller/service/AcessShare.service';
-import {AcessShareDto}  from '../../../../../../controller/model/AcessShare.model';
-import {AcessShareCriteria} from '../../../../../../controller/criteria/AcessShareCriteria.model';
+import {AcessShareService} from 'app/controller/service/AcessShare.service';
+import {AcessShareDto}  from 'app/controller/model/AcessShare.model';
+import {AcessShareCriteria} from 'app/controller/criteria/AcessShareCriteria.model';
 
 
 import Edit from '../edit/acess-share-edit-admin.component';

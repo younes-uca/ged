@@ -14,7 +14,7 @@ import {Calendar, CalendarChangeEvent} from 'primereact/calendar';
 import { format } from 'date-fns';
 import { InputSwitch } from 'primereact/inputswitch';
 import {MultiSelect} from 'primereact/multiselect';
-import  {EntiteAdministrativeDto}  from '../../../../../../controller/model/EntiteAdministrative.model';
+import  {EntiteAdministrativeDto}  from 'app/controller/model/EntiteAdministrative.model';
 
 const View = ({visible,onClose,selectedItem}) => {
 

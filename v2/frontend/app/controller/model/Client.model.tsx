@@ -1,6 +1,6 @@
-import {BaseDto} from '../../zynerator/dto/BaseDto.model';
+import {BaseDto} from 'app/zynerator/dto/BaseDto.model';
 
-import {ClientCategoryDto} from '../../controller/model/ClientCategory.model';
+import {ClientCategoryDto} from 'app/controller/model/ClientCategory.model';
 
 export class ClientDto extends BaseDto{
 
@@ -12,11 +12,11 @@ export class ClientDto extends BaseDto{
 
 
     constructor() {
-    super();
+        super();
 
-        fullName = '';
-        email = '';
-        clientCategory = new ClientCategoryDto() ;
+        this.fullName = '';
+        this.email = '';
+        this.clientCategory = new ClientCategoryDto() ;
 
         }
 

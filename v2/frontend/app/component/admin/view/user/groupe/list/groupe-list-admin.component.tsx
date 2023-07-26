@@ -17,16 +17,16 @@ import {InputNumber} from 'primereact/inputnumber';
 import {Dropdown} from 'primereact/dropdown';
 import {AxiosResponse} from 'axios';
 
-import {MessageService} from '../../../../../../controller/service/MessageService';
+import {MessageService} from 'app/controller/service/MessageService';
 
-import {GroupeService} from '../../../../../../controller/service/Groupe.service';
-import {GroupeDto}  from '../../../../../../controller/model/Groupe.model';
-import {GroupeCriteria} from '../../../../../../controller/criteria/GroupeCriteria.model';
+import {GroupeService} from 'app/controller/service/Groupe.service';
+import {GroupeDto}  from 'app/controller/model/Groupe.model';
+import {GroupeCriteria} from 'app/controller/criteria/GroupeCriteria.model';
 
-import {UtilisateurDto} from '../../../../../../controller/model/Utilisateur.model';
-import {UtilisateurService} from '../../../../../../controller/service/Utilisateur.service';
-import {GroupeUtilisateurDto} from '../../../../../../controller/model/GroupeUtilisateur.model';
-import {GroupeUtilisateurService} from '../../../../../../controller/service/GroupeUtilisateur.service';
+import {GroupeUtilisateurDto} from 'app/controller/model/GroupeUtilisateur.model';
+import {GroupeUtilisateurService} from 'app/controller/service/GroupeUtilisateur.service';
+import {UtilisateurDto} from 'app/controller/model/Utilisateur.model';
+import {UtilisateurService} from 'app/controller/service/Utilisateur.service';
 
 import Edit from '../edit/groupe-edit-admin.component';
 import Create from '../create/groupe-create-admin.component';
@@ -54,10 +54,10 @@ const List = () => {
     const [findByCriteriaShow, setFindByCriteriaShow] = useState(false);
     const [isSearchTriggered, setIsSearchTriggered] = useState(false);
 
-    const [utilisateurs, setUtilisateurs] = useState<UtilisateurDto[]>([]);
-    type UtilisateurResponse = AxiosResponse<UtilisateurDto[]>;
     const [groupeUtilisateurs, setGroupeUtilisateurs] = useState<GroupeUtilisateurDto[]>([]);
     type GroupeUtilisateurResponse = AxiosResponse<GroupeUtilisateurDto[]>;
+    const [utilisateurs, setUtilisateurs] = useState<UtilisateurDto[]>([]);
+    type UtilisateurResponse = AxiosResponse<UtilisateurDto[]>;
 
     const showSearch = () => { setFindByCriteriaShow(!findByCriteriaShow); };
 

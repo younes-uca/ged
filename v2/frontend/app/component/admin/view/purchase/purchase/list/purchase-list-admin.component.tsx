@@ -17,22 +17,22 @@ import {InputNumber} from 'primereact/inputnumber';
 import {Dropdown} from 'primereact/dropdown';
 import {AxiosResponse} from 'axios';
 
-import {MessageService} from '../../../../../../controller/service/MessageService';
+import {MessageService} from 'app/controller/service/MessageService';
 
-import {PurchaseService} from '../../../../../../controller/service/Purchase.service';
-import {PurchaseDto}  from '../../../../../../controller/model/Purchase.model';
-import {PurchaseCriteria} from '../../../../../../controller/criteria/PurchaseCriteria.model';
+import {PurchaseService} from 'app/controller/service/Purchase.service';
+import {PurchaseDto}  from 'app/controller/model/Purchase.model';
+import {PurchaseCriteria} from 'app/controller/criteria/PurchaseCriteria.model';
 
-import {ProductDto} from '../../../../../../controller/model/Product.model';
-import {ProductService} from '../../../../../../controller/service/Product.service';
-import {PurchaseTagDto} from '../../../../../../controller/model/PurchaseTag.model';
-import {PurchaseTagService} from '../../../../../../controller/service/PurchaseTag.service';
-import {TagDto} from '../../../../../../controller/model/Tag.model';
-import {TagService} from '../../../../../../controller/service/Tag.service';
-import {ClientDto} from '../../../../../../controller/model/Client.model';
-import {ClientService} from '../../../../../../controller/service/Client.service';
-import {PurchaseItemDto} from '../../../../../../controller/model/PurchaseItem.model';
-import {PurchaseItemService} from '../../../../../../controller/service/PurchaseItem.service';
+import {ClientDto} from 'app/controller/model/Client.model';
+import {ClientService} from 'app/controller/service/Client.service';
+import {PurchaseItemDto} from 'app/controller/model/PurchaseItem.model';
+import {PurchaseItemService} from 'app/controller/service/PurchaseItem.service';
+import {ProductDto} from 'app/controller/model/Product.model';
+import {ProductService} from 'app/controller/service/Product.service';
+import {TagDto} from 'app/controller/model/Tag.model';
+import {TagService} from 'app/controller/service/Tag.service';
+import {PurchaseTagDto} from 'app/controller/model/PurchaseTag.model';
+import {PurchaseTagService} from 'app/controller/service/PurchaseTag.service';
 
 import Edit from '../edit/purchase-edit-admin.component';
 import Create from '../create/purchase-create-admin.component';
@@ -60,16 +60,16 @@ const List = () => {
     const [findByCriteriaShow, setFindByCriteriaShow] = useState(false);
     const [isSearchTriggered, setIsSearchTriggered] = useState(false);
 
-    const [products, setProducts] = useState<ProductDto[]>([]);
-    type ProductResponse = AxiosResponse<ProductDto[]>;
-    const [purchaseTags, setPurchaseTags] = useState<PurchaseTagDto[]>([]);
-    type PurchaseTagResponse = AxiosResponse<PurchaseTagDto[]>;
-    const [tags, setTags] = useState<TagDto[]>([]);
-    type TagResponse = AxiosResponse<TagDto[]>;
     const [clients, setClients] = useState<ClientDto[]>([]);
     type ClientResponse = AxiosResponse<ClientDto[]>;
     const [purchaseItems, setPurchaseItems] = useState<PurchaseItemDto[]>([]);
     type PurchaseItemResponse = AxiosResponse<PurchaseItemDto[]>;
+    const [products, setProducts] = useState<ProductDto[]>([]);
+    type ProductResponse = AxiosResponse<ProductDto[]>;
+    const [tags, setTags] = useState<TagDto[]>([]);
+    type TagResponse = AxiosResponse<TagDto[]>;
+    const [purchaseTags, setPurchaseTags] = useState<PurchaseTagDto[]>([]);
+    type PurchaseTagResponse = AxiosResponse<PurchaseTagDto[]>;
 
     const showSearch = () => { setFindByCriteriaShow(!findByCriteriaShow); };
 

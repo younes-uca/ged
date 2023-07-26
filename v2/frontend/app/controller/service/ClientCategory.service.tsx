@@ -1,8 +1,8 @@
 import axios, { AxiosResponse } from "axios";
-import { API_URL } from '../../../layout/AppConfig';
-import {PaginatedList} from '../../zynerator/dto/PaginatedList.model';
-import {ClientCategoryDto} from '../../controller/model/ClientCategory.model';
-import {ClientCategoryCriteria} from '../../controller/criteria/ClientCategoryCriteria.model';
+import { API_URL } from 'layout/AppConfig';
+import {PaginatedList} from 'app/zynerator/dto/PaginatedList.model';
+import {ClientCategoryDto} from 'app/controller/model/ClientCategory.model';
+import {ClientCategoryCriteria} from 'app/controller/criteria/ClientCategoryCriteria.model';
 
 
 

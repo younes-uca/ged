@@ -1,8 +1,8 @@
 import axios, { AxiosResponse } from "axios";
-import { API_URL } from '../../../layout/AppConfig';
-import {PaginatedList} from '../../zynerator/dto/PaginatedList.model';
-import {DocumentManagementGroupeDto} from '../../controller/model/DocumentManagementGroupe.model';
-import {DocumentManagementGroupeCriteria} from '../../controller/criteria/DocumentManagementGroupeCriteria.model';
+import { API_URL } from 'layout/AppConfig';
+import {PaginatedList} from 'app/zynerator/dto/PaginatedList.model';
+import {DocumentManagementGroupeDto} from 'app/controller/model/DocumentManagementGroupe.model';
+import {DocumentManagementGroupeCriteria} from 'app/controller/criteria/DocumentManagementGroupeCriteria.model';
 
 
 

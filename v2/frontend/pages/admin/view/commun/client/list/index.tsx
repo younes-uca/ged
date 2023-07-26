@@ -1,8 +1,8 @@
 import {NextPageWithLayout} from 'next';
 import {ReactNode} from 'react';
 
-import ClientsList from '../../../../../../app/component/admin/view/commun/client/list/client-list-admin.component';
-import Layout from '../../../../../../layout/layout';
+import ClientsList from 'app/component/admin/view/commun/client/list/client-list-admin.component';
+import Layout from 'layout/layout';
 
 const Clients: NextPageWithLayout = () => {
     return <ClientsList />

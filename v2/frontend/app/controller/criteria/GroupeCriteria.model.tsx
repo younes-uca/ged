@@ -1,7 +1,7 @@
-import {BaseCriteria} from '../../zynerator/criteria/BaseCriteria.model';
+import {BaseCriteria} from 'app/zynerator/criteria/BaseCriteria.model';
 
-import {GroupeUtilisateurCriteria} from 'GroupeUtilisateurCriteria.model';
-import {UtilisateurCriteria} from 'UtilisateurCriteria.model';
+import {GroupeUtilisateurCriteria} from './GroupeUtilisateurCriteria.model';
+import {UtilisateurCriteria} from './UtilisateurCriteria.model';
 
 
 
@@ -20,12 +20,12 @@ export class GroupeCriteria  extends  BaseCriteria {
 
     constructor() {
         super();
-        code = '';
-        codeLike = '';
-        libelle = '';
-        libelleLike = '';
-        utilisateur = new UtilisateurCriteria() ;
-        public utilisateurs = new Array<UtilisateurCriteria>() ;
+        this.code = '';
+        this.codeLike = '';
+        this.libelle = '';
+        this.libelleLike = '';
+        this.utilisateur = new UtilisateurCriteria() ;
+        this.utilisateurs = new Array<UtilisateurCriteria>() ;
     }
 
 }

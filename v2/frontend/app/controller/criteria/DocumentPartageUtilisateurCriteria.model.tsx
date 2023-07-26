@@ -1,8 +1,8 @@
-import {BaseCriteria} from '../../zynerator/criteria/BaseCriteria.model';
+import {BaseCriteria} from 'app/zynerator/criteria/BaseCriteria.model';
 
-import {AcessShareCriteria} from 'AcessShareCriteria.model';
-import {DocumentCriteria} from 'DocumentCriteria.model';
-import {UtilisateurCriteria} from 'UtilisateurCriteria.model';
+import {AcessShareCriteria} from './AcessShareCriteria.model';
+import {DocumentCriteria} from './DocumentCriteria.model';
+import {UtilisateurCriteria} from './UtilisateurCriteria.model';
 
 
 
@@ -23,15 +23,15 @@ export class DocumentPartageUtilisateurCriteria  extends  BaseCriteria {
 
     constructor() {
         super();
-        dateShare = null;
-        dateShareFrom  = null;
-        dateShareTo = null;
-        document = new DocumentCriteria() ;
-        public documents = new Array<DocumentCriteria>() ;
-        utilisateur = new UtilisateurCriteria() ;
-        public utilisateurs = new Array<UtilisateurCriteria>() ;
-        acessShare = new AcessShareCriteria() ;
-        public acessShares = new Array<AcessShareCriteria>() ;
+        this.dateShare = null;
+        this.dateShareFrom  = null;
+        this.dateShareTo = null;
+        this.document = new DocumentCriteria() ;
+        this.documents = new Array<DocumentCriteria>() ;
+        this.utilisateur = new UtilisateurCriteria() ;
+        this.utilisateurs = new Array<UtilisateurCriteria>() ;
+        this.acessShare = new AcessShareCriteria() ;
+        this.acessShares = new Array<AcessShareCriteria>() ;
     }
 
 }

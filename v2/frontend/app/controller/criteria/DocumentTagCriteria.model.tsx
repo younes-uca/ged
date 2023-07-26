@@ -1,7 +1,7 @@
-import {BaseCriteria} from '../../zynerator/criteria/BaseCriteria.model';
+import {BaseCriteria} from 'app/zynerator/criteria/BaseCriteria.model';
 
-import {TagCriteria} from 'TagCriteria.model';
-import {DocumentCriteria} from 'DocumentCriteria.model';
+import {TagCriteria} from './TagCriteria.model';
+import {DocumentCriteria} from './DocumentCriteria.model';
 
 
 
@@ -17,10 +17,10 @@ export class DocumentTagCriteria  extends  BaseCriteria {
 
     constructor() {
         super();
-        document = new DocumentCriteria() ;
-        public documents = new Array<DocumentCriteria>() ;
-        tag = new TagCriteria() ;
-        public tags = new Array<TagCriteria>() ;
+        this.document = new DocumentCriteria() ;
+        this.documents = new Array<DocumentCriteria>() ;
+        this.tag = new TagCriteria() ;
+        this.tags = new Array<TagCriteria>() ;
     }
 
 }

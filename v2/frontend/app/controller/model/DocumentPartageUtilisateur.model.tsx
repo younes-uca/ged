@@ -1,8 +1,8 @@
-import {BaseDto} from '../../zynerator/dto/BaseDto.model';
+import {BaseDto} from 'app/zynerator/dto/BaseDto.model';
 
-import {AcessShareDto} from '../../controller/model/AcessShare.model';
-import {DocumentDto} from '../../controller/model/Document.model';
-import {UtilisateurDto} from '../../controller/model/Utilisateur.model';
+import {AcessShareDto} from 'app/controller/model/AcessShare.model';
+import {DocumentDto} from 'app/controller/model/Document.model';
+import {UtilisateurDto} from 'app/controller/model/Utilisateur.model';
 
 export class DocumentPartageUtilisateurDto extends BaseDto{
 
@@ -14,12 +14,12 @@ export class DocumentPartageUtilisateurDto extends BaseDto{
 
 
     constructor() {
-    super();
+        super();
 
-        dateShare = null;
-        document = new DocumentDto() ;
-        utilisateur = new UtilisateurDto() ;
-        acessShare = new AcessShareDto() ;
+        this.dateShare = null;
+        this.document = new DocumentDto() ;
+        this.utilisateur = new UtilisateurDto() ;
+        this.acessShare = new AcessShareDto() ;
 
         }
 

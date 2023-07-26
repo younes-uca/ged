@@ -17,14 +17,14 @@ import {InputNumber} from 'primereact/inputnumber';
 import {Dropdown} from 'primereact/dropdown';
 import {AxiosResponse} from 'axios';
 
-import {MessageService} from '../../../../../../controller/service/MessageService';
+import {MessageService} from 'app/controller/service/MessageService';
 
-import {EntiteAdministrativeService} from '../../../../../../controller/service/EntiteAdministrative.service';
-import {EntiteAdministrativeDto}  from '../../../../../../controller/model/EntiteAdministrative.model';
-import {EntiteAdministrativeCriteria} from '../../../../../../controller/criteria/EntiteAdministrativeCriteria.model';
+import {EntiteAdministrativeService} from 'app/controller/service/EntiteAdministrative.service';
+import {EntiteAdministrativeDto}  from 'app/controller/model/EntiteAdministrative.model';
+import {EntiteAdministrativeCriteria} from 'app/controller/criteria/EntiteAdministrativeCriteria.model';
 
-import {UtilisateurDto} from '../../../../../../controller/model/Utilisateur.model';
-import {UtilisateurService} from '../../../../../../controller/service/Utilisateur.service';
+import {UtilisateurDto} from 'app/controller/model/Utilisateur.model';
+import {UtilisateurService} from 'app/controller/service/Utilisateur.service';
 
 import Edit from '../edit/entite-administrative-edit-admin.component';
 import Create from '../create/entite-administrative-create-admin.component';

@@ -1,6 +1,6 @@
-import {BaseCriteria} from '../../zynerator/criteria/BaseCriteria.model';
+import {BaseCriteria} from 'app/zynerator/criteria/BaseCriteria.model';
 
-import {ClientCategoryCriteria} from 'ClientCategoryCriteria.model';
+import {ClientCategoryCriteria} from './ClientCategoryCriteria.model';
 
 
 
@@ -18,12 +18,12 @@ export class ClientCriteria  extends  BaseCriteria {
 
     constructor() {
         super();
-        fullName = '';
-        fullNameLike = '';
-        email = '';
-        emailLike = '';
-        clientCategory = new ClientCategoryCriteria() ;
-        public clientCategorys = new Array<ClientCategoryCriteria>() ;
+        this.fullName = '';
+        this.fullNameLike = '';
+        this.email = '';
+        this.emailLike = '';
+        this.clientCategory = new ClientCategoryCriteria() ;
+        this.clientCategorys = new Array<ClientCategoryCriteria>() ;
     }
 
 }

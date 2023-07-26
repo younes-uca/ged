@@ -14,7 +14,7 @@ import {Calendar, CalendarChangeEvent} from 'primereact/calendar';
 import { format } from 'date-fns';
 import { InputSwitch } from 'primereact/inputswitch';
 import {MultiSelect} from 'primereact/multiselect';
-import  {AcessShareDto}  from '../../../../../../controller/model/AcessShare.model';
+import  {AcessShareDto}  from 'app/controller/model/AcessShare.model';
 
 const View = ({visible,onClose,selectedItem}) => {
 

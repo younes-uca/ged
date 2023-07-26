@@ -1,4 +1,4 @@
-import {BaseDto} from '../../zynerator/dto/BaseDto.model';
+import {BaseDto} from 'app/zynerator/dto/BaseDto.model';
 
 
 export class UtilisateurDto extends BaseDto{
@@ -10,10 +10,10 @@ export class UtilisateurDto extends BaseDto{
 
 
     constructor() {
-    super();
+        super();
 
-        email = '';
-        name = '';
+        this.email = '';
+        this.name = '';
 
         }
 

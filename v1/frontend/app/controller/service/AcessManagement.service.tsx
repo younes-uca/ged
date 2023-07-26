@@ -1,5 +1,5 @@
 import axios, { AxiosResponse } from "axios";
-import { API_URL } from '../../../layout/AppConfig';
+import { API_URL } from 'layout/AppConfig';
 import {PaginatedList} from '../../zynerator/dto/PaginatedList.model';
 import {AcessManagementDto} from '../../controller/model/AcessManagement.model';
 import {AcessManagementCriteria} from '../../controller/criteria/AcessManagementCriteria.model';

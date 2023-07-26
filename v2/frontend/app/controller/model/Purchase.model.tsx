@@ -1,8 +1,8 @@
-import {BaseDto} from '../../zynerator/dto/BaseDto.model';
+import {BaseDto} from 'app/zynerator/dto/BaseDto.model';
 
-import {PurchaseTagDto} from '../../controller/model/PurchaseTag.model';
-import {PurchaseItemDto} from '../../controller/model/PurchaseItem.model';
-import {ClientDto} from '../../controller/model/Client.model';
+import {PurchaseTagDto} from 'app/controller/model/PurchaseTag.model';
+import {PurchaseItemDto} from 'app/controller/model/PurchaseItem.model';
+import {ClientDto} from 'app/controller/model/Client.model';
 
 export class PurchaseDto extends BaseDto{
 
@@ -12,7 +12,7 @@ export class PurchaseDto extends BaseDto{
 
     public image: string;
 
-    public total: number;
+    public total: null | number;
 
     public description: string;
 
@@ -22,16 +22,16 @@ export class PurchaseDto extends BaseDto{
 
 
     constructor() {
-    super();
+        super();
 
-        reference = '';
-        purchaseDate = null;
-        image = '';
-        total = 0;
-        description = '';
-        client = new ClientDto() ;
-        purchaseItems = new Array<PurchaseItemDto>();
-        purchaseTags = new Array<PurchaseTagDto>();
+        this.reference = '';
+        this.purchaseDate = null;
+        this.image = '';
+        this.total = null;
+        this.description = '';
+        this.client = new ClientDto() ;
+        this.purchaseItems = new Array<PurchaseItemDto>();
+        this.purchaseTags = new Array<PurchaseTagDto>();
 
         }
 

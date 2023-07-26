@@ -2,12 +2,10 @@
 
 import React, {useContext} from 'react';
 import AppMenuitem from '/layout/AppMenuitem';
-import {LayoutContext} from '/layout/context/layoutcontext';
 import {MenuProvider} from '/layout/context/menucontext';
 import {AppMenuItem} from '/types/types';
 
 const AppMenu = () => {
-    const {layoutConfig} = useContext(LayoutContext);
 
     const model: AppMenuItem[] = [
         {
@@ -122,22 +120,6 @@ const AppMenu = () => {
                       },
                     ]
                     },
-
-                {
-                    label: 'Timeline',
-                    icon: 'pi pi-fw pi-calendar',
-                    to: '/pages/timeline'
-                },
-                {
-                    label: 'Not Found',
-                    icon: 'pi pi-fw pi-exclamation-circle',
-                    to: '/pages/notfound'
-                },
-                {
-                    label: 'Empty',
-                    icon: 'pi pi-fw pi-circle-off',
-                    to: '/pages/empty'
-                }
             ]
         },
 

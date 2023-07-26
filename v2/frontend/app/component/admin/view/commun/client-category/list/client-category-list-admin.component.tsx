@@ -17,11 +17,11 @@ import {InputNumber} from 'primereact/inputnumber';
 import {Dropdown} from 'primereact/dropdown';
 import {AxiosResponse} from 'axios';
 
-import {MessageService} from '../../../../../../controller/service/MessageService';
+import {MessageService} from 'app/controller/service/MessageService';
 
-import {ClientCategoryService} from '../../../../../../controller/service/ClientCategory.service';
-import {ClientCategoryDto}  from '../../../../../../controller/model/ClientCategory.model';
-import {ClientCategoryCriteria} from '../../../../../../controller/criteria/ClientCategoryCriteria.model';
+import {ClientCategoryService} from 'app/controller/service/ClientCategory.service';
+import {ClientCategoryDto}  from 'app/controller/model/ClientCategory.model';
+import {ClientCategoryCriteria} from 'app/controller/criteria/ClientCategoryCriteria.model';
 
 
 import Edit from '../edit/client-category-edit-admin.component';

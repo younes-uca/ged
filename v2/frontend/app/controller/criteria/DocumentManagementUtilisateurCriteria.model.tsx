@@ -1,8 +1,8 @@
-import {BaseCriteria} from '../../zynerator/criteria/BaseCriteria.model';
+import {BaseCriteria} from 'app/zynerator/criteria/BaseCriteria.model';
 
-import {AcessManagementCriteria} from 'AcessManagementCriteria.model';
-import {DocumentCriteria} from 'DocumentCriteria.model';
-import {UtilisateurCriteria} from 'UtilisateurCriteria.model';
+import {AcessManagementCriteria} from './AcessManagementCriteria.model';
+import {DocumentCriteria} from './DocumentCriteria.model';
+import {UtilisateurCriteria} from './UtilisateurCriteria.model';
 
 
 
@@ -23,15 +23,15 @@ export class DocumentManagementUtilisateurCriteria  extends  BaseCriteria {
 
     constructor() {
         super();
-        dateManagement = null;
-        dateManagementFrom  = null;
-        dateManagementTo = null;
-        document = new DocumentCriteria() ;
-        public documents = new Array<DocumentCriteria>() ;
-        utilisateur = new UtilisateurCriteria() ;
-        public utilisateurs = new Array<UtilisateurCriteria>() ;
-        acessManagement = new AcessManagementCriteria() ;
-        public acessManagements = new Array<AcessManagementCriteria>() ;
+        this.dateManagement = null;
+        this.dateManagementFrom  = null;
+        this.dateManagementTo = null;
+        this.document = new DocumentCriteria() ;
+        this.documents = new Array<DocumentCriteria>() ;
+        this.utilisateur = new UtilisateurCriteria() ;
+        this.utilisateurs = new Array<UtilisateurCriteria>() ;
+        this.acessManagement = new AcessManagementCriteria() ;
+        this.acessManagements = new Array<AcessManagementCriteria>() ;
     }
 
 }

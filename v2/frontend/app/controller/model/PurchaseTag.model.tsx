@@ -1,7 +1,7 @@
-import {BaseDto} from '../../zynerator/dto/BaseDto.model';
+import {BaseDto} from 'app/zynerator/dto/BaseDto.model';
 
-import {PurchaseDto} from '../../controller/model/Purchase.model';
-import {TagDto} from '../../controller/model/Tag.model';
+import {PurchaseDto} from 'app/controller/model/Purchase.model';
+import {TagDto} from 'app/controller/model/Tag.model';
 
 export class PurchaseTagDto extends BaseDto{
 
@@ -10,10 +10,10 @@ export class PurchaseTagDto extends BaseDto{
 
 
     constructor() {
-    super();
+        super();
 
-        purchase = new PurchaseDto() ;
-        tag = new TagDto() ;
+        this.purchase = new PurchaseDto() ;
+        this.tag = new TagDto() ;
 
         }
 

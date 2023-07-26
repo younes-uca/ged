@@ -2,7 +2,6 @@ import {Button} from 'primereact/button';
 import {Column} from 'primereact/column';
 import {Dropdown} from 'primereact/dropdown';
 import {TabView, TabPanel} from 'primereact/tabview';
-import {DataTable} from 'primereact/datatable';
 import {Dialog} from 'primereact/dialog';
 import {InputNumber, InputNumberChangeEvent} from 'primereact/inputnumber';
 import {InputText} from 'primereact/inputtext';
@@ -16,13 +15,13 @@ import {InputNumberChangeEvent} from 'primereact/inputnumber';
 import { InputSwitch } from 'primereact/inputswitch';
 import {MultiSelect} from 'primereact/multiselect';
 
-import {MessageService} from '../../../../../../controller/service/MessageService';
+import {MessageService} from 'app/controller/service/MessageService';
 
-import {ClientService} from '../../../../../../controller/service/Client.service';
-import  {ClientDto}  from '../../../../../../controller/model/Client.model';
+import {ClientService} from 'app/controller/service/Client.service';
+import  {ClientDto}  from 'app/controller/model/Client.model';
 
-import {ClientCategoryDto} from '../../../../../../controller/model/ClientCategory.model';
-import {ClientCategoryService} from '../../../../../../controller/service/ClientCategory.service';
+import {ClientCategoryDto} from 'app/controller/model/ClientCategory.model';
+import {ClientCategoryService} from 'app/controller/service/ClientCategory.service';
 const Edit = ({visible, onClose, showToast, selectedItem, update}) => {
 
     const emptyItem = new ClientDto();
@@ -139,7 +138,7 @@ return(
                         <Dropdown  id="clientCategoryDropdown"  value={item ? item.clientCategory : ''} options={clientCategorys} onChange={(e) => onDropdownChange(e, 'clientCategory')}   placeholder="Sélectionnez un clientCategory" filter filterPlaceholder="Rechercher un clientCategory" optionLabel="reference" />
                     </div>
                 </div>
-            < /TabPanel>
+            </TabPanel>
         </TabView>
     </Dialog>
 );

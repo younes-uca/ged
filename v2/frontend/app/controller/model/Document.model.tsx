@@ -1,14 +1,14 @@
-import {BaseDto} from '../../zynerator/dto/BaseDto.model';
+import {BaseDto} from 'app/zynerator/dto/BaseDto.model';
 
-import {DocumentPartageGroupeDto} from '../../controller/model/DocumentPartageGroupe.model';
-import {DocumentTagDto} from '../../controller/model/DocumentTag.model';
-import {DocumentPartageUtilisateurDto} from '../../controller/model/DocumentPartageUtilisateur.model';
-import {DocumentTypeDto} from '../../controller/model/DocumentType.model';
-import {EntiteAdministrativeDto} from '../../controller/model/EntiteAdministrative.model';
-import {DocumentManagementGroupeDto} from '../../controller/model/DocumentManagementGroupe.model';
-import {DocumentAcessShareDto} from '../../controller/model/DocumentAcessShare.model';
-import {UtilisateurDto} from '../../controller/model/Utilisateur.model';
-import {DocumentManagementUtilisateurDto} from '../../controller/model/DocumentManagementUtilisateur.model';
+import {DocumentPartageGroupeDto} from 'app/controller/model/DocumentPartageGroupe.model';
+import {DocumentTagDto} from 'app/controller/model/DocumentTag.model';
+import {DocumentPartageUtilisateurDto} from 'app/controller/model/DocumentPartageUtilisateur.model';
+import {DocumentTypeDto} from 'app/controller/model/DocumentType.model';
+import {EntiteAdministrativeDto} from 'app/controller/model/EntiteAdministrative.model';
+import {DocumentManagementGroupeDto} from 'app/controller/model/DocumentManagementGroupe.model';
+import {DocumentAcessShareDto} from 'app/controller/model/DocumentAcessShare.model';
+import {UtilisateurDto} from 'app/controller/model/Utilisateur.model';
+import {DocumentManagementUtilisateurDto} from 'app/controller/model/DocumentManagementUtilisateur.model';
 
 export class DocumentDto extends BaseDto{
 
@@ -20,7 +20,7 @@ export class DocumentDto extends BaseDto{
 
     public content: string;
 
-    public size: number;
+    public size: null | number;
 
     public description: string;
 
@@ -40,25 +40,25 @@ export class DocumentDto extends BaseDto{
 
 
     constructor() {
-    super();
+        super();
 
-        reference = '';
-        uploadDate = null;
-        dateLastUpdate = null;
-        content = '';
-        size = 0;
-        description = '';
-        archive = null;
-        versionne = null;
-        documentType = new DocumentTypeDto() ;
-        utilisateur = new UtilisateurDto() ;
-        entiteAdministrative = new EntiteAdministrativeDto() ;
-        documentPartageGroupes = new Array<DocumentPartageGroupeDto>();
-        documentPartageUtilisateurs = new Array<DocumentPartageUtilisateurDto>();
-        documentManagementGroupes = new Array<DocumentManagementGroupeDto>();
-        documentManagementUtilisateurs = new Array<DocumentManagementUtilisateurDto>();
-        documentAcessShares = new Array<DocumentAcessShareDto>();
-        documentTags = new Array<DocumentTagDto>();
+        this.reference = '';
+        this.uploadDate = null;
+        this.dateLastUpdate = null;
+        this.content = '';
+        this.size = null;
+        this.description = '';
+        this.archive = null;
+        this.versionne = null;
+        this.documentType = new DocumentTypeDto() ;
+        this.utilisateur = new UtilisateurDto() ;
+        this.entiteAdministrative = new EntiteAdministrativeDto() ;
+        this.documentPartageGroupes = new Array<DocumentPartageGroupeDto>();
+        this.documentPartageUtilisateurs = new Array<DocumentPartageUtilisateurDto>();
+        this.documentManagementGroupes = new Array<DocumentManagementGroupeDto>();
+        this.documentManagementUtilisateurs = new Array<DocumentManagementUtilisateurDto>();
+        this.documentAcessShares = new Array<DocumentAcessShareDto>();
+        this.documentTags = new Array<DocumentTagDto>();
 
         }
 
