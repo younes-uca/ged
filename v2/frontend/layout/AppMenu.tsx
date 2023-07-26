@@ -1,13 +1,13 @@
 /* eslint-disable @next/next/no-img-element */
 
-import React, {useContext} from 'react';
+import React, {useContext, useState} from 'react';
 import AppMenuitem from '/layout/AppMenuitem';
 import {MenuProvider} from '/layout/context/menucontext';
 import {AppMenuItem} from '/types/types';
 
 const AppMenu = () => {
-
-    const model: AppMenuItem[] = [
+    const [model, setModel] = useState(null);
+    const modelAdmin: AppMenuItem[] = [
         {
             label: 'Home',
             items: [{label: 'Dashboard', icon: 'pi pi-fw pi-home', to: '/dashboard'}]
@@ -125,10 +125,65 @@ const AppMenu = () => {
 
     ];
 
+
+    const modelAgent: AppMenuItem[] = [
+        {
+            label: 'Home',
+            items: [{label: 'Dashboard', icon: 'pi pi-fw pi-home', to: '/dashboard'}]
+        },
+        {
+            label: 'Pages',
+            icon: 'pi pi-fw pi-briefcase',
+            to: '',
+            items: [
+
+                {
+                    label: 'Auth',
+                    icon: 'pi pi-fw pi-user',
+                    items: [
+                        {
+                            label: 'Error',
+                            icon: 'pi pi-fw pi-times-circle',
+                            to: '/auth/error'
+                        },
+                        {
+                            label: 'Access Denied',
+                            icon: 'pi pi-fw pi-lock',
+                            to: '/auth/access'
+                        }
+                    ]
+                },
+                {
+                    label: 'Collaborator',
+                    icon: 'pi pi-fw pi-pencil',
+                    items: [
+                        {
+                            label: 'Liste client',
+                            to: '/admin/view/commun/client/list'
+                        },
+                        {
+                            label: 'Liste client category',
+                            to: '/admin/view/commun/client-category/list'
+                        },
+                    ]
+                },
+            ]
+        },
+
+    ];
+
+    const chooseProfile = (profileName: string) =>{
+        if(profileName === 'admin'){
+            setModel(modelAdmin)
+        }else{
+            setModel(modelAgent)
+        }
+    };
+
     return (
         <MenuProvider>
             <ul className="layout-menu">
-                {model.map((item, i) => {
+                {modelAdmin.map((item, i) => {
                     return !item?.seperator ? <AppMenuitem item={item} root={true} index={i} key={item.label}/> :
                         <li className="menu-separator"></li>;
                 })}

@@ -1,0 +1,27 @@
+
+]
+-pages/agent/view/commun/client/list/index.tsx,e\c\ec303513c830b11c533fe181234deeb1f3b530f8
+f
+6pages/agent/view/commun/client-category/list/index.tsx,b\3\b32c7957ba6c4514b4c656e85dc9c7d10e5a5c71
+B
+layout/AppMenu.tsx,c\6\c6f34fc9fb8ddfe16c8e8d5af6149b598ce334db
+
+Oapp/component/admin/view/commun/client/create/client-create-admin.component.tsx,2\1\21b68c6d315c87bb6bbf646685569c0cc26f2eea
+U
+%app/component/auth/styles.module.scss,2\5\253ac71f4ac0b8ea0a0001384da8a7971d2fb48e
+A
+layout/layout.tsx,c\f\cfc0682f4e19a17afa8996a292dcc2a93e72faa2
+I
+layout/styles.module.scss,d\3\d338ac2aed51e77f93be683ca57950050c5cb140
+E
+layout/AuthLayout.tsx,a\e\ae5151299907057f65aca0a6c4d14716903ada9e
+D
+pages/auth/index.tsx,9\5\95c1bba0170d5cc0f10c2504d99169de370578fa
+U
+%app/component/auth/Auth.container.tsx,9\a\9a22bff75f0c4d8a0b11e084006bc4ec3a2dc841
+>
+pages/_app.tsx,5\5\550528cc072fa7d76d123e2f4303d4ab39daa8e8
+>
+next.config.js,8\1\811a6d5a2e04fadb44d8eec365f2fa8af5c4facf
+9
+	README.md,8\e\8ec9a00bfd09b3190ac6b22251dbb1aa95a0579d

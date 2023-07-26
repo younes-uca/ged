@@ -1,0 +1,18 @@
+
+Itypescript:S1128"&Remove this unused import of 'format'.(ô²ç8Ô°Şˆ™1
+Qtypescript:S3863".'primereact/inputnumber' import is duplicated.(ÀˆÚš8Û°Şˆ™1
+Otypescript:S2814",'InputNumberChangeEvent' is already defined.(ÀˆÚš8İ°Şˆ™1
+Ntypescript:S1128"+Remove this unused import of 'InputSwitch'.(Ç¯º¼8Ş°Şˆ™1
+Ntypescript:S1128"+Remove this unused import of 'MultiSelect'.(×ü›š8à°Şˆ™1
+[typescript:S1128"3Remove this unused import of 'PurchaseItemService'.(ú÷ çşÿÿÿÿ8á°Şˆ™1
+Utypescript:S1128""2Remove this unused import of 'PurchaseTagService'.(Ğ‹Ú¥8å°Şˆ™1
+[typescript:S1854&"3Remove this useless assignment to variable "items".(–ó¦îşÿÿÿÿ8æ°Şˆ™1
+^typescript:S1854&"6Remove this useless assignment to variable "setItems".(–ó¦îşÿÿÿÿ8ç°Şˆ™1
+Utypescript:S1854."2Remove this useless assignment to variable "tags".(¢ÒÉ›8è°Şˆ™1
+]typescript:S18547":Remove this useless assignment to variable "purchaseTags".(Š¶‘‘8é°Şˆ™1
+qtypescript:S1854u"NRemove this useless assignment to variable "onMultiSelectChangePurchaseItems".(¦æÁŠ8é°Şˆ™1
+wtypescript:S1854|"ORemove this useless assignment to variable "onBooleanInputChangePurchaseItems".(ğ”Õ—üÿÿÿÿ8é°Şˆ™1
+utypescript:S1854"LRemove this useless assignment to variable "onInputDateChangePurchaseItems".(ğ­Ëşÿÿÿÿ8ë°Şˆ™1
+utypescript:S1854ˆ"LRemove this useless assignment to variable "onInputTextChangePurchaseItems".(ß•§—úÿÿÿÿ8ë°Şˆ™1
+etypescript:S1854¾"ARemove this useless assignment to variable "onMultiSelectChange".(†ôßë8ë°Şˆ™1
+ftypescript:S1854Å"BRemove this useless assignment to variable "onBooleanInputChange".(¸Á›„8ì°Şˆ™1
