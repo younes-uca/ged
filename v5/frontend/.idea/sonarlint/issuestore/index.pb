@@ -1,0 +1,27 @@
+
+>
+next.config.js,8\1\811a6d5a2e04fadb44d8eec365f2fa8af5c4facf
+9
+	README.md,8\e\8ec9a00bfd09b3190ac6b22251dbb1aa95a0579d
+`
+0pages/admin/view/user/utilisateur/list/index.tsx,d\4\d499a9c717006990e904b9a736bd8d0dde41a4d5
+^
+.pages/admin/view/commun/product/list/index.tsx,c\c\cc23676d9ea1d63cfcb76bf761677f2d2632c985
+\
+,pages/admin/view/doc/document/list/index.tsx,8\1\811e5f551e141351840deb911ad41931c5d36d7a
+]
+-pages/agent/view/commun/client/list/index.tsx,e\c\ec303513c830b11c533fe181234deeb1f3b530f8
+W
+'app/zynerator/security/Auth.service.tsx,e\c\ecc7c8d29ac6d3f61455fc281f26c639836e6e9f
+X
+(app/zynerator/service/MessageService.tsx,1\3\138737b2ce415eef5f75a53144cc9d70fb5f9fc3
+U
+%app/component/auth/Auth.container.tsx,9\a\9a22bff75f0c4d8a0b11e084006bc4ec3a2dc841
+[
++app/component/auth/auth-guard.component.tsx,e\9\e9fe0d05db5c13aaf18b7cd89996c665c3b97423
+B
+layout/AppMenu.tsx,c\6\c6f34fc9fb8ddfe16c8e8d5af6149b598ce334db
+
+Oapp/component/admin/view/commun/client/create/client-create-admin.component.tsx,2\1\21b68c6d315c87bb6bbf646685569c0cc26f2eea
+…
+Uapp/component/admin/view/purchase/purchase/create/purchase-create-admin.component.tsx,c\5\c5e62e40e921afc2ae844682a8cd1972683d6ac8

@@ -10,7 +10,10 @@ import { classNames } from 'primereact/utils';
 import React, { useContext, useEffect, useState } from 'react';
 import { AppConfigProps, LayoutConfig, LayoutState } from '/types/types';
 import { LayoutContext } from '/layout/context/layoutcontext';
-export const API_URL = 'http://localhost:8036/api/admin/';
+export const BASE_URL = 'http://localhost:8036/';
+export const ADMI_URL = BASE_URL + 'api/admin/';
+export const AGENT_URL = BASE_URL + 'api/agent/';
+export const AUTH_URL = BASE_URL + 'login';
 
 const AppConfig = (props: AppConfigProps) => {
     const [scales] = useState([12, 13, 14, 15, 16]);

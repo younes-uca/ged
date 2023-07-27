@@ -29,6 +29,7 @@ import {ClientCategoryService} from 'app/controller/service/ClientCategory.servi
 import Edit from '../edit/client-edit-admin.component';
 import Create from '../create/client-create-admin.component';
 import View from '../view/client-view-admin.component';
+import {AuthService} from "../../../../../../zynerator/security/Auth.service";
 
 const List = () => {
 

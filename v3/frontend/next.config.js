@@ -1,8 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    reactStrictMode: true,
-    basePath : '/auth'
-
+    reactStrictMode: true
 };
 
 module.exports = nextConfig;
