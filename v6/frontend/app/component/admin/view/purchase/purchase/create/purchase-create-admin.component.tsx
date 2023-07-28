@@ -239,7 +239,9 @@ return(
                     </div>
                     <div className="field col-6">
                     <label htmlFor="purchaseTags">Tag</label>
+                  {/*
                     <MultiSelect value={item.purchaseTags} options={purchaseTags}  optionLabel="tag.libelle" display="chip" placeholder="Select tag"  maxSelectedLabels={3}  onChange={(e) => onMultiSelectChange(e, 'purchaseTags')} />
+                    */}
                     </div>
                 </div>
             </TabPanel>

@@ -63,7 +63,7 @@ const List = () => {
 
     useEffect(() => {
         fetchItems(criteria);
-    }, []);
+    },[]);
 
     const fetchItems = async (criteria) => {
         try {
