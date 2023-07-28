@@ -9,27 +9,27 @@ import {DocumentManagementGroupeCriteria} from 'app/controller/criteria/Document
 export const DocumentManagementGroupeService = {
 
    getList(): Promise<AxiosResponse<DocumentManagementGroupeDto[]>> {
-     return axios.get(API_URL + 'documentManagementGroupe/');
+     return axios.get(ADMIN_URL + 'documentManagementGroupe/');
    },
 
    save(item: DocumentManagementGroupeDto): Promise<AxiosResponse<DocumentManagementGroupeDto>> {
-     return axios.post(API_URL + 'documentManagementGroupe/', item);
+     return axios.post(ADMIN_URL + 'documentManagementGroupe/', item);
    },
 
    update(item: DocumentManagementGroupeDto): Promise<AxiosResponse<DocumentManagementGroupeDto>> {
-      return axios.put(API_URL + 'documentManagementGroupe/', item);
+      return axios.put(ADMIN_URL + 'documentManagementGroupe/', item);
    },
 
    delete(id: number): Promise<AxiosResponse<DocumentManagementGroupeDto>> {
-      return axios.delete(API_URL + 'documentManagementGroupe/id/'+ id);
+      return axios.delete(ADMIN_URL + 'documentManagementGroupe/id/'+ id);
    },
 
    deleteList(items: DocumentManagementGroupeDto[]): Promise<AxiosResponse<string>> {
-      return axios.post(API_URL + 'documentManagementGroupe/multiple', items);
+      return axios.post(ADMIN_URL + 'documentManagementGroupe/multiple', items);
    },
 
    findPaginatedByCriteria(criteria:DocumentManagementGroupeCriteria):Promise<AxiosResponse<PaginatedList<DocumentManagementGroupeDto>>> {
-     return axios.post<PaginatedList<DocumentManagementGroupeDto>>(API_URL + 'documentManagementGroupe/find-paginated-by-criteria', criteria);
+     return axios.post<PaginatedList<DocumentManagementGroupeDto>>(ADMIN_URL + 'documentManagementGroupe/find-paginated-by-criteria', criteria);
    }
 };
 

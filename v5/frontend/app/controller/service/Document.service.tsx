@@ -9,27 +9,27 @@ import {DocumentCriteria} from 'app/controller/criteria/DocumentCriteria.model';
 export const DocumentService = {
 
    getList(): Promise<AxiosResponse<DocumentDto[]>> {
-     return axios.get(API_URL + 'document/');
+     return axios.get(ADMIN_URL + 'document/');
    },
 
    save(item: DocumentDto): Promise<AxiosResponse<DocumentDto>> {
-     return axios.post(API_URL + 'document/', item);
+     return axios.post(ADMIN_URL + 'document/', item);
    },
 
    update(item: DocumentDto): Promise<AxiosResponse<DocumentDto>> {
-      return axios.put(API_URL + 'document/', item);
+      return axios.put(ADMIN_URL + 'document/', item);
    },
 
    delete(id: number): Promise<AxiosResponse<DocumentDto>> {
-      return axios.delete(API_URL + 'document/id/'+ id);
+      return axios.delete(ADMIN_URL + 'document/id/'+ id);
    },
 
    deleteList(items: DocumentDto[]): Promise<AxiosResponse<string>> {
-      return axios.post(API_URL + 'document/multiple', items);
+      return axios.post(ADMIN_URL + 'document/multiple', items);
    },
 
    findPaginatedByCriteria(criteria:DocumentCriteria):Promise<AxiosResponse<PaginatedList<DocumentDto>>> {
-     return axios.post<PaginatedList<DocumentDto>>(API_URL + 'document/find-paginated-by-criteria', criteria);
+     return axios.post<PaginatedList<DocumentDto>>(ADMIN_URL + 'document/find-paginated-by-criteria', criteria);
    }
 };
 

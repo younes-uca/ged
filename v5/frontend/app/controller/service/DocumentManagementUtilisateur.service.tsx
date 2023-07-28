@@ -9,27 +9,27 @@ import {DocumentManagementUtilisateurCriteria} from 'app/controller/criteria/Doc
 export const DocumentManagementUtilisateurService = {
 
    getList(): Promise<AxiosResponse<DocumentManagementUtilisateurDto[]>> {
-     return axios.get(API_URL + 'documentManagementUtilisateur/');
+     return axios.get(ADMIN_URL + 'documentManagementUtilisateur/');
    },
 
    save(item: DocumentManagementUtilisateurDto): Promise<AxiosResponse<DocumentManagementUtilisateurDto>> {
-     return axios.post(API_URL + 'documentManagementUtilisateur/', item);
+     return axios.post(ADMIN_URL + 'documentManagementUtilisateur/', item);
    },
 
    update(item: DocumentManagementUtilisateurDto): Promise<AxiosResponse<DocumentManagementUtilisateurDto>> {
-      return axios.put(API_URL + 'documentManagementUtilisateur/', item);
+      return axios.put(ADMIN_URL + 'documentManagementUtilisateur/', item);
    },
 
    delete(id: number): Promise<AxiosResponse<DocumentManagementUtilisateurDto>> {
-      return axios.delete(API_URL + 'documentManagementUtilisateur/id/'+ id);
+      return axios.delete(ADMIN_URL + 'documentManagementUtilisateur/id/'+ id);
    },
 
    deleteList(items: DocumentManagementUtilisateurDto[]): Promise<AxiosResponse<string>> {
-      return axios.post(API_URL + 'documentManagementUtilisateur/multiple', items);
+      return axios.post(ADMIN_URL + 'documentManagementUtilisateur/multiple', items);
    },
 
    findPaginatedByCriteria(criteria:DocumentManagementUtilisateurCriteria):Promise<AxiosResponse<PaginatedList<DocumentManagementUtilisateurDto>>> {
-     return axios.post<PaginatedList<DocumentManagementUtilisateurDto>>(API_URL + 'documentManagementUtilisateur/find-paginated-by-criteria', criteria);
+     return axios.post<PaginatedList<DocumentManagementUtilisateurDto>>(ADMIN_URL + 'documentManagementUtilisateur/find-paginated-by-criteria', criteria);
    }
 };
 

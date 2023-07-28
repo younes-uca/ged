@@ -9,27 +9,27 @@ import {ClientCategoryCriteria} from 'app/controller/criteria/ClientCategoryCrit
 export const ClientCategoryService = {
 
    getList(): Promise<AxiosResponse<ClientCategoryDto[]>> {
-     return axios.get(API_URL + 'clientCategory/');
+     return axios.get(ADMIN_URL + 'clientCategory/');
    },
 
    save(item: ClientCategoryDto): Promise<AxiosResponse<ClientCategoryDto>> {
-     return axios.post(API_URL + 'clientCategory/', item);
+     return axios.post(ADMIN_URL + 'clientCategory/', item);
    },
 
    update(item: ClientCategoryDto): Promise<AxiosResponse<ClientCategoryDto>> {
-      return axios.put(API_URL + 'clientCategory/', item);
+      return axios.put(ADMIN_URL + 'clientCategory/', item);
    },
 
    delete(id: number): Promise<AxiosResponse<ClientCategoryDto>> {
-      return axios.delete(API_URL + 'clientCategory/id/'+ id);
+      return axios.delete(ADMIN_URL + 'clientCategory/id/'+ id);
    },
 
    deleteList(items: ClientCategoryDto[]): Promise<AxiosResponse<string>> {
-      return axios.post(API_URL + 'clientCategory/multiple', items);
+      return axios.post(ADMIN_URL + 'clientCategory/multiple', items);
    },
 
    findPaginatedByCriteria(criteria:ClientCategoryCriteria):Promise<AxiosResponse<PaginatedList<ClientCategoryDto>>> {
-     return axios.post<PaginatedList<ClientCategoryDto>>(API_URL + 'clientCategory/find-paginated-by-criteria', criteria);
+     return axios.post<PaginatedList<ClientCategoryDto>>(ADMIN_URL + 'clientCategory/find-paginated-by-criteria', criteria);
    }
 };
 

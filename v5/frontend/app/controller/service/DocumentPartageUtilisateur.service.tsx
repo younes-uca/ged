@@ -9,27 +9,27 @@ import {DocumentPartageUtilisateurCriteria} from 'app/controller/criteria/Docume
 export const DocumentPartageUtilisateurService = {
 
    getList(): Promise<AxiosResponse<DocumentPartageUtilisateurDto[]>> {
-     return axios.get(API_URL + 'documentPartageUtilisateur/');
+     return axios.get(ADMIN_URL + 'documentPartageUtilisateur/');
    },
 
    save(item: DocumentPartageUtilisateurDto): Promise<AxiosResponse<DocumentPartageUtilisateurDto>> {
-     return axios.post(API_URL + 'documentPartageUtilisateur/', item);
+     return axios.post(ADMIN_URL + 'documentPartageUtilisateur/', item);
    },
 
    update(item: DocumentPartageUtilisateurDto): Promise<AxiosResponse<DocumentPartageUtilisateurDto>> {
-      return axios.put(API_URL + 'documentPartageUtilisateur/', item);
+      return axios.put(ADMIN_URL + 'documentPartageUtilisateur/', item);
    },
 
    delete(id: number): Promise<AxiosResponse<DocumentPartageUtilisateurDto>> {
-      return axios.delete(API_URL + 'documentPartageUtilisateur/id/'+ id);
+      return axios.delete(ADMIN_URL + 'documentPartageUtilisateur/id/'+ id);
    },
 
    deleteList(items: DocumentPartageUtilisateurDto[]): Promise<AxiosResponse<string>> {
-      return axios.post(API_URL + 'documentPartageUtilisateur/multiple', items);
+      return axios.post(ADMIN_URL + 'documentPartageUtilisateur/multiple', items);
    },
 
    findPaginatedByCriteria(criteria:DocumentPartageUtilisateurCriteria):Promise<AxiosResponse<PaginatedList<DocumentPartageUtilisateurDto>>> {
-     return axios.post<PaginatedList<DocumentPartageUtilisateurDto>>(API_URL + 'documentPartageUtilisateur/find-paginated-by-criteria', criteria);
+     return axios.post<PaginatedList<DocumentPartageUtilisateurDto>>(ADMIN_URL + 'documentPartageUtilisateur/find-paginated-by-criteria', criteria);
    }
 };
 

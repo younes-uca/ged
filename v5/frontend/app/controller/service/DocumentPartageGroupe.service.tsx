@@ -9,27 +9,27 @@ import {DocumentPartageGroupeCriteria} from 'app/controller/criteria/DocumentPar
 export const DocumentPartageGroupeService = {
 
    getList(): Promise<AxiosResponse<DocumentPartageGroupeDto[]>> {
-     return axios.get(API_URL + 'documentPartageGroupe/');
+     return axios.get(ADMIN_URL + 'documentPartageGroupe/');
    },
 
    save(item: DocumentPartageGroupeDto): Promise<AxiosResponse<DocumentPartageGroupeDto>> {
-     return axios.post(API_URL + 'documentPartageGroupe/', item);
+     return axios.post(ADMIN_URL + 'documentPartageGroupe/', item);
    },
 
    update(item: DocumentPartageGroupeDto): Promise<AxiosResponse<DocumentPartageGroupeDto>> {
-      return axios.put(API_URL + 'documentPartageGroupe/', item);
+      return axios.put(ADMIN_URL + 'documentPartageGroupe/', item);
    },
 
    delete(id: number): Promise<AxiosResponse<DocumentPartageGroupeDto>> {
-      return axios.delete(API_URL + 'documentPartageGroupe/id/'+ id);
+      return axios.delete(ADMIN_URL + 'documentPartageGroupe/id/'+ id);
    },
 
    deleteList(items: DocumentPartageGroupeDto[]): Promise<AxiosResponse<string>> {
-      return axios.post(API_URL + 'documentPartageGroupe/multiple', items);
+      return axios.post(ADMIN_URL + 'documentPartageGroupe/multiple', items);
    },
 
    findPaginatedByCriteria(criteria:DocumentPartageGroupeCriteria):Promise<AxiosResponse<PaginatedList<DocumentPartageGroupeDto>>> {
-     return axios.post<PaginatedList<DocumentPartageGroupeDto>>(API_URL + 'documentPartageGroupe/find-paginated-by-criteria', criteria);
+     return axios.post<PaginatedList<DocumentPartageGroupeDto>>(ADMIN_URL + 'documentPartageGroupe/find-paginated-by-criteria', criteria);
    }
 };
 

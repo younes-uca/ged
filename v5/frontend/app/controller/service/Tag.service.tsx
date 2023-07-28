@@ -9,27 +9,27 @@ import {TagCriteria} from 'app/controller/criteria/TagCriteria.model';
 export const TagService = {
 
    getList(): Promise<AxiosResponse<TagDto[]>> {
-     return axios.get(API_URL + 'tag/');
+     return axios.get(ADMIN_URL + 'tag/');
    },
 
    save(item: TagDto): Promise<AxiosResponse<TagDto>> {
-     return axios.post(API_URL + 'tag/', item);
+     return axios.post(ADMIN_URL + 'tag/', item);
    },
 
    update(item: TagDto): Promise<AxiosResponse<TagDto>> {
-      return axios.put(API_URL + 'tag/', item);
+      return axios.put(ADMIN_URL + 'tag/', item);
    },
 
    delete(id: number): Promise<AxiosResponse<TagDto>> {
-      return axios.delete(API_URL + 'tag/id/'+ id);
+      return axios.delete(ADMIN_URL + 'tag/id/'+ id);
    },
 
    deleteList(items: TagDto[]): Promise<AxiosResponse<string>> {
-      return axios.post(API_URL + 'tag/multiple', items);
+      return axios.post(ADMIN_URL + 'tag/multiple', items);
    },
 
    findPaginatedByCriteria(criteria:TagCriteria):Promise<AxiosResponse<PaginatedList<TagDto>>> {
-     return axios.post<PaginatedList<TagDto>>(API_URL + 'tag/find-paginated-by-criteria', criteria);
+     return axios.post<PaginatedList<TagDto>>(ADMIN_URL + 'tag/find-paginated-by-criteria', criteria);
    }
 };
 

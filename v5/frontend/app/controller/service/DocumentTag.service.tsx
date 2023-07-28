@@ -9,27 +9,27 @@ import {DocumentTagCriteria} from 'app/controller/criteria/DocumentTagCriteria.m
 export const DocumentTagService = {
 
    getList(): Promise<AxiosResponse<DocumentTagDto[]>> {
-     return axios.get(API_URL + 'documentTag/');
+     return axios.get(ADMIN_URL + 'documentTag/');
    },
 
    save(item: DocumentTagDto): Promise<AxiosResponse<DocumentTagDto>> {
-     return axios.post(API_URL + 'documentTag/', item);
+     return axios.post(ADMIN_URL + 'documentTag/', item);
    },
 
    update(item: DocumentTagDto): Promise<AxiosResponse<DocumentTagDto>> {
-      return axios.put(API_URL + 'documentTag/', item);
+      return axios.put(ADMIN_URL + 'documentTag/', item);
    },
 
    delete(id: number): Promise<AxiosResponse<DocumentTagDto>> {
-      return axios.delete(API_URL + 'documentTag/id/'+ id);
+      return axios.delete(ADMIN_URL + 'documentTag/id/'+ id);
    },
 
    deleteList(items: DocumentTagDto[]): Promise<AxiosResponse<string>> {
-      return axios.post(API_URL + 'documentTag/multiple', items);
+      return axios.post(ADMIN_URL + 'documentTag/multiple', items);
    },
 
    findPaginatedByCriteria(criteria:DocumentTagCriteria):Promise<AxiosResponse<PaginatedList<DocumentTagDto>>> {
-     return axios.post<PaginatedList<DocumentTagDto>>(API_URL + 'documentTag/find-paginated-by-criteria', criteria);
+     return axios.post<PaginatedList<DocumentTagDto>>(ADMIN_URL + 'documentTag/find-paginated-by-criteria', criteria);
    }
 };
 

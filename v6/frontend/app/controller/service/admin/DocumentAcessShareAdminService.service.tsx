@@ -1,0 +1,35 @@
+import axios, { AxiosResponse } from "axios";
+import { ADMIN_URL } from 'layout/AppConfig';
+import {PaginatedList} from 'app/zynerator/dto/PaginatedList.model';
+import {DocumentAcessShareDto} from 'app/controller/model/DocumentAcessShare.model';
+import {DocumentAcessShareCriteria} from 'app/controller/criteria/DocumentAcessShareCriteria.model';
+
+
+
+export const DocumentAcessShareAdminService = {
+
+   getList(): Promise<AxiosResponse<DocumentAcessShareDto[]>> {
+     return axios.get(ADMIN_URL + 'documentAcessShare/');
+   },
+
+   save(item: DocumentAcessShareDto): Promise<AxiosResponse<DocumentAcessShareDto>> {
+     return axios.post(ADMIN_URL + 'documentAcessShare/', item);
+   },
+
+   update(item: DocumentAcessShareDto): Promise<AxiosResponse<DocumentAcessShareDto>> {
+      return axios.put(ADMIN_URL + 'documentAcessShare/', item);
+   },
+
+   delete(id: number): Promise<AxiosResponse<DocumentAcessShareDto>> {
+      return axios.delete(ADMIN_URL + 'documentAcessShare/id/'+ id);
+   },
+
+   deleteList(items: DocumentAcessShareDto[]): Promise<AxiosResponse<string>> {
+      return axios.post(ADMIN_URL + 'documentAcessShare/multiple', items);
+   },
+
+   findPaginatedByCriteria(criteria:DocumentAcessShareCriteria):Promise<AxiosResponse<PaginatedList<DocumentAcessShareDto>>> {
+     return axios.post<PaginatedList<DocumentAcessShareDto>>(ADMIN_URL + 'documentAcessShare/find-paginated-by-criteria', criteria);
+   }
+};
+

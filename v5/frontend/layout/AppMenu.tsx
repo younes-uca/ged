@@ -8,9 +8,8 @@ import React, {useEffect, useState} from 'react';
 
 
 const AppMenu = () => {
-
+    const authService = new AuthService();
     const [model, setModel] = useState<AppMenuItem[]>([] as AppMenuItem[]);
-    const [authService,setAuthService] = useState(new AuthService())
     const modelAdmin: AppMenuItem[] = [
         {
             label: 'Home',
@@ -167,14 +166,14 @@ const AppMenu = () => {
     ];
 
     useEffect(() => {
-        const roleConnectedUser = new AuthService().getRoleConnectedUser();
+        const roleConnectedUser = authService.getRoleConnectedUser();
         if (roleConnectedUser === 'ROLE_ADMIN') {
             setModel(modelAdmin)
         }
         if (roleConnectedUser === 'ROLE_AGENT') {
             setModel(modelAgent)
         }
-    })
+    },[])
 
     return (
         <MenuProvider>

@@ -9,27 +9,27 @@ import {GroupeCriteria} from 'app/controller/criteria/GroupeCriteria.model';
 export const GroupeService = {
 
    getList(): Promise<AxiosResponse<GroupeDto[]>> {
-     return axios.get(API_URL + 'groupe/');
+     return axios.get(ADMIN_URL + 'groupe/');
    },
 
    save(item: GroupeDto): Promise<AxiosResponse<GroupeDto>> {
-     return axios.post(API_URL + 'groupe/', item);
+     return axios.post(ADMIN_URL + 'groupe/', item);
    },
 
    update(item: GroupeDto): Promise<AxiosResponse<GroupeDto>> {
-      return axios.put(API_URL + 'groupe/', item);
+      return axios.put(ADMIN_URL + 'groupe/', item);
    },
 
    delete(id: number): Promise<AxiosResponse<GroupeDto>> {
-      return axios.delete(API_URL + 'groupe/id/'+ id);
+      return axios.delete(ADMIN_URL + 'groupe/id/'+ id);
    },
 
    deleteList(items: GroupeDto[]): Promise<AxiosResponse<string>> {
-      return axios.post(API_URL + 'groupe/multiple', items);
+      return axios.post(ADMIN_URL + 'groupe/multiple', items);
    },
 
    findPaginatedByCriteria(criteria:GroupeCriteria):Promise<AxiosResponse<PaginatedList<GroupeDto>>> {
-     return axios.post<PaginatedList<GroupeDto>>(API_URL + 'groupe/find-paginated-by-criteria', criteria);
+     return axios.post<PaginatedList<GroupeDto>>(ADMIN_URL + 'groupe/find-paginated-by-criteria', criteria);
    }
 };
 

@@ -10,7 +10,8 @@ import { classNames } from 'primereact/utils';
 import React, { useContext, useEffect, useState } from 'react';
 import { AppConfigProps, LayoutConfig, LayoutState } from '/types/types';
 import { LayoutContext } from '/layout/context/layoutcontext';
-export const BASE_URL = 'http://localhost:8036/';
+
+const BASE_URL = 'http://localhost:8036/';
 export const ADMIN_URL = BASE_URL + 'api/admin/';
 export const AGENT_URL = BASE_URL + 'api/agent/';
 export const AUTH_URL = BASE_URL + 'login';

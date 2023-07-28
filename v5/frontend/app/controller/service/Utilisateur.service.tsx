@@ -9,27 +9,27 @@ import {UtilisateurCriteria} from 'app/controller/criteria/UtilisateurCriteria.m
 export const UtilisateurService = {
 
    getList(): Promise<AxiosResponse<UtilisateurDto[]>> {
-     return axios.get(API_URL + 'utilisateur/');
+     return axios.get(ADMIN_URL + 'utilisateur/');
    },
 
    save(item: UtilisateurDto): Promise<AxiosResponse<UtilisateurDto>> {
-     return axios.post(API_URL + 'utilisateur/', item);
+     return axios.post(ADMIN_URL + 'utilisateur/', item);
    },
 
    update(item: UtilisateurDto): Promise<AxiosResponse<UtilisateurDto>> {
-      return axios.put(API_URL + 'utilisateur/', item);
+      return axios.put(ADMIN_URL + 'utilisateur/', item);
    },
 
    delete(id: number): Promise<AxiosResponse<UtilisateurDto>> {
-      return axios.delete(API_URL + 'utilisateur/id/'+ id);
+      return axios.delete(ADMIN_URL + 'utilisateur/id/'+ id);
    },
 
    deleteList(items: UtilisateurDto[]): Promise<AxiosResponse<string>> {
-      return axios.post(API_URL + 'utilisateur/multiple', items);
+      return axios.post(ADMIN_URL + 'utilisateur/multiple', items);
    },
 
    findPaginatedByCriteria(criteria:UtilisateurCriteria):Promise<AxiosResponse<PaginatedList<UtilisateurDto>>> {
-     return axios.post<PaginatedList<UtilisateurDto>>(API_URL + 'utilisateur/find-paginated-by-criteria', criteria);
+     return axios.post<PaginatedList<UtilisateurDto>>(ADMIN_URL + 'utilisateur/find-paginated-by-criteria', criteria);
    }
 };
 

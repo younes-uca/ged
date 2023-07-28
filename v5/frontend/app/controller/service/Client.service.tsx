@@ -9,27 +9,27 @@ import {ClientCriteria} from 'app/controller/criteria/ClientCriteria.model';
 export const ClientService = {
 
    getList(): Promise<AxiosResponse<ClientDto[]>> {
-     return axios.get(API_URL + 'client/');
+     return axios.get(ADMIN_URL + 'client/');
    },
 
    save(item: ClientDto): Promise<AxiosResponse<ClientDto>> {
-     return axios.post(API_URL + 'client/', item);
+     return axios.post(ADMIN_URL + 'client/', item);
    },
 
    update(item: ClientDto): Promise<AxiosResponse<ClientDto>> {
-      return axios.put(API_URL + 'client/', item);
+      return axios.put(ADMIN_URL + 'client/', item);
    },
 
    delete(id: number): Promise<AxiosResponse<ClientDto>> {
-      return axios.delete(API_URL + 'client/id/'+ id);
+      return axios.delete(ADMIN_URL + 'client/id/'+ id);
    },
 
    deleteList(items: ClientDto[]): Promise<AxiosResponse<string>> {
-      return axios.post(API_URL + 'client/multiple', items);
+      return axios.post(ADMIN_URL + 'client/multiple', items);
    },
 
    findPaginatedByCriteria(criteria:ClientCriteria):Promise<AxiosResponse<PaginatedList<ClientDto>>> {
-     return axios.post<PaginatedList<ClientDto>>(API_URL + 'client/find-paginated-by-criteria', criteria);
+     return axios.post<PaginatedList<ClientDto>>(ADMIN_URL + 'client/find-paginated-by-criteria', criteria);
    }
 };
 

@@ -9,27 +9,27 @@ import {EntiteAdministrativeCriteria} from 'app/controller/criteria/EntiteAdmini
 export const EntiteAdministrativeService = {
 
    getList(): Promise<AxiosResponse<EntiteAdministrativeDto[]>> {
-     return axios.get(API_URL + 'entiteAdministrative/');
+     return axios.get(ADMIN_URL + 'entiteAdministrative/');
    },
 
    save(item: EntiteAdministrativeDto): Promise<AxiosResponse<EntiteAdministrativeDto>> {
-     return axios.post(API_URL + 'entiteAdministrative/', item);
+     return axios.post(ADMIN_URL + 'entiteAdministrative/', item);
    },
 
    update(item: EntiteAdministrativeDto): Promise<AxiosResponse<EntiteAdministrativeDto>> {
-      return axios.put(API_URL + 'entiteAdministrative/', item);
+      return axios.put(ADMIN_URL + 'entiteAdministrative/', item);
    },
 
    delete(id: number): Promise<AxiosResponse<EntiteAdministrativeDto>> {
-      return axios.delete(API_URL + 'entiteAdministrative/id/'+ id);
+      return axios.delete(ADMIN_URL + 'entiteAdministrative/id/'+ id);
    },
 
    deleteList(items: EntiteAdministrativeDto[]): Promise<AxiosResponse<string>> {
-      return axios.post(API_URL + 'entiteAdministrative/multiple', items);
+      return axios.post(ADMIN_URL + 'entiteAdministrative/multiple', items);
    },
 
    findPaginatedByCriteria(criteria:EntiteAdministrativeCriteria):Promise<AxiosResponse<PaginatedList<EntiteAdministrativeDto>>> {
-     return axios.post<PaginatedList<EntiteAdministrativeDto>>(API_URL + 'entiteAdministrative/find-paginated-by-criteria', criteria);
+     return axios.post<PaginatedList<EntiteAdministrativeDto>>(ADMIN_URL + 'entiteAdministrative/find-paginated-by-criteria', criteria);
    }
 };
 

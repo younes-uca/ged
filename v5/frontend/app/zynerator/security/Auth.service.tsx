@@ -1,20 +1,16 @@
-import axios, {AxiosResponse} from "axios";
-import {AUTH_URL} from 'layout/AppConfig';
-
-
-import jwt from 'jsonwebtoken';
+import axios, { AxiosResponse } from "axios";
+import { AUTH_URL } from 'layout/AppConfig';
+import decode from 'jsonwebtoken/decode';
 
 export class AuthService {
 
     signIn(username: string, password: string): Promise<AxiosResponse<any>> {
-        return axios.post(AUTH_URL, {username, password});
+        return axios.post(AUTH_URL, { username, password });
     }
 
-
     getRoleConnectedUser(): string {
-        var decodedJwt = this.decodeJWT();
-        var roles = decodedJwt['roles'];
-        return roles[0];
+        const decodedJwt = this.decodeJWT();
+        return decodedJwt ? decodedJwt['roles'][0] : [];
     }
 
     saveToken(token: string) {
@@ -32,13 +28,17 @@ export class AuthService {
 
     decodeJWT() {
         const token = this.getToken();
-        try {
-            const decodedToken = jwt.decode(token.replace('Bearer ', ''));
-            return decodedToken;
-        } catch (error) {
-            console.error('Error decoding JWT:', error);
-            return null;
+
+        if (token) {
+            try {
+                const decodedToken = decode(token.replace('Bearer ', ''));
+                return decodedToken;
+            } catch (error) {
+                console.error('Error decoding JWT:', error);
+                return null;
+            }
         }
+        return null;
     }
 
     getUsername(): string {
@@ -46,17 +46,15 @@ export class AuthService {
         return tokenDecoded.sub;
     }
 
-    getExpirationFromToken(): boolean {
+    getExpirationFromToken() {
         const tokenDecoded = this.decodeJWT();
-        console.log(tokenDecoded);
-        return tokenDecoded.exp;
+        return tokenDecoded ? tokenDecoded.exp : 0;
     }
 
     isTokenValid(): boolean {
         const exp = this.getExpirationFromToken();
-        const now = new Date();
-        //return isAfter(exp, now)
-        return true;
+        const now = Date.now();
+        return exp * 1000 > now;
     }
 };
 

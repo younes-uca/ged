@@ -16,22 +16,23 @@ const AuthContainer: React.FC = ({}) => {
     const [password, setPassword] = useState('');
     const [checked, setChecked] = useState(false);
     const router = useRouter();
-    const [userService, setUserService] = useState(new AuthService());
+    const userService = new AuthService();
     const toast = useRef<Toast>();
 
     const handleAuthFormClick = () => {
         userService.signIn(username, password).then(data => {
-            console.log(data)
             const jwt = data.headers['authorization'];
-            console.log(jwt)
-            var tokenValid =  userService.isTokenValid();
-            console.log('aweda rah token valide ? ' + tokenValid)
-            jwt != null ? userService.saveToken(jwt) : false;
-            router.push("/dashboard")
+            if (jwt) {
+                userService.saveToken(jwt)
+                router.push("/dashboard")
+            }else{
+                MessageService.showError(toast,'Probléme de connexion');
+            }
         }).catch(() => {
-           MessageService.showError(toast,'Vos identifiants sont incorrects');
+            MessageService.showError(toast,'Vos identifiants sont incorrects');
         })
     }
+
 
     return (
         <div className={styles.authForm}>

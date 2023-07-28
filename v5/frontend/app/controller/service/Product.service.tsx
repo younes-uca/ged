@@ -9,27 +9,27 @@ import {ProductCriteria} from 'app/controller/criteria/ProductCriteria.model';
 export const ProductService = {
 
    getList(): Promise<AxiosResponse<ProductDto[]>> {
-     return axios.get(API_URL + 'product/');
+     return axios.get(ADMIN_URL + 'product/');
    },
 
    save(item: ProductDto): Promise<AxiosResponse<ProductDto>> {
-     return axios.post(API_URL + 'product/', item);
+     return axios.post(ADMIN_URL + 'product/', item);
    },
 
    update(item: ProductDto): Promise<AxiosResponse<ProductDto>> {
-      return axios.put(API_URL + 'product/', item);
+      return axios.put(ADMIN_URL + 'product/', item);
    },
 
    delete(id: number): Promise<AxiosResponse<ProductDto>> {
-      return axios.delete(API_URL + 'product/id/'+ id);
+      return axios.delete(ADMIN_URL + 'product/id/'+ id);
    },
 
    deleteList(items: ProductDto[]): Promise<AxiosResponse<string>> {
-      return axios.post(API_URL + 'product/multiple', items);
+      return axios.post(ADMIN_URL + 'product/multiple', items);
    },
 
    findPaginatedByCriteria(criteria:ProductCriteria):Promise<AxiosResponse<PaginatedList<ProductDto>>> {
-     return axios.post<PaginatedList<ProductDto>>(API_URL + 'product/find-paginated-by-criteria', criteria);
+     return axios.post<PaginatedList<ProductDto>>(ADMIN_URL + 'product/find-paginated-by-criteria', criteria);
    }
 };
 

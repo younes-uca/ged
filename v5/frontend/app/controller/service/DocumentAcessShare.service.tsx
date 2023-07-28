@@ -9,27 +9,27 @@ import {DocumentAcessShareCriteria} from 'app/controller/criteria/DocumentAcessS
 export const DocumentAcessShareService = {
 
    getList(): Promise<AxiosResponse<DocumentAcessShareDto[]>> {
-     return axios.get(API_URL + 'documentAcessShare/');
+     return axios.get(ADMIN_URL + 'documentAcessShare/');
    },
 
    save(item: DocumentAcessShareDto): Promise<AxiosResponse<DocumentAcessShareDto>> {
-     return axios.post(API_URL + 'documentAcessShare/', item);
+     return axios.post(ADMIN_URL + 'documentAcessShare/', item);
    },
 
    update(item: DocumentAcessShareDto): Promise<AxiosResponse<DocumentAcessShareDto>> {
-      return axios.put(API_URL + 'documentAcessShare/', item);
+      return axios.put(ADMIN_URL + 'documentAcessShare/', item);
    },
 
    delete(id: number): Promise<AxiosResponse<DocumentAcessShareDto>> {
-      return axios.delete(API_URL + 'documentAcessShare/id/'+ id);
+      return axios.delete(ADMIN_URL + 'documentAcessShare/id/'+ id);
    },
 
    deleteList(items: DocumentAcessShareDto[]): Promise<AxiosResponse<string>> {
-      return axios.post(API_URL + 'documentAcessShare/multiple', items);
+      return axios.post(ADMIN_URL + 'documentAcessShare/multiple', items);
    },
 
    findPaginatedByCriteria(criteria:DocumentAcessShareCriteria):Promise<AxiosResponse<PaginatedList<DocumentAcessShareDto>>> {
-     return axios.post<PaginatedList<DocumentAcessShareDto>>(API_URL + 'documentAcessShare/find-paginated-by-criteria', criteria);
+     return axios.post<PaginatedList<DocumentAcessShareDto>>(ADMIN_URL + 'documentAcessShare/find-paginated-by-criteria', criteria);
    }
 };
 

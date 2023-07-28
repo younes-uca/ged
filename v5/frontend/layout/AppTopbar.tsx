@@ -5,18 +5,27 @@ import { classNames } from 'primereact/utils';
 import React, { forwardRef, useContext, useImperativeHandle, useRef } from 'react';
 import { AppTopbarRef } from '/types/types';
 import { LayoutContext } from '/layout/context/layoutcontext';
+import {AuthService} from "../app/zynerator/security/Auth.service";
+import {useRouter} from "next/router";
 
 const AppTopbar = forwardRef<AppTopbarRef>((props, ref) => {
     const { layoutConfig, layoutState, onMenuToggle, showProfileSidebar } = useContext(LayoutContext);
     const menubuttonRef = useRef(null);
     const topbarmenuRef = useRef(null);
     const topbarmenubuttonRef = useRef(null);
+    const authService = new AuthService();
+    const router = useRouter();
 
     useImperativeHandle(ref, () => ({
         /*menubutton: menubuttonRef.current,
         topbarmenu: topbarmenuRef.current,
         topbarmenubutton: topbarmenubuttonRef.current*/
     }));
+
+    const signOut = () => {
+        authService.signOut();
+        router.push('/auth')
+    }
 
     return (
         <div className="layout-topbar">
@@ -38,7 +47,7 @@ const AppTopbar = forwardRef<AppTopbarRef>((props, ref) => {
                     <i className="pi pi-calendar"></i>
                     <span>Calendar</span>
                 </button>
-                <button type="button" className="p-link layout-topbar-button">
+                <button type="button" className="p-link layout-topbar-button" onClick={signOut}>
                     <i className="pi pi-user"></i>
                     <span>Profile</span>
                 </button>
