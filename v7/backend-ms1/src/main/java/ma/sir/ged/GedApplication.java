@@ -57,23 +57,23 @@ public class GedApplication {
     @Bean
     public CommandLineRunner demo(UserService userService, RoleService roleService) {
     return (args) -> {
-        if(false){
+        if(true){
 
-            createDocumentType();
-            createDocumentCategorieField();
-            createUtilisateur();
-            createDocumentState();
-            createRoleUtilisateur();
-            createEntiteAdministrativeType();
-            createEtatUtilisateur();
-            createGroupe();
-            createAccessShare();
-            createDocumentFieldState();
-            createEntiteAdministrative();
-            createDocumentField();
-            createField();
-            createDocumentCategorieFieldRule();
-            createDocumentCategorie();
+//            createDocumentType();
+//            createDocumentCategorieField();
+//            createUtilisateur();
+//            createDocumentState();
+//            createRoleUtilisateur();
+//            createEntiteAdministrativeType();
+//            createEtatUtilisateur();
+//            createGroupe();
+//            createAccessShare();
+//            createDocumentFieldState();
+//            createEntiteAdministrative();
+//            createDocumentField();
+//            createField();
+//            createDocumentCategorieFieldRule();
+//            createDocumentCategorie();
 
 
     // Role admin
