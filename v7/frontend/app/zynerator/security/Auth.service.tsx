@@ -8,6 +8,10 @@ export class AuthService {
         return axios.post(AUTH_URL, { username, password });
     }
 
+    signOut() { 
+        this.removeToken();
+    }
+
     getRoleConnectedUser(): string {
         const decodedJwt = this.decodeJWT();
         return decodedJwt ? decodedJwt['roles'][0] : [];

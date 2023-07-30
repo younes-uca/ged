@@ -2,37 +2,28 @@
 
 import Link from 'next/link';
 import { classNames } from 'primereact/utils';
-import React, {forwardRef, useContext, useImperativeHandle, useRef, useState} from 'react';
+import React, { forwardRef, useContext, useImperativeHandle, useRef, useState } from 'react';
 import { AppTopbarRef } from '/types/types';
 import { LayoutContext } from '/layout/context/layoutcontext';
-import {Menubar} from "primereact/menubar";
-import {InputText} from "primereact/inputtext";
+import { Menubar } from "primereact/menubar";
+import { InputText } from "primereact/inputtext";
+import { AuthService } from 'app/zynerator/security/Auth.service';
+import { useRouter } from 'next/router';
 
 const AppTopbar = forwardRef<AppTopbarRef>((props, ref) => {
     const { layoutConfig, layoutState, onMenuToggle, showProfileSidebar } = useContext(LayoutContext);
     const menubuttonRef = useRef(null);
     const topbarmenuRef = useRef(null);
     const topbarmenubuttonRef = useRef(null);
-    const items = [
 
+    const router = useRouter();
 
-        {
-            label: '',
-            icon: 'pi pi-fw pi-user',
-            items: [
-                {
-                    label: 'Profil',
-                    icon: 'pi pi-fw pi-user-plus',
+    const authService = new AuthService();
 
-                }
-            ]
-        },
-
-        {
-            label: 'Quit',
-            icon: 'pi pi-fw pi-power-off'
-        }
-    ];
+    const signOut = () => { 
+        authService.signOut();
+        router.push("/auth");
+    }
 
 
     useImperativeHandle(ref, () => ({
@@ -47,7 +38,7 @@ const AppTopbar = forwardRef<AppTopbarRef>((props, ref) => {
 
     return (
 
-    <div className="layout-topbar">
+        <div className="layout-topbar">
             <Link href="/" className="layout-topbar-logo">
                 <img src={`/layout/images/logo-${layoutConfig.colorScheme !== 'light' ? 'white' : 'dark'}.svg`} width="47.22px" height={'35px'} alt="logo" />
                 <span>GED</span>
@@ -62,18 +53,15 @@ const AppTopbar = forwardRef<AppTopbarRef>((props, ref) => {
             </button>
 
             <div ref={topbarmenuRef} className={classNames('layout-topbar-menu', { 'layout-topbar-menu-mobile-active': layoutState.profileSidebarVisible })}>
-                {/*<button type="button" className="p-link layout-topbar-button">
-                    <i className="pi pi-calendar"></i>
-                    <span>Calendar</span>
-                </button>
                 <button type="button" className="p-link layout-topbar-button">
                     <i className="pi pi-user"></i>
                     <span>Profile</span>
-                </button>*/}
-                <Menubar model={items} />
-
-
-
+                </button>
+               
+                <button type="button" className="p-link layout-topbar-button" onClick={signOut}>
+                    <i className="pi pi-sign-out"></i>
+                    <span>Deconnexion</span>
+                </button>
             </div>
         </div>
     );
