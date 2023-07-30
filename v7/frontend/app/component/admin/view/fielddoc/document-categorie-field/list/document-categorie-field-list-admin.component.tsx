@@ -129,7 +129,7 @@ const List = () => {
     };
 
     const update = (updatedItem: DocumentCategorieFieldDto) => {
-        const updatedList = items.map((item) => {
+        const updatedList = items.map(item => {
             if (item.id === updatedItem.id) { return updatedItem; }
             return item;
         });

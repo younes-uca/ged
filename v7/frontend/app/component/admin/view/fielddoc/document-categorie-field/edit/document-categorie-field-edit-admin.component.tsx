@@ -85,6 +85,7 @@ const Edit = ({visible, onClose, showToast, selectedItem, update}) => {
         setSubmitted(true);
         if (isFormValid()) {
             const response = await DocumentCategorieFieldAdminService.update(item);
+            console.log("haaaa doc cat fild de back ",response.data)
             update(response.data);
             MessageService.showSuccess(showToast, 'DocumentCategorieField Updated');
             onClose();

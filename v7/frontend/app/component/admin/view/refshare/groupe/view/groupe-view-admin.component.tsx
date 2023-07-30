@@ -24,6 +24,7 @@ const View = ({visible,onClose,selectedItem}) => {
     const [activeIndex, setActiveIndex] = useState<number>(0);
 
     useEffect(() => {
+        console.log(selectedItem)
         setItem(selectedItem ? { ...selectedItem } : { ...emptyItem });
     }, [selectedItem]);
 
@@ -58,7 +59,7 @@ return(
 
                 <div className="field col-6">
                     <label htmlFor="utilisateur">Utilisateur</label>
-                    <Dropdown  id="utilisateurDropdown"  value={selectedItem?.utilisateur?.nom}  disabled  />
+                    <InputText  id="utilisateurDropdown"  value={selectedItem?.utilisateur?.nom}  disabled  />
                 </div>
         </div>
 </TabPanel>

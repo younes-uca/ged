@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1
--- Généré le : dim. 30 juil. 2023 à 14:21
+-- Généré le : dim. 30 juil. 2023 à 18:25
 -- Version du serveur : 10.4.28-MariaDB
 -- Version de PHP : 8.0.28
 
@@ -23,12 +23,27 @@ SET time_zone = "+00:00";
 --
 
 --
+-- Déchargement des données de la table `access_share`
+--
+
+INSERT INTO `access_share` (`id`, `createdby`, `createdon`, `updatedby`, `updatedon`, `code`, `libelle`, `action_type`, `data`, `date`, `object_id`, `object_name`, `user_id`, `username`) VALUES
+(1, 'anonymousUser', '2023-07-30 15:53:23', '', NULL, 'read', 'read', NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+(2, 'anonymousUser', '2023-07-30 15:53:58', '', NULL, 'write', 'Write', NULL, NULL, NULL, NULL, NULL, NULL, NULL);
+
+--
 -- Déchargement des données de la table `access_share_seq`
 --
 
 INSERT INTO `access_share_seq` (`next_val`) VALUES
-(1),
-(1);
+(3),
+(3);
+
+--
+-- Déchargement des données de la table `document`
+--
+
+INSERT INTO `document` (`id`, `createdby`, `createdon`, `updatedby`, `updatedon`, `archive`, `content`, `date_last_update`, `description`, `folder`, `reference`, `size`, `upload_date`, `versionne`, `action_type`, `data`, `date`, `object_id`, `object_name`, `user_id`, `username`, `document_categorie`, `document_state`, `document_type`, `entite_administrative`, `entite_administrative_proprietaire`, `proprietaire`) VALUES
+(1, 'anonymousUser', '2023-07-30 12:48:30', 'anonymousUser', '2023-07-30 16:22:14', b'0', NULL, NULL, NULL, b'0', 'd1', 0.00, NULL, b'0', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 1, 1, 2, NULL, NULL, NULL);
 
 --
 -- Déchargement des données de la table `document_categorie`
@@ -42,8 +57,8 @@ INSERT INTO `document_categorie` (`id`, `createdby`, `createdon`, `updatedby`, `
 --
 
 INSERT INTO `document_categorie_field` (`id`, `createdby`, `createdon`, `updatedby`, `updatedon`, `action_type`, `data`, `date`, `object_id`, `object_name`, `user_id`, `username`, `document_categorie`, `document_categorie_field_rule`, `field`) VALUES
-(1, 'anonymousUser', '2023-07-30 11:52:54', '', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 1, 2, 1),
-(2, 'anonymousUser', '2023-07-30 11:52:54', '', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 1, 2, 2);
+(2, 'anonymousUser', '2023-07-30 11:52:54', '', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 1, 2, 2),
+(4, 'anonymousUser', '2023-07-30 16:11:27', 'anonymousUser', '2023-07-30 16:18:17', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 1, 1, 1);
 
 --
 -- Déchargement des données de la table `document_categorie_field_rule`
@@ -66,8 +81,8 @@ INSERT INTO `document_categorie_field_rule_seq` (`next_val`) VALUES
 --
 
 INSERT INTO `document_categorie_field_seq` (`next_val`) VALUES
-(3),
-(3);
+(5),
+(5);
 
 --
 -- Déchargement des données de la table `document_categorie_seq`
@@ -122,8 +137,8 @@ INSERT INTO `document_partage_utilisateur_seq` (`next_val`) VALUES
 --
 
 INSERT INTO `document_seq` (`next_val`) VALUES
-(1),
-(1);
+(2),
+(2);
 
 --
 -- Déchargement des données de la table `document_state`
@@ -158,20 +173,37 @@ INSERT INTO `document_type_seq` (`next_val`) VALUES
 (3);
 
 --
+-- Déchargement des données de la table `entite_administrative`
+--
+
+INSERT INTO `entite_administrative` (`id`, `createdby`, `createdon`, `updatedby`, `updatedon`, `code`, `description`, `libelle`, `action_type`, `data`, `date`, `object_id`, `object_name`, `user_id`, `username`, `entite_administrative_type`, `utilisateur`) VALUES
+(2, 'anonymousUser', '2023-07-30 15:58:01', '', NULL, 'info', 'Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l\'imprimerie depuis les années 1500', 'Department Informatique', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 1, 1),
+(3, 'anonymousUser', '2023-07-30 15:59:48', '', NULL, 'achat', 'Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l\'imprimerie depuis les années 1500', 'Achat', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 2, 2);
+
+--
 -- Déchargement des données de la table `entite_administrative_seq`
 --
 
 INSERT INTO `entite_administrative_seq` (`next_val`) VALUES
-(1),
-(1);
+(4),
+(4);
+
+--
+-- Déchargement des données de la table `entite_administrative_type`
+--
+
+INSERT INTO `entite_administrative_type` (`id`, `createdby`, `createdon`, `updatedby`, `updatedon`, `code`, `libelle`, `action_type`, `data`, `date`, `object_id`, `object_name`, `user_id`, `username`) VALUES
+(1, 'anonymousUser', '2023-07-30 15:54:23', '', NULL, 'department', 'Department', NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+(2, 'anonymousUser', '2023-07-30 15:54:34', 'anonymousUser', '2023-07-30 15:55:11', 'division', 'Division', NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+(3, 'anonymousUser', '2023-07-30 15:54:46', 'anonymousUser', '2023-07-30 15:55:23', 'service', 'Service', NULL, NULL, NULL, NULL, NULL, NULL, NULL);
 
 --
 -- Déchargement des données de la table `entite_administrative_type_seq`
 --
 
 INSERT INTO `entite_administrative_type_seq` (`next_val`) VALUES
-(1),
-(1);
+(4),
+(4);
 
 --
 -- Déchargement des données de la table `etablissement_seq`
@@ -181,12 +213,20 @@ INSERT INTO `etablissement_seq` (`next_val`) VALUES
 (1);
 
 --
+-- Déchargement des données de la table `etat_utilisateur`
+--
+
+INSERT INTO `etat_utilisateur` (`id`, `createdby`, `createdon`, `updatedby`, `updatedon`, `code`, `libelle`, `action_type`, `data`, `date`, `object_id`, `object_name`, `user_id`, `username`) VALUES
+(1, 'anonymousUser', '2023-07-30 15:40:54', '', NULL, 'actif', 'Actif', NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+(2, 'anonymousUser', '2023-07-30 15:41:15', '', NULL, 'bloque', 'Bloque', NULL, NULL, NULL, NULL, NULL, NULL, NULL);
+
+--
 -- Déchargement des données de la table `etat_utilisateur_seq`
 --
 
 INSERT INTO `etat_utilisateur_seq` (`next_val`) VALUES
-(1),
-(1);
+(3),
+(3);
 
 --
 -- Déchargement des données de la table `field`
@@ -205,20 +245,39 @@ INSERT INTO `field_seq` (`next_val`) VALUES
 (3);
 
 --
+-- Déchargement des données de la table `groupe`
+--
+
+INSERT INTO `groupe` (`id`, `createdby`, `createdon`, `updatedby`, `updatedon`, `code`, `libelle`, `action_type`, `data`, `date`, `object_id`, `object_name`, `user_id`, `username`, `utilisateur`) VALUES
+(1, 'anonymousUser', '2023-07-30 15:37:13', 'anonymousUser', '2023-07-30 15:42:10', 'ing', 'Ingenieure', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 2),
+(2, 'anonymousUser', '2023-07-30 15:43:26', '', NULL, 'chef', 'Ched Department', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 1);
+
+--
 -- Déchargement des données de la table `groupe_seq`
 --
 
 INSERT INTO `groupe_seq` (`next_val`) VALUES
-(1),
-(1);
+(3),
+(3);
+
+--
+-- Déchargement des données de la table `groupe_utilisateur`
+--
+
+INSERT INTO `groupe_utilisateur` (`id`, `createdby`, `createdon`, `updatedby`, `updatedon`, `date_ajout`, `action_type`, `data`, `date`, `object_id`, `object_name`, `user_id`, `username`, `etat_utilisateur`, `groupe`, `role_utilisateur`, `utilisateur`) VALUES
+(1, 'anonymousUser', '2023-07-30 15:42:10', '', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 1, 1, 2, 1),
+(2, 'anonymousUser', '2023-07-30 15:42:10', '', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 1, 1, 2, 3),
+(3, 'anonymousUser', '2023-07-30 15:43:26', '', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 2, 2, 2, 2),
+(4, 'anonymousUser', '2023-07-30 15:43:26', '', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 1, 2, 2, 3),
+(5, 'anonymousUser', '2023-07-30 15:43:26', '', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 1, 2, 1, 4);
 
 --
 -- Déchargement des données de la table `groupe_utilisateur_seq`
 --
 
 INSERT INTO `groupe_utilisateur_seq` (`next_val`) VALUES
-(1),
-(1);
+(6),
+(6);
 
 --
 -- Déchargement des données de la table `hibernate_sequence`
@@ -535,12 +594,20 @@ INSERT INTO `role_app` (`id`, `authority`, `created_at`, `updated_at`) VALUES
 (98, 'ROLE_AGENT', NULL, NULL);
 
 --
+-- Déchargement des données de la table `role_utilisateur`
+--
+
+INSERT INTO `role_utilisateur` (`id`, `createdby`, `createdon`, `updatedby`, `updatedon`, `code`, `libelle`, `action_type`, `data`, `date`, `object_id`, `object_name`, `user_id`, `username`) VALUES
+(1, 'anonymousUser', '2023-07-30 15:38:03', '', NULL, 'admin', 'Admin', NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+(2, 'anonymousUser', '2023-07-30 15:38:19', '', NULL, 'membre', 'Membre', NULL, NULL, NULL, NULL, NULL, NULL, NULL);
+
+--
 -- Déchargement des données de la table `role_utilisateur_seq`
 --
 
 INSERT INTO `role_utilisateur_seq` (`next_val`) VALUES
-(1),
-(1);
+(3),
+(3);
 
 --
 -- Déchargement des données de la table `users_roles`
@@ -559,12 +626,22 @@ INSERT INTO `user_app` (`id`, `created_by`, `created_on`, `updated_by`, `updated
 (99, NULL, '2023-07-30 11:46:33', NULL, NULL, b'1', b'1', '2023-07-30 11:46:33', b'1', 'agent', b'1', 'agent', '$2a$10$8M9H6I8jJ0orWGB1spBcg.e5wISYRzv5YyijSbtnk07Ug1O5id6VW', b'0', 'agent', NULL, 'agent', NULL);
 
 --
+-- Déchargement des données de la table `utilisateur`
+--
+
+INSERT INTO `utilisateur` (`id`, `createdby`, `createdon`, `updatedby`, `updatedon`, `email`, `nom`, `prenom`, `action_type`, `data`, `date`, `object_id`, `object_name`, `user_id`, `username`) VALUES
+(1, 'anonymousUser', '2023-07-30 15:35:55', 'anonymousUser', '2023-07-30 15:36:36', 'younes.zouani.ext@enova.ma', 'Zouani', 'Younes', NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+(2, 'anonymousUser', '2023-07-30 15:36:19', '', NULL, 'h.idrisi@uca.ma', 'Idrisi', 'Hamid', NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+(3, 'anonymousUser', '2023-07-30 15:39:30', 'anonymousUser', '2023-07-30 15:39:44', 'ahmed@cnss.com', 'Taoufik', 'Ahmed', NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+(4, 'anonymousUser', '2023-07-30 15:40:16', '', NULL, 'brahim@sqli.ma', 'Tag', 'Ibrahim', NULL, NULL, NULL, NULL, NULL, NULL, NULL);
+
+--
 -- Déchargement des données de la table `utilisateur_seq`
 --
 
 INSERT INTO `utilisateur_seq` (`next_val`) VALUES
-(1),
-(1);
+(5),
+(5);
 SET FOREIGN_KEY_CHECKS=1;
 COMMIT;
 

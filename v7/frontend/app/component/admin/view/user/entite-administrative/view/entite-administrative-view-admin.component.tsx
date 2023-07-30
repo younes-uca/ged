@@ -65,11 +65,11 @@ return(
 
                 <div className="field col-6">
                     <label htmlFor="utilisateur">Utilisateur</label>
-                    <Dropdown  id="utilisateurDropdown"  value={selectedItem?.utilisateur?.nom}  disabled  />
+                    <InputText  id="utilisateurDropdown"  value={selectedItem?.utilisateur?.nom}  disabled  />
                 </div>
                 <div className="field col-6">
                     <label htmlFor="entiteAdministrativeType">Entite administrative type</label>
-                    <Dropdown  id="entiteAdministrativeTypeDropdown"  value={selectedItem?.entiteAdministrativeType?.libelle}  disabled  />
+                    <InputText  id="entiteAdministrativeTypeDropdown"  value={selectedItem?.entiteAdministrativeType?.libelle}  disabled  />
                 </div>
         </div>
 </TabPanel>
