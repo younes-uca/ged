@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="26f9f25d-5f49-474e-8d75-1c60dd7ea265" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/layout/i18n.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/locales/en/translation.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/locales/fr/translation.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/frontend.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/frontend.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/component/admin/view/doc/document-partage-groupe/create/document-partage-groupe-create-admin.component.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/component/admin/view/doc/document-partage-groupe/edit/document-partage-groupe-edit-admin.component.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/component/admin/view/doc/document-partage-groupe/list/document-partage-groupe-list-admin.component.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/component/admin/view/doc/document-partage-groupe/view/document-partage-groupe-view-admin.component.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/component/admin/view/doc/document-partage-utilisateur/create/document-partage-utilisateur-create-admin.component.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/component/admin/view/doc/document-partage-utilisateur/edit/document-partage-utilisateur-edit-admin.component.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/component/admin/view/doc/document-partage-utilisateur/list/document-partage-utilisateur-list-admin.component.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/component/admin/view/doc/document-partage-utilisateur/view/document-partage-utilisateur-view-admin.component.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/component/admin/view/doc/document/create/document-create-admin.component.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/component/admin/view/doc/document/edit/document-edit-admin.component.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/component/admin/view/doc/document/list/document-list-admin.component.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/component/admin/view/doc/document/view/document-view-admin.component.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/component/admin/view/doc/entite-administrative-type/create/entite-administrative-type-create-admin.component.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/component/admin/view/doc/entite-administrative-type/edit/entite-administrative-type-edit-admin.component.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/component/admin/view/doc/entite-administrative-type/list/entite-administrative-type-list-admin.component.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/component/admin/view/doc/entite-administrative-type/view/entite-administrative-type-view-admin.component.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/component/admin/view/fielddoc/document-categorie-field-rule/create/document-categorie-field-rule-create-admin.component.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/component/admin/view/fielddoc/document-categorie-field-rule/edit/document-categorie-field-rule-edit-admin.component.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/component/admin/view/fielddoc/document-categorie-field-rule/list/document-categorie-field-rule-list-admin.component.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/component/admin/view/fielddoc/document-categorie-field-rule/view/document-categorie-field-rule-view-admin.component.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/component/admin/view/fielddoc/document-categorie-field/create/document-categorie-field-create-admin.component.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/component/admin/view/fielddoc/document-categorie-field/edit/document-categorie-field-edit-admin.component.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/component/admin/view/fielddoc/document-categorie-field/list/document-categorie-field-list-admin.component.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/component/admin/view/fielddoc/document-categorie-field/view/document-categorie-field-view-admin.component.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/component/admin/view/fielddoc/document-field-state/create/document-field-state-create-admin.component.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/component/admin/view/fielddoc/document-field-state/edit/document-field-state-edit-admin.component.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/component/admin/view/fielddoc/document-field-state/list/document-field-state-list-admin.component.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/component/admin/view/fielddoc/document-field-state/view/document-field-state-view-admin.component.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/component/admin/view/fielddoc/document-field/create/document-field-create-admin.component.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/component/admin/view/fielddoc/document-field/edit/document-field-edit-admin.component.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/component/admin/view/fielddoc/document-field/list/document-field-list-admin.component.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/component/admin/view/fielddoc/document-field/view/document-field-view-admin.component.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/component/admin/view/fielddoc/field/create/field-create-admin.component.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/component/admin/view/fielddoc/field/edit/field-edit-admin.component.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/component/admin/view/fielddoc/field/list/field-list-admin.component.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/component/admin/view/fielddoc/field/view/field-view-admin.component.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/component/admin/view/refdoc/document-categorie/create/document-categorie-create-admin.component.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/component/admin/view/refdoc/document-categorie/edit/document-categorie-edit-admin.component.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/component/admin/view/refdoc/document-categorie/list/document-categorie-list-admin.component.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/component/admin/view/refdoc/document-categorie/view/document-categorie-view-admin.component.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/component/admin/view/refdoc/document-state/create/document-state-create-admin.component.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/component/admin/view/refdoc/document-state/edit/document-state-edit-admin.component.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/component/admin/view/refdoc/document-state/list/document-state-list-admin.component.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/component/admin/view/refdoc/document-state/view/document-state-view-admin.component.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/component/admin/view/refdoc/document-type/create/document-type-create-admin.component.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/component/admin/view/refdoc/document-type/edit/document-type-edit-admin.component.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/component/admin/view/refdoc/document-type/list/document-type-list-admin.component.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/component/admin/view/refdoc/document-type/view/document-type-view-admin.component.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/component/admin/view/refshare/access-share/create/access-share-create-admin.component.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/component/admin/view/refshare/access-share/edit/access-share-edit-admin.component.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/component/admin/view/refshare/access-share/list/access-share-list-admin.component.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/component/admin/view/refshare/access-share/view/access-share-view-admin.component.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/component/admin/view/refshare/etat-utilisateur/create/etat-utilisateur-create-admin.component.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/component/admin/view/refshare/etat-utilisateur/edit/etat-utilisateur-edit-admin.component.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/component/admin/view/refshare/etat-utilisateur/list/etat-utilisateur-list-admin.component.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/component/admin/view/refshare/etat-utilisateur/view/etat-utilisateur-view-admin.component.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/component/admin/view/refshare/groupe/create/groupe-create-admin.component.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/component/admin/view/refshare/groupe/edit/groupe-edit-admin.component.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/component/admin/view/refshare/groupe/list/groupe-list-admin.component.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/component/admin/view/refshare/groupe/view/groupe-view-admin.component.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/component/admin/view/refshare/role-utilisateur/create/role-utilisateur-create-admin.component.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/component/admin/view/refshare/role-utilisateur/edit/role-utilisateur-edit-admin.component.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/component/admin/view/refshare/role-utilisateur/list/role-utilisateur-list-admin.component.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/component/admin/view/refshare/role-utilisateur/view/role-utilisateur-view-admin.component.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/component/admin/view/user/entite-administrative/create/entite-administrative-create-admin.component.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/component/admin/view/user/entite-administrative/edit/entite-administrative-edit-admin.component.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/component/admin/view/user/entite-administrative/list/entite-administrative-list-admin.component.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/component/admin/view/user/entite-administrative/view/entite-administrative-view-admin.component.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/component/admin/view/user/utilisateur/create/utilisateur-create-admin.component.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/component/admin/view/user/utilisateur/edit/utilisateur-edit-admin.component.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/component/admin/view/user/utilisateur/list/utilisateur-list-admin.component.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/component/admin/view/user/utilisateur/view/utilisateur-view-admin.component.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controller/criteria/AccessShareCriteria.model.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controller/criteria/DocumentCategorieCriteria.model.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controller/criteria/DocumentCategorieFieldCriteria.model.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controller/criteria/DocumentCategorieFieldRuleCriteria.model.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controller/criteria/DocumentCriteria.model.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controller/criteria/DocumentFieldCriteria.model.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controller/criteria/DocumentFieldStateCriteria.model.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controller/criteria/DocumentPartageGroupeCriteria.model.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controller/criteria/DocumentPartageUtilisateurCriteria.model.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controller/criteria/DocumentStateCriteria.model.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controller/criteria/DocumentTypeCriteria.model.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controller/criteria/EntiteAdministrativeCriteria.model.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controller/criteria/EntiteAdministrativeTypeCriteria.model.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controller/criteria/EtatUtilisateurCriteria.model.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controller/criteria/FieldCriteria.model.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controller/criteria/GroupeCriteria.model.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controller/criteria/GroupeUtilisateurCriteria.model.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controller/criteria/RoleUtilisateurCriteria.model.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controller/criteria/UtilisateurCriteria.model.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controller/model/AccessShare.model.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controller/model/Document.model.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controller/model/DocumentCategorie.model.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controller/model/DocumentCategorieField.model.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controller/model/DocumentCategorieFieldRule.model.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controller/model/DocumentField.model.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controller/model/DocumentFieldState.model.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controller/model/DocumentPartageGroupe.model.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controller/model/DocumentPartageUtilisateur.model.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controller/model/DocumentState.model.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controller/model/DocumentType.model.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controller/model/EntiteAdministrative.model.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controller/model/EntiteAdministrativeType.model.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controller/model/EtatUtilisateur.model.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controller/model/Field.model.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controller/model/Groupe.model.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controller/model/GroupeUtilisateur.model.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controller/model/RoleUtilisateur.model.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controller/model/Utilisateur.model.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controller/service/admin/AccessShareAdminService.service.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controller/service/admin/DocumentAdminService.service.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controller/service/admin/DocumentCategorieAdminService.service.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controller/service/admin/DocumentCategorieFieldAdminService.service.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controller/service/admin/DocumentCategorieFieldRuleAdminService.service.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controller/service/admin/DocumentFieldAdminService.service.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controller/service/admin/DocumentFieldStateAdminService.service.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controller/service/admin/DocumentPartageGroupeAdminService.service.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controller/service/admin/DocumentPartageUtilisateurAdminService.service.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controller/service/admin/DocumentStateAdminService.service.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controller/service/admin/DocumentTypeAdminService.service.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controller/service/admin/EntiteAdministrativeAdminService.service.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controller/service/admin/EntiteAdministrativeTypeAdminService.service.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controller/service/admin/EtatUtilisateurAdminService.service.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controller/service/admin/FieldAdminService.service.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controller/service/admin/GroupeAdminService.service.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controller/service/admin/GroupeUtilisateurAdminService.service.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controller/service/admin/RoleUtilisateurAdminService.service.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controller/service/admin/UtilisateurAdminService.service.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/zynerator/security/Auth.service.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/zynerator/security/Auth.service.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/docker-compose.override.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker/docker-compose.override.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/layout/AppConfig.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/layout/AppConfig.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/layout/AppMenu.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/layout/AppMenu.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/layout/AppTopbar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/layout/AppTopbar.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/layout/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/layout/layout.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/admin/view/doc/document-partage-groupe/list/index.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/admin/view/doc/document-partage-utilisateur/list/index.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/admin/view/doc/document/list/index.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/admin/view/doc/entite-administrative-type/list/index.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/admin/view/fielddoc/document-categorie-field-rule/list/index.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/admin/view/fielddoc/document-categorie-field/list/index.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/admin/view/fielddoc/document-field-state/list/index.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/admin/view/fielddoc/document-field/list/index.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/admin/view/fielddoc/field/list/index.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/admin/view/refdoc/document-categorie/list/index.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/admin/view/refdoc/document-state/list/index.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/admin/view/refdoc/document-type/list/index.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/admin/view/refshare/access-share/list/index.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/admin/view/refshare/etat-utilisateur/list/index.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/admin/view/refshare/groupe/list/index.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/admin/view/refshare/role-utilisateur/list/index.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/admin/view/user/entite-administrative/list/index.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/admin/view/user/utilisateur/list/index.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/dashboard/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/dashboard/index.tsx" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "customColor": "",
+  "associatedIndex": -1
+}]]></component>
+  <component name="ProjectId" id="2TLx0uNKU2M34uCI49s9IXxLRp5" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "C:/Users/HP/generated/ged/ged/v7/frontend/layout",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "ts.external.directory.path": "C:\\Users\\HP\\generated\\ged\\ged\\v7\\frontend\\node_modules\\typescript\\lib",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\HP\generated\ged\ged\v7\frontend\layout" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="dev" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="dev" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.dev" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="26f9f25d-5f49-474e-8d75-1c60dd7ea265" name="Changes" comment="" />
+      <created>1690835942432</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1690835942432</updated>
+      <workItem from="1690835943471" duration="2925000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
