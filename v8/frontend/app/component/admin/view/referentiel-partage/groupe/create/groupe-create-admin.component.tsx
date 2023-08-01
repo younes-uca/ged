@@ -231,7 +231,7 @@ return(
                              </div>
                             <div className="field col-6">
                                 <label htmlFor="dateAjout">{t("groupeUtilisateurDateAjout")}</label>
-                                <Calendar id="dateAjout" value={groupeUtilisateurs.dateAjout}  onChange={(e) => onInputDateChangeGroupeUtilisateurs(e, 'dateAjout')} dateFormat="dd/mm/yy" showTime  />
+                                <Calendar id="dateAjout" value={groupeUtilisateurs.dateAjout}  onChange={(e) => onInputDateChangeGroupeUtilisateurs(e, 'dateAjout')} dateFormat="dd/mm/yy" />
                             </div>
                             <div className="field col-6">
                                 <label htmlFor="etatUtilisateur">{t("groupeUtilisateurEtatUtilisateur")}</label>

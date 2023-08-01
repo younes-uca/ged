@@ -17,8 +17,7 @@ export class GroupeUtilisateurDto extends BaseDto{
 
     constructor() {
         super();
-
-        this.dateAjout = null;
+        this.dateAjout = new Date();
         this.groupe = new GroupeDto() ;
         this.utilisateur = new UtilisateurDto() ;
         this.etatUtilisateur = new EtatUtilisateurDto() ;

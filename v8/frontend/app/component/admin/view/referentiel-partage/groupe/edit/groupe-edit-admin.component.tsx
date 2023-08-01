@@ -179,6 +179,7 @@ const Edit = ({visible, onClose, showToast, selectedItem, update, t}) => {
         _item[`${name}`] = val;
         setItem(_item);
     };
+    console.log("groupeUtilisateurs", item.groupeUtilisateurs)
 
     const onInputNumerChange = (e: InputNumberChangeEvent, name: string) => {
         const val = e.value === null ? null : +e.value;
@@ -233,7 +234,7 @@ return(
                             </div>
                             <div className="field col-6">
                                 <label htmlFor="dateAjout">{t("groupeUtilisateurDateAjout")}</label>
-                                <Calendar id="dateAjout" value={groupeUtilisateurs?.dateAjout}  onChange={(e) => onInputDateChangeGroupeUtilisateurs(e, 'dateAjout')} dateFormat="dd/mm/yy" showTime  />
+                                <Calendar id="dateAjout" value={groupeUtilisateurs?.dateAjout}  onChange={(e) => onInputDateChangeGroupeUtilisateurs(e, 'dateAjout')} dateFormat="dd/mm/yy" showIcon />
                             </div>
                             <div className="field col-6">
                                 <label htmlFor="etatUtilisateur">{t("groupeUtilisateurEtatUtilisateur")}</label>
