@@ -43,8 +43,8 @@ export class DocumentDto extends BaseDto{
         super();
 
         this.reference = '';
-        this.uploadDate = null;
-        this.dateLastUpdate = null;
+        this.uploadDate = new Date();
+        this.dateLastUpdate = new Date();
         this.content = '';
         this.folder = null;
         this.size = null;
