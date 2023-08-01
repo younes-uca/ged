@@ -1,7 +1,12 @@
 package ma.sir.ged.ws.facade.admin;
 
 import ma.sir.ged.service.facade.admin.MinIOService;
+import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpHeaders;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.MediaType;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 
@@ -24,7 +29,7 @@ public class MinioController {
     //--- Check if bucket exists or not ---
     //curl "http://localhost:8036/minio/bucket/my-bucket"
     @GetMapping("/bucket/{name}")
-    public int bucketExists(@PathVariable String name) {
+    public Boolean bucketExists(@PathVariable String name) {
         return minIOService.bucketExists(name);
     }
 
@@ -51,9 +56,26 @@ public class MinioController {
 
     //--- Download all files from a bucket ---
     //curl -o D:/GED/all_documents.zip http://localhost:8036/minio/downloadAll/bucket/my-bucket
-    @GetMapping("/downloadAll/bucket/{bucket}")
-    public byte[] downloadAllDocumentsAsZip(@PathVariable String bucket) {
-        return minIOService.downloadAllDocumentsAsZip(bucket);
+    @GetMapping(value = "/downloadAll/{bucket}", produces = MediaType.APPLICATION_OCTET_STREAM_VALUE)
+    public ResponseEntity<byte[]> downloadAllDocumentsAsZip(@PathVariable String bucket, @RequestParam(name ="path", required = false) String path) {
+        byte[] zipData = (StringUtils.isNoneBlank(path)) ?
+                    minIOService.downloadAllDocumentsAsZip(bucket, path) :
+                    minIOService.downloadAllDocumentsAsZip(bucket);
+        if (zipData != null) {
+            HttpHeaders headers = new HttpHeaders();
+            headers.setContentDispositionFormData("attachment", "all_documents.zip");
+            headers.setContentType(MediaType.APPLICATION_OCTET_STREAM);
+            return new ResponseEntity<>(zipData, headers, HttpStatus.OK);
+        } else {
+            return new ResponseEntity<>(HttpStatus.NOT_FOUND);
+        }
+    }
+
+    //--- Create a new directory inside a bucket ---
+    //curl -X POST -F "bucketName=my-new-bucket" http://localhost:8036/minio/bucket/directory
+    @PostMapping("/bucket/directory")
+    public int saveBucket(@RequestParam("bucketName") String bucket, @RequestParam("directoryPath") String path) {
+        return minIOService.createDirectory(bucket, path);
     }
 
 }
