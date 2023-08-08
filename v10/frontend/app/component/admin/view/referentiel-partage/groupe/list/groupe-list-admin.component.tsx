@@ -22,14 +22,14 @@ import {GroupeAdminService} from 'app/controller/service/admin/GroupeAdminServic
 import {GroupeDto}  from 'app/controller/model/Groupe.model';
 import {GroupeCriteria} from 'app/controller/criteria/GroupeCriteria.model';
 
-import {UtilisateurDto} from 'app/controller/model/Utilisateur.model';
-import {UtilisateurAdminService} from 'app/controller/service/admin/UtilisateurAdminService.service';
-import {EtatUtilisateurDto} from 'app/controller/model/EtatUtilisateur.model';
-import {EtatUtilisateurAdminService} from 'app/controller/service/admin/EtatUtilisateurAdminService.service';
-import {GroupeUtilisateurDto} from 'app/controller/model/GroupeUtilisateur.model';
-import {GroupeUtilisateurAdminService} from 'app/controller/service/admin/GroupeUtilisateurAdminService.service';
 import {RoleUtilisateurDto} from 'app/controller/model/RoleUtilisateur.model';
 import {RoleUtilisateurAdminService} from 'app/controller/service/admin/RoleUtilisateurAdminService.service';
+import {GroupeUtilisateurDto} from 'app/controller/model/GroupeUtilisateur.model';
+import {GroupeUtilisateurAdminService} from 'app/controller/service/admin/GroupeUtilisateurAdminService.service';
+import {EtatUtilisateurDto} from 'app/controller/model/EtatUtilisateur.model';
+import {EtatUtilisateurAdminService} from 'app/controller/service/admin/EtatUtilisateurAdminService.service';
+import {UtilisateurDto} from 'app/controller/model/Utilisateur.model';
+import {UtilisateurAdminService} from 'app/controller/service/admin/UtilisateurAdminService.service';
 
 import { useTranslation } from 'react-i18next';
 

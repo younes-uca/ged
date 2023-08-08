@@ -23,10 +23,10 @@ import {Toast} from "primereact/toast";
 
 import {FieldDto} from 'app/controller/model/Field.model';
 import {FieldAdminService} from 'app/controller/service/admin/FieldAdminService.service';
-import {DocumentCategorieFieldRuleDto} from 'app/controller/model/DocumentCategorieFieldRule.model';
-import {DocumentCategorieFieldRuleAdminService} from 'app/controller/service/admin/DocumentCategorieFieldRuleAdminService.service';
 import {DocumentCategorieDto} from 'app/controller/model/DocumentCategorie.model';
 import {DocumentCategorieAdminService} from 'app/controller/service/admin/DocumentCategorieAdminService.service';
+import {DocumentCategorieFieldRuleDto} from 'app/controller/model/DocumentCategorieFieldRule.model';
+import {DocumentCategorieFieldRuleAdminService} from 'app/controller/service/admin/DocumentCategorieFieldRuleAdminService.service';
 type DocumentCategorieFieldEditAdminType = {
     visible: boolean,
     onClose: () => void,
@@ -47,15 +47,14 @@ const Edit: React.FC<DocumentCategorieFieldEditAdminType> = ({visible, onClose, 
     const [documentCategories, setDocumentCategories] = useState<DocumentCategorieDto[]>([]);
 
 
+        useEffect(() => {
 
+    FieldAdminService.getList().then(({data}) => setFields(data)).catch(error => console.log(error));
+    DocumentCategorieAdminService.getList().then(({data}) => setDocumentCategories(data)).catch(error => console.log(error));
+    DocumentCategorieFieldRuleAdminService.getList().then(({data}) => setDocumentCategorieFieldRules(data)).catch(error => console.log(error));
 
-    useEffect(() => {
+        }, []);
 
-        FieldAdminService.getList().then(({data}) => setFields(data)).catch(error => console.log(error));
-        DocumentCategorieFieldRuleAdminService.getList().then(({data}) => setDocumentCategorieFieldRules(data)).catch(error => console.log(error));
-        DocumentCategorieAdminService.getList().then(({data}) => setDocumentCategories(data)).catch(error => console.log(error));
-
-    }, []);
 
 
 

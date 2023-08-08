@@ -21,10 +21,10 @@ import  {EntiteAdministrativeDto}  from 'app/controller/model/EntiteAdministrati
 import {TFunction} from "i18next";
 import {Toast} from "primereact/toast";
 
-import {UtilisateurDto} from 'app/controller/model/Utilisateur.model';
-import {UtilisateurAdminService} from 'app/controller/service/admin/UtilisateurAdminService.service';
 import {EntiteAdministrativeTypeDto} from 'app/controller/model/EntiteAdministrativeType.model';
 import {EntiteAdministrativeTypeAdminService} from 'app/controller/service/admin/EntiteAdministrativeTypeAdminService.service';
+import {UtilisateurDto} from 'app/controller/model/Utilisateur.model';
+import {UtilisateurAdminService} from 'app/controller/service/admin/UtilisateurAdminService.service';
 type EntiteAdministrativeEditAdminType = {
     visible: boolean,
     onClose: () => void,
@@ -44,14 +44,13 @@ const Edit: React.FC<EntiteAdministrativeEditAdminType> = ({visible, onClose, sh
     const [entiteAdministrativeTypes, setEntiteAdministrativeTypes] = useState<EntiteAdministrativeTypeDto[]>([]);
 
 
+        useEffect(() => {
 
+    UtilisateurAdminService.getList().then(({data}) => setUtilisateurs(data)).catch(error => console.log(error));
+    EntiteAdministrativeTypeAdminService.getList().then(({data}) => setEntiteAdministrativeTypes(data)).catch(error => console.log(error));
 
-    useEffect(() => {
+        }, []);
 
-        UtilisateurAdminService.getList().then(({data}) => setUtilisateurs(data)).catch(error => console.log(error));
-        EntiteAdministrativeTypeAdminService.getList().then(({data}) => setEntiteAdministrativeTypes(data)).catch(error => console.log(error));
-
-    }, []);
 
 
 

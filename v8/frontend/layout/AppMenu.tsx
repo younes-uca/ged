@@ -45,15 +45,15 @@ const AppMenu = () => {
                     icon: 'pi pi-fw pi-plus-circle',
                     items: [
                       {
-                      label: 'Liste document field state',
+                      label: 'Liste field state',
                      to: '/admin/view/referentiel-doc/document-field-state/list'
                       },
                       {
-                      label: 'Liste document categorie',
+                      label: 'Liste categorie',
                      to: '/admin/view/referentiel-doc/document-categorie/list'
                       },
                       {
-                      label: 'Liste document categorie field rule',
+                      label: 'Liste categorie field rule',
                      to: '/admin/view/referentiel-doc/document-categorie-field-rule/list'
                       },
                       {
@@ -61,15 +61,15 @@ const AppMenu = () => {
                      to: '/admin/view/referentiel-doc/field/list'
                       },
                       {
-                      label: 'Liste document state',
+                      label: 'Liste state',
                      to: '/admin/view/referentiel-doc/document-state/list'
                       },
-                      {
-                      label: 'Liste document categorie field',
+                      /*{
+                      label: 'Liste categorie field',
                      to: '/admin/view/referentiel-doc/document-categorie-field/list'
-                      },
+                      },*/
                       {
-                      label: 'Liste document type',
+                      label: 'Liste type',
                      to: '/admin/view/referentiel-doc/document-type/list'
                       },
                     ]

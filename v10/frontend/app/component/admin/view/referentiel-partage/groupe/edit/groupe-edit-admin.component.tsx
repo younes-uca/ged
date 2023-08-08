@@ -22,14 +22,14 @@ import  {GroupeDto}  from 'app/controller/model/Groupe.model';
 import {TFunction} from "i18next";
 import {Toast} from "primereact/toast";
 
-import {UtilisateurDto} from 'app/controller/model/Utilisateur.model';
-import {UtilisateurAdminService} from 'app/controller/service/admin/UtilisateurAdminService.service';
-import {EtatUtilisateurDto} from 'app/controller/model/EtatUtilisateur.model';
-import {EtatUtilisateurAdminService} from 'app/controller/service/admin/EtatUtilisateurAdminService.service';
-import {GroupeUtilisateurDto} from 'app/controller/model/GroupeUtilisateur.model';
-import {GroupeUtilisateurAdminService} from 'app/controller/service/admin/GroupeUtilisateurAdminService.service';
 import {RoleUtilisateurDto} from 'app/controller/model/RoleUtilisateur.model';
 import {RoleUtilisateurAdminService} from 'app/controller/service/admin/RoleUtilisateurAdminService.service';
+import {GroupeUtilisateurDto} from 'app/controller/model/GroupeUtilisateur.model';
+import {GroupeUtilisateurAdminService} from 'app/controller/service/admin/GroupeUtilisateurAdminService.service';
+import {EtatUtilisateurDto} from 'app/controller/model/EtatUtilisateur.model';
+import {EtatUtilisateurAdminService} from 'app/controller/service/admin/EtatUtilisateurAdminService.service';
+import {UtilisateurDto} from 'app/controller/model/Utilisateur.model';
+import {UtilisateurAdminService} from 'app/controller/service/admin/UtilisateurAdminService.service';
 type GroupeEditAdminType = {
     visible: boolean,
     onClose: () => void,
@@ -49,22 +49,18 @@ const Edit: React.FC<GroupeEditAdminType> = ({visible, onClose, showToast, selec
     const [etatUtilisateurs, setEtatUtilisateurs] = useState<EtatUtilisateurDto[]>([]);
     const [roleUtilisateurs, setRoleUtilisateurs] = useState<RoleUtilisateurDto[]>([]);
 
-
     const [groupeUtilisateurs, setGroupeUtilisateurs] = useState<GroupeUtilisateurDto>(new GroupeUtilisateurDto());
 
+        useEffect(() => {
 
-    useEffect(() => {
-
-        UtilisateurAdminService.getList().then(({data}) => setUtilisateurs(data)).catch(error => console.log(error));
-        EtatUtilisateurAdminService.getList().then(({data}) => setEtatUtilisateurs(data)).catch(error => console.log(error));
-        RoleUtilisateurAdminService.getList().then(({data}) => setRoleUtilisateurs(data)).catch(error => console.log(error));
+    UtilisateurAdminService.getList().then(({data}) => setUtilisateurs(data)).catch(error => console.log(error));
 
 
-        UtilisateurAdminService.getList().then(({data}) => setUtilisateurs(data)).catch(error => console.log(error));
-        EtatUtilisateurAdminService.getList().then(({data}) => setEtatUtilisateurs(data)).catch(error => console.log(error));
-        RoleUtilisateurAdminService.getList().then(({data}) => setRoleUtilisateurs(data)).catch(error => console.log(error));
+    UtilisateurAdminService.getList().then(({data}) => setUtilisateurs(data)).catch(error => console.log(error));
+    EtatUtilisateurAdminService.getList().then(({data}) => setEtatUtilisateurs(data)).catch(error => console.log(error));
+    RoleUtilisateurAdminService.getList().then(({data}) => setRoleUtilisateurs(data)).catch(error => console.log(error));
+        }, []);
 
-    }, []);
 
 
 

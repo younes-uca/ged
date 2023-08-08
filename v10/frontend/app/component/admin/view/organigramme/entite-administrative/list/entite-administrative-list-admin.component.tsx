@@ -22,10 +22,10 @@ import {EntiteAdministrativeAdminService} from 'app/controller/service/admin/Ent
 import {EntiteAdministrativeDto}  from 'app/controller/model/EntiteAdministrative.model';
 import {EntiteAdministrativeCriteria} from 'app/controller/criteria/EntiteAdministrativeCriteria.model';
 
-import {UtilisateurDto} from 'app/controller/model/Utilisateur.model';
-import {UtilisateurAdminService} from 'app/controller/service/admin/UtilisateurAdminService.service';
 import {EntiteAdministrativeTypeDto} from 'app/controller/model/EntiteAdministrativeType.model';
 import {EntiteAdministrativeTypeAdminService} from 'app/controller/service/admin/EntiteAdministrativeTypeAdminService.service';
+import {UtilisateurDto} from 'app/controller/model/Utilisateur.model';
+import {UtilisateurAdminService} from 'app/controller/service/admin/UtilisateurAdminService.service';
 
 import { useTranslation } from 'react-i18next';
 

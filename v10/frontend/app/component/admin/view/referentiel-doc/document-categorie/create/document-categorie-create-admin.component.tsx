@@ -52,12 +52,11 @@ const Create: React.FC<DocumentCategorieCreateAdminType> = ({visible, onClose, a
 
     useEffect(() => {
 
-        FieldAdminService.getList().then(({data}) => setFields(data)).catch(error => console.log(error));
-        DocumentCategorieFieldRuleAdminService.getList().then(({data}) => setDocumentCategorieFieldRules(data)).catch(error => console.log(error));
 
 
         FieldAdminService.getList().then(({data}) => setFields(data)).catch(error => console.log(error));
         DocumentCategorieFieldRuleAdminService.getList().then(({data}) => setDocumentCategorieFieldRules(data)).catch(error => console.log(error));
+
 
     }, []);
 

@@ -46,20 +46,16 @@ const Edit: React.FC<DocumentCategorieEditAdminType> = ({visible, onClose, showT
     const [fields, setFields] = useState<FieldDto[]>([]);
     const [documentCategorieFieldRules, setDocumentCategorieFieldRules] = useState<DocumentCategorieFieldRuleDto[]>([]);
 
-
     const [documentCategorieFields, setDocumentCategorieFields] = useState<DocumentCategorieFieldDto>(new DocumentCategorieFieldDto());
 
-
-    useEffect(() => {
-
-        FieldAdminService.getList().then(({data}) => setFields(data)).catch(error => console.log(error));
-        DocumentCategorieFieldRuleAdminService.getList().then(({data}) => setDocumentCategorieFieldRules(data)).catch(error => console.log(error));
+        useEffect(() => {
 
 
-        FieldAdminService.getList().then(({data}) => setFields(data)).catch(error => console.log(error));
-        DocumentCategorieFieldRuleAdminService.getList().then(({data}) => setDocumentCategorieFieldRules(data)).catch(error => console.log(error));
 
-    }, []);
+    FieldAdminService.getList().then(({data}) => setFields(data)).catch(error => console.log(error));
+    DocumentCategorieFieldRuleAdminService.getList().then(({data}) => setDocumentCategorieFieldRules(data)).catch(error => console.log(error));
+        }, []);
+
 
 
 

@@ -18,10 +18,10 @@ import {MessageService} from 'app/zynerator/service/MessageService';
 import {EntiteAdministrativeAdminService} from 'app/controller/service/admin/EntiteAdministrativeAdminService.service';
 import  {EntiteAdministrativeDto}  from 'app/controller/model/EntiteAdministrative.model';
 
-import {UtilisateurDto} from 'app/controller/model/Utilisateur.model';
-import {UtilisateurAdminService} from 'app/controller/service/admin/UtilisateurAdminService.service';
 import {EntiteAdministrativeTypeDto} from 'app/controller/model/EntiteAdministrativeType.model';
 import {EntiteAdministrativeTypeAdminService} from 'app/controller/service/admin/EntiteAdministrativeTypeAdminService.service';
+import {UtilisateurDto} from 'app/controller/model/Utilisateur.model';
+import {UtilisateurAdminService} from 'app/controller/service/admin/UtilisateurAdminService.service';
 import {TFunction} from "i18next";
 import {Toast} from "primereact/toast";
 

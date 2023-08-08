@@ -24,10 +24,10 @@ import {DocumentCategorieFieldCriteria} from 'app/controller/criteria/DocumentCa
 
 import {FieldDto} from 'app/controller/model/Field.model';
 import {FieldAgentService} from 'app/controller/service/agent/FieldAgentService.service';
-import {DocumentCategorieFieldRuleDto} from 'app/controller/model/DocumentCategorieFieldRule.model';
-import {DocumentCategorieFieldRuleAgentService} from 'app/controller/service/agent/DocumentCategorieFieldRuleAgentService.service';
 import {DocumentCategorieDto} from 'app/controller/model/DocumentCategorie.model';
 import {DocumentCategorieAgentService} from 'app/controller/service/agent/DocumentCategorieAgentService.service';
+import {DocumentCategorieFieldRuleDto} from 'app/controller/model/DocumentCategorieFieldRule.model';
+import {DocumentCategorieFieldRuleAgentService} from 'app/controller/service/agent/DocumentCategorieFieldRuleAgentService.service';
 
 import { useTranslation } from 'react-i18next';
 

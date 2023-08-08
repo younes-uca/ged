@@ -38,12 +38,11 @@ const Edit: React.FC<UtilisateurEditAdminType> = ({visible, onClose, showToast, 
     const [item, setItem] = useState<UtilisateurDto>(selectedItem);
 
 
+        useEffect(() => {
 
 
-    useEffect(() => {
+        }, []);
 
-
-    }, []);
 
 
 

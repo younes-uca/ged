@@ -38,12 +38,11 @@ const Edit: React.FC<TagEditAdminType> = ({visible, onClose, showToast, selected
     const [item, setItem] = useState<TagDto>(selectedItem);
 
 
+        useEffect(() => {
 
 
-    useEffect(() => {
+        }, []);
 
-
-    }, []);
 
 
 

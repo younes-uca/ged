@@ -52,12 +52,11 @@ const Create: React.FC<DocumentCategorieCreateAgentType> = ({visible, onClose, a
 
     useEffect(() => {
 
-        FieldAgentService.getList().then(({data}) => setFields(data)).catch(error => console.log(error));
-        DocumentCategorieFieldRuleAgentService.getList().then(({data}) => setDocumentCategorieFieldRules(data)).catch(error => console.log(error));
 
 
         FieldAgentService.getList().then(({data}) => setFields(data)).catch(error => console.log(error));
         DocumentCategorieFieldRuleAgentService.getList().then(({data}) => setDocumentCategorieFieldRules(data)).catch(error => console.log(error));
+
 
     }, []);
 

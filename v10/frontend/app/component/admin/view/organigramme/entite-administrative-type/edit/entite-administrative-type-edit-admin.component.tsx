@@ -38,12 +38,11 @@ const Edit: React.FC<EntiteAdministrativeTypeEditAdminType> = ({visible, onClose
     const [item, setItem] = useState<EntiteAdministrativeTypeDto>(selectedItem);
 
 
+        useEffect(() => {
 
 
-    useEffect(() => {
+        }, []);
 
-
-    }, []);
 
 
 

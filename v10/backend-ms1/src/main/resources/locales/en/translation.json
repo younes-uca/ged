@@ -1,4 +1,5 @@
 {
+    "from-to": "Elements from {first} to {last} (total {totalRecords})"
     "new" : "New",
     "search": "Search",
     "export": "Export",
@@ -15,533 +16,598 @@
     "creation": "Creation",
     "list": "List",
 
-    "documentPartageGroupe": "DocumentPartageGroupe",
-    "documentPartageGroupeTabPan": "Document partage groupe",
-    "documentPartageGroupeHeader": "Liste des document partage groupes",
-    "deleteDocumentPartageGroupeConfirmationMessage": "Are you sure you want to delete document partage groupe",
 
+    "documentPartageGroupe":{
+        "documentPartageGroupe": "Document partage groupe",
+        "tabPan": "Document partage groupe",
+        "header": "Liste des document partage groupes",
+        "deleteDocumentPartageGroupeConfirmationMessage": "Are you sure you want to delete document partage groupe",
 
 
-    "documentPartageGroupeDocument": "Document",
 
-    "documentPartageGroupeDocumentPlaceHolder": "Select a Document",
-    "documentPartageGroupeDocumentPlaceHolderFilter": "Search by Document",
+        "document": "Document",
 
+        "documentPlaceHolder": "Select a Document",
+        "documentPlaceHolderFilter": "Search by Document",
 
-    "documentPartageGroupeGroupe": "Groupe",
 
-    "documentPartageGroupeGroupePlaceHolder": "Select a Groupe",
-    "documentPartageGroupeGroupePlaceHolderFilter": "Search by Groupe",
+        "groupe": "Groupe",
 
+        "groupePlaceHolder": "Select a Groupe",
+        "groupePlaceHolderFilter": "Search by Groupe",
 
-    "documentPartageGroupeDateShare": "Date share",
-    "documentPartageGroupeDateShareMin": "Date share Min",
-    "documentPartageGroupeDateShareMax": "Date share Max",
 
+        "dateShare": "Date share"
+        "dateShareMin": "Date share Min"
+        "dateShareMax": "Date share Max"
 
 
-    "documentPartageGroupeAccessShare": "Access share",
 
-    "documentPartageGroupeAccessSharePlaceHolder": "Select a Access share",
-    "documentPartageGroupeAccessSharePlaceHolderFilter": "Search by Access share",
+        "accessShare": "Access share",
 
+        "accessSharePlaceHolder": "Select a Access share",
+        "accessSharePlaceHolderFilter": "Search by Access share",
 
-    "etatUtilisateur": "EtatUtilisateur",
-    "etatUtilisateurTabPan": "Etat utilisateur",
-    "etatUtilisateurHeader": "Liste des etat utilisateurs",
-    "deleteEtatUtilisateurConfirmationMessage": "Are you sure you want to delete etat utilisateur",
 
+    },
 
+    "etatUtilisateur":{
+        "etatUtilisateur": "Etat utilisateur",
+        "tabPan": "Etat utilisateur",
+        "header": "Liste des etat utilisateurs",
+        "deleteEtatUtilisateurConfirmationMessage": "Are you sure you want to delete etat utilisateur",
 
-    "etatUtilisateurCode": "Code",
 
 
+        "code": "Code"
 
-    "etatUtilisateurLibelle": "Libelle",
 
 
+        "libelle": "Libelle",
 
-    "groupeUtilisateur": "GroupeUtilisateur",
-    "groupeUtilisateurTabPan": "Groupe utilisateur",
-    "groupeUtilisateurHeader": "Liste des groupe utilisateurs",
-    "deleteGroupeUtilisateurConfirmationMessage": "Are you sure you want to delete groupe utilisateur",
 
 
+    },
 
-    "groupeUtilisateurGroupe": "Groupe",
+    "groupeUtilisateur":{
+        "groupeUtilisateur": "Groupe utilisateur",
+        "tabPan": "Groupe utilisateur",
+        "header": "Liste des groupe utilisateurs",
+        "deleteGroupeUtilisateurConfirmationMessage": "Are you sure you want to delete groupe utilisateur",
 
-    "groupeUtilisateurGroupePlaceHolder": "Select a Groupe",
-    "groupeUtilisateurGroupePlaceHolderFilter": "Search by Groupe",
 
 
-    "groupeUtilisateurUtilisateur": "Utilisateur",
+        "groupe": "Groupe",
 
-    "groupeUtilisateurUtilisateurPlaceHolder": "Select a Utilisateur",
-    "groupeUtilisateurUtilisateurPlaceHolderFilter": "Search by Utilisateur",
+        "groupePlaceHolder": "Select a Groupe",
+        "groupePlaceHolderFilter": "Search by Groupe",
 
 
-    "groupeUtilisateurDateAjout": "Date ajout",
-    "groupeUtilisateurDateAjoutMin": "Date ajout Min",
-    "groupeUtilisateurDateAjoutMax": "Date ajout Max",
+        "utilisateur": "Utilisateur",
 
+        "utilisateurPlaceHolder": "Select a Utilisateur",
+        "utilisateurPlaceHolderFilter": "Search by Utilisateur",
 
 
-    "groupeUtilisateurEtatUtilisateur": "Etat utilisateur",
+        "dateAjout": "Date ajout",
+        "dateAjoutMin": "Date ajout Min",
+        "dateAjoutMax": "Date ajout Max",
 
-    "groupeUtilisateurEtatUtilisateurPlaceHolder": "Select a Etat utilisateur",
-    "groupeUtilisateurEtatUtilisateurPlaceHolderFilter": "Search by Etat utilisateur",
 
 
-    "groupeUtilisateurRoleUtilisateur": "Role utilisateur",
+        "etatUtilisateur": "Etat utilisateur"
 
-    "groupeUtilisateurRoleUtilisateurPlaceHolder": "Select a Role utilisateur",
-    "groupeUtilisateurRoleUtilisateurPlaceHolderFilter": "Search by Role utilisateur",
+        "etatUtilisateurPlaceHolder": "Select a Etat utilisateur"
+        "etatUtilisateurPlaceHolderFilter": "Search by Etat utilisateur"
 
 
-    "roleUtilisateur": "RoleUtilisateur",
-    "roleUtilisateurTabPan": "Role utilisateur",
-    "roleUtilisateurHeader": "Liste des role utilisateurs",
-    "deleteRoleUtilisateurConfirmationMessage": "Are you sure you want to delete role utilisateur",
+        "roleUtilisateur": "Role utilisateur",
 
+        "roleUtilisateurPlaceHolder": "Select a Role utilisateur",
+        "roleUtilisateurPlaceHolderFilter": "Search by Role utilisateur",
 
 
-    "roleUtilisateurCode": "Code",
+    },
 
+    "roleUtilisateur":{
+        "roleUtilisateur": "Role utilisateur",
+        "tabPan": "Role utilisateur",
+        "header": "Liste des role utilisateurs",
+        "deleteRoleUtilisateurConfirmationMessage": "Are you sure you want to delete role utilisateur",
 
 
-    "roleUtilisateurLibelle": "Libelle",
 
+        "code": "Code"
 
 
-    "document": "Document",
-    "documentTabPan": "Document",
-    "documentHeader": "Liste des documents",
-    "deleteDocumentConfirmationMessage": "Are you sure you want to delete document",
 
+        "libelle": "Libelle",
 
 
-    "documentReference": "Reference",
 
+    },
 
+    "document":{
+        "document": "Document",
+        "tabPan": "Document",
+        "header": "Liste des documents",
+        "deleteDocumentConfirmationMessage": "Are you sure you want to delete document",
 
-    "documentUploadDate": "Upload date",
-    "documentUploadDateMin": "Upload date Min",
-    "documentUploadDateMax": "Upload date Max",
 
 
+        "reference": "Reference",
 
-    "documentDateLastUpdate": "Date last update",
-    "documentDateLastUpdateMin": "Date last update Min",
-    "documentDateLastUpdateMax": "Date last update Max",
 
 
+        "referenceGed": "Reference ged",
 
-    "documentContent": "Content",
 
 
+        "uploadDate": "Upload date",
+        "uploadDateMin": "Upload date Min",
+        "uploadDateMax": "Upload date Max",
 
-    "documentFolder": "Folder",
 
 
+        "dateLastUpdate": "Date last update",
+        "dateLastUpdateMin": "Date last update Min",
+        "dateLastUpdateMax": "Date last update Max",
 
-    "documentSize": "Size",
-    "documentSizeMin": "Size Min",
-    "documentSizeMax": "Size Max",
 
 
+        "content": "Content",
 
-    "documentDocumentType": "Document type",
 
-    "documentDocumentTypePlaceHolder": "Select a Document type",
-    "documentDocumentTypePlaceHolderFilter": "Search by Document type",
 
+        "folder": "Folder",
 
-    "documentDocumentState": "Document state",
 
-    "documentDocumentStatePlaceHolder": "Select a Document state",
-    "documentDocumentStatePlaceHolderFilter": "Search by Document state",
 
+        "size": "Size",
+        "sizeMin": "Size Min",
+        "sizeMax": "Size Max",
 
-    "documentDocumentCategorie": "Document categorie",
 
-    "documentDocumentCategoriePlaceHolder": "Select a Document categorie",
-    "documentDocumentCategoriePlaceHolderFilter": "Search by Document categorie",
 
+        "documentType": "Document type",
 
-    "documentDocumentFields": "Document fields",
+        "documentTypePlaceHolder": "Select a Document type",
+        "documentTypePlaceHolderFilter": "Search by Document type",
 
 
+        "documentState": "Document state",
 
-    "documentDescription": "Description",
+        "documentStatePlaceHolder": "Select a Document state",
+        "documentStatePlaceHolderFilter": "Search by Document state",
 
 
+        "documentCategorie": "Document categorie",
 
-    "documentUtilisateur": "Utilisateur",
+        "documentCategoriePlaceHolder": "Select a Document categorie",
+        "documentCategoriePlaceHolderFilter": "Search by Document categorie",
 
-    "documentUtilisateurPlaceHolder": "Select a Utilisateur",
-    "documentUtilisateurPlaceHolderFilter": "Search by Utilisateur",
 
+        "documentFields": "Document fields",
 
-    "documentArchive": "Archive",
 
 
+        "description": "Description",
 
-    "documentVersionne": "Versionne",
 
 
+        "utilisateur": "Utilisateur",
 
-    "documentEntiteAdministrative": "Entite administrative",
+        "utilisateurPlaceHolder": "Select a Utilisateur",
+        "utilisateurPlaceHolderFilter": "Search by Utilisateur",
 
-    "documentEntiteAdministrativePlaceHolder": "Select a Entite administrative",
-    "documentEntiteAdministrativePlaceHolderFilter": "Search by Entite administrative",
 
+        "archive": "Archive",
 
-    "documentDocumentPartageGroupes": "Document partage groupes",
 
 
+        "versionne": "Versionne",
 
-    "documentDocumentPartageUtilisateurs": "Document partage utilisateurs",
 
 
+        "entiteAdministrative": "Entite administrative",
 
-    "documentDocumentTags": "Document tags",
+        "entiteAdministrativePlaceHolder": "Select a Entite administrative",
+        "entiteAdministrativePlaceHolderFilter": "Search by Entite administrative",
 
 
-    "documentDocumentTagsPlaceHolder": "Select multiple Tags",
+        "documentPartageGroupes": "Document partage groupes",
 
-    "documentField": "DocumentField",
-    "documentFieldTabPan": "Document field",
-    "documentFieldHeader": "Liste des document fields",
-    "deleteDocumentFieldConfirmationMessage": "Are you sure you want to delete document field",
 
 
+        "documentPartageUtilisateurs": "Document partage utilisateurs"
 
-    "documentFieldField": "Field",
 
-    "documentFieldFieldPlaceHolder": "Select a Field",
-    "documentFieldFieldPlaceHolderFilter": "Search by Field",
 
+        "documentTags": "Document tags",
 
-    "documentFieldDocument": "Document",
 
-    "documentFieldDocumentPlaceHolder": "Select a Document",
-    "documentFieldDocumentPlaceHolderFilter": "Search by Document",
+        "DocumentTagsPlaceHolder": "Select multiple Tags",
 
+    },
 
-    "documentFieldValue": "Value",
+    "documentField":{
+        "documentField": "Document field",
+        "tabPan": "Document field",
+        "header": "Liste des document fields",
+        "deleteDocumentFieldConfirmationMessage": "Are you sure you want to delete document field",
 
 
 
-    "documentFieldDocumentFieldState": "Document field state",
+        "field": "Field",
 
-    "documentFieldDocumentFieldStatePlaceHolder": "Select a Document field state",
-    "documentFieldDocumentFieldStatePlaceHolderFilter": "Search by Document field state",
+        "fieldPlaceHolder": "Select a Field",
+        "fieldPlaceHolderFilter": "Search by Field",
 
 
-    "documentFieldState": "DocumentFieldState",
-    "documentFieldStateTabPan": "Document field state",
-    "documentFieldStateHeader": "Liste des document field states",
-    "deleteDocumentFieldStateConfirmationMessage": "Are you sure you want to delete document field state",
+        "document": "Document",
 
+        "documentPlaceHolder": "Select a Document",
+        "documentPlaceHolderFilter": "Search by Document",
 
 
-    "documentFieldStateCode": "Code",
+        "value": "Value"
 
 
 
-    "documentFieldStateLibelle": "Libelle",
+        "documentFieldState": "Document field state",
 
+        "documentFieldStatePlaceHolder": "Select a Document field state",
+        "documentFieldStatePlaceHolderFilter": "Search by Document field state",
 
 
-    "documentFieldStateStyle": "Style",
+    },
 
+    "documentFieldState":{
+        "documentFieldState": "Document field state",
+        "tabPan": "Document field state",
+        "header": "Liste des document field states",
+        "deleteDocumentFieldStateConfirmationMessage": "Are you sure you want to delete document field state",
 
 
-    "entiteAdministrativeType": "EntiteAdministrativeType",
-    "entiteAdministrativeTypeTabPan": "Entite administrative type",
-    "entiteAdministrativeTypeHeader": "Liste des entite administrative types",
-    "deleteEntiteAdministrativeTypeConfirmationMessage": "Are you sure you want to delete entite administrative type",
 
+        "code": "Code",
 
 
-    "entiteAdministrativeTypeCode": "Code",
 
+        "libelle": "Libelle"
 
 
-    "entiteAdministrativeTypeLibelle": "Libelle",
 
+        "style": "Style",
 
 
-    "documentPartageUtilisateur": "DocumentPartageUtilisateur",
-    "documentPartageUtilisateurTabPan": "Document partage utilisateur",
-    "documentPartageUtilisateurHeader": "Liste des document partage utilisateurs",
-    "deleteDocumentPartageUtilisateurConfirmationMessage": "Are you sure you want to delete document partage utilisateur",
 
+    },
 
+    "entiteAdministrativeType":{
+        "entiteAdministrativeType": "Entite administrative type",
+        "tabPan": "Entite administrative type",
+        "header": "Liste des entite administrative types",
+        "deleteEntiteAdministrativeTypeConfirmationMessage": "Are you sure you want to delete entite administrative type",
 
-    "documentPartageUtilisateurDocument": "Document",
 
-    "documentPartageUtilisateurDocumentPlaceHolder": "Select a Document",
-    "documentPartageUtilisateurDocumentPlaceHolderFilter": "Search by Document",
 
+        "code": "Code"
 
-    "documentPartageUtilisateurUtilisateur": "Utilisateur",
 
-    "documentPartageUtilisateurUtilisateurPlaceHolder": "Select a Utilisateur",
-    "documentPartageUtilisateurUtilisateurPlaceHolderFilter": "Search by Utilisateur",
 
+        "libelle": "Libelle",
 
-    "documentPartageUtilisateurDateShare": "Date share",
-    "documentPartageUtilisateurDateShareMin": "Date share Min",
-    "documentPartageUtilisateurDateShareMax": "Date share Max",
 
 
+    },
 
-    "documentPartageUtilisateurAccessShare": "Access share",
+    "documentPartageUtilisateur":{
+        "documentPartageUtilisateur": "Document partage utilisateur",
+        "tabPan": "Document partage utilisateur",
+        "header": "Liste des document partage utilisateurs",
+        "deleteDocumentPartageUtilisateurConfirmationMessage": "Are you sure you want to delete document partage utilisateur",
 
-    "documentPartageUtilisateurAccessSharePlaceHolder": "Select a Access share",
-    "documentPartageUtilisateurAccessSharePlaceHolderFilter": "Search by Access share",
 
 
-    "documentCategorie": "DocumentCategorie",
-    "documentCategorieTabPan": "Document categorie",
-    "documentCategorieHeader": "Liste des document categories",
-    "deleteDocumentCategorieConfirmationMessage": "Are you sure you want to delete document categorie",
+        "document": "Document",
 
+        "documentPlaceHolder": "Select a Document",
+        "documentPlaceHolderFilter": "Search by Document",
 
 
-    "documentCategorieCode": "Code",
+        "utilisateur": "Utilisateur",
 
+        "utilisateurPlaceHolder": "Select a Utilisateur",
+        "utilisateurPlaceHolderFilter": "Search by Utilisateur",
 
 
-    "documentCategorieLibelle": "Libelle",
+        "dateShare": "Date share"
+        "dateShareMin": "Date share Min"
+        "dateShareMax": "Date share Max"
 
 
 
-    "documentCategorieDocumentCategorieFields": "Document categorie fields",
+        "accessShare": "Access share",
 
+        "accessSharePlaceHolder": "Select a Access share",
+        "accessSharePlaceHolderFilter": "Search by Access share",
 
 
-    "documentCategorieFieldRule": "DocumentCategorieFieldRule",
-    "documentCategorieFieldRuleTabPan": "Document categorie field rule",
-    "documentCategorieFieldRuleHeader": "Liste des document categorie field rules",
-    "deleteDocumentCategorieFieldRuleConfirmationMessage": "Are you sure you want to delete document categorie field rule",
+    },
 
+    "documentCategorie":{
+        "documentCategorie": "Document categorie",
+        "tabPan": "Document categorie",
+        "header": "Liste des document categories",
+        "deleteDocumentCategorieConfirmationMessage": "Are you sure you want to delete document categorie",
 
 
-    "documentCategorieFieldRuleCode": "Code",
 
+        "code": "Code",
 
 
-    "documentCategorieFieldRuleLibelle": "Libelle",
 
+        "libelle": "Libelle"
 
 
-    "documentCategorieFieldRuleExpresion": "Expresion",
 
+        "documentCategorieFields": "Document categorie fields",
 
 
-    "groupe": "Groupe",
-    "groupeTabPan": "Groupe",
-    "groupeHeader": "Liste des groupes",
-    "deleteGroupeConfirmationMessage": "Are you sure you want to delete groupe",
 
+    },
 
+    "documentCategorieFieldRule":{
+        "documentCategorieFieldRule": "Document categorie field rule",
+        "tabPan": "Document categorie field rule",
+        "header": "Liste des document categorie field rules",
+        "deleteDocumentCategorieFieldRuleConfirmationMessage": "Are you sure you want to delete document categorie field rule",
 
-    "groupeCode": "Code",
 
 
+        "code": "Code",
 
-    "groupeLibelle": "Libelle",
 
 
+        "libelle": "Libelle"
 
-    "groupeUtilisateur": "Utilisateur",
 
-    "groupeUtilisateurPlaceHolder": "Select a Utilisateur",
-    "groupeUtilisateurPlaceHolderFilter": "Search by Utilisateur",
 
+        "expresion": "Expresion",
 
-    "groupeGroupeUtilisateurs": "Groupe utilisateurs",
 
 
+    },
 
-    "field": "Field",
-    "fieldTabPan": "Field",
-    "fieldHeader": "Liste des fields",
-    "deleteFieldConfirmationMessage": "Are you sure you want to delete field",
+    "groupe":{
+        "groupe": "Groupe",
+        "tabPan": "Groupe",
+        "header": "Liste des groupes",
+        "deleteGroupeConfirmationMessage": "Are you sure you want to delete groupe",
 
 
 
-    "fieldCode": "Code",
+        "code": "Code",
 
 
 
-    "fieldLibelle": "Libelle",
+        "libelle": "Libelle",
 
 
 
-    "documentTag": "DocumentTag",
-    "documentTagTabPan": "Document tag",
-    "documentTagHeader": "Liste des document tags",
-    "deleteDocumentTagConfirmationMessage": "Are you sure you want to delete document tag",
+        "utilisateur": "Utilisateur"
 
+        "utilisateurPlaceHolder": "Select a Utilisateur"
+        "utilisateurPlaceHolderFilter": "Search by Utilisateur"
 
 
-    "documentTagDocument": "Document",
+        "groupeUtilisateurs": "Groupe utilisateurs",
 
-    "documentTagDocumentPlaceHolder": "Select a Document",
-    "documentTagDocumentPlaceHolderFilter": "Search by Document",
 
 
-    "documentTagTag": "Tag",
+    },
 
-    "documentTagTagPlaceHolder": "Select a Tag",
-    "documentTagTagPlaceHolderFilter": "Search by Tag",
+    "field":{
+        "field": "Field",
+        "tabPan": "Field",
+        "header": "Liste des fields",
+        "deleteFieldConfirmationMessage": "Are you sure you want to delete field",
 
 
-    "utilisateur": "Utilisateur",
-    "utilisateurTabPan": "Utilisateur",
-    "utilisateurHeader": "Liste des utilisateurs",
-    "deleteUtilisateurConfirmationMessage": "Are you sure you want to delete utilisateur",
 
+        "code": "Code"
 
 
-    "utilisateurEmail": "Email",
 
+        "libelle": "Libelle",
 
 
-    "utilisateurNom": "Nom",
 
+    },
 
+    "documentTag":{
+        "documentTag": "Document tag",
+        "tabPan": "Document tag",
+        "header": "Liste des document tags",
+        "deleteDocumentTagConfirmationMessage": "Are you sure you want to delete document tag",
 
-    "utilisateurPrenom": "Prenom",
 
 
+        "document": "Document"
 
-    "tag": "Tag",
-    "tagTabPan": "Tag",
-    "tagHeader": "Liste des tags",
-    "deleteTagConfirmationMessage": "Are you sure you want to delete tag",
+        "documentPlaceHolder": "Select a Document"
+        "documentPlaceHolderFilter": "Search by Document"
 
 
+        "tag": "Tag",
 
-    "tagCode": "Code",
+        "tagPlaceHolder": "Select a Tag",
+        "tagPlaceHolderFilter": "Search by Tag",
 
 
+    },
 
-    "tagLibelle": "Libelle",
+    "utilisateur":{
+        "utilisateur": "Utilisateur",
+        "tabPan": "Utilisateur",
+        "header": "Liste des utilisateurs",
+        "deleteUtilisateurConfirmationMessage": "Are you sure you want to delete utilisateur",
 
 
 
-    "documentState": "DocumentState",
-    "documentStateTabPan": "Document state",
-    "documentStateHeader": "Liste des document states",
-    "deleteDocumentStateConfirmationMessage": "Are you sure you want to delete document state",
+        "email": "Email",
 
 
 
-    "documentStateCode": "Code",
+        "nom": "Nom"
 
 
 
-    "documentStateLibelle": "Libelle",
+        "prenom": "Prenom",
 
 
 
-    "documentStateStyle": "Style",
+    },
 
+    "tag":{
+        "tag": "Tag",
+        "tabPan": "Tag",
+        "header": "Liste des tags",
+        "deleteTagConfirmationMessage": "Are you sure you want to delete tag",
 
 
-    "accessShare": "AccessShare",
-    "accessShareTabPan": "Access share",
-    "accessShareHeader": "Liste des access shares",
-    "deleteAccessShareConfirmationMessage": "Are you sure you want to delete access share",
 
+        "code": "Code"
 
 
-    "accessShareCode": "Code",
 
+        "libelle": "Libelle",
 
 
-    "accessShareLibelle": "Libelle",
 
+    },
 
+    "documentState":{
+        "documentState": "Document state",
+        "tabPan": "Document state",
+        "header": "Liste des document states",
+        "deleteDocumentStateConfirmationMessage": "Are you sure you want to delete document state",
 
-    "documentCategorieField": "DocumentCategorieField",
-    "documentCategorieFieldTabPan": "Document categorie field",
-    "documentCategorieFieldHeader": "Liste des document categorie fields",
-    "deleteDocumentCategorieFieldConfirmationMessage": "Are you sure you want to delete document categorie field",
 
 
+        "code": "Code",
 
-    "documentCategorieFieldField": "Field",
 
-    "documentCategorieFieldFieldPlaceHolder": "Select a Field",
-    "documentCategorieFieldFieldPlaceHolderFilter": "Search by Field",
 
+        "libelle": "Libelle"
 
-    "documentCategorieFieldDocumentCategorie": "Document categorie",
 
-    "documentCategorieFieldDocumentCategoriePlaceHolder": "Select a Document categorie",
-    "documentCategorieFieldDocumentCategoriePlaceHolderFilter": "Search by Document categorie",
 
+        "style": "Style",
 
-    "documentCategorieFieldDocumentCategorieFieldRule": "Document categorie field rule",
 
-    "documentCategorieFieldDocumentCategorieFieldRulePlaceHolder": "Select a Document categorie field rule",
-    "documentCategorieFieldDocumentCategorieFieldRulePlaceHolderFilter": "Search by Document categorie field rule",
 
+    },
 
-    "documentType": "DocumentType",
-    "documentTypeTabPan": "Document type",
-    "documentTypeHeader": "Liste des document types",
-    "deleteDocumentTypeConfirmationMessage": "Are you sure you want to delete document type",
+    "accessShare":{
+        "accessShare": "Access share",
+        "tabPan": "Access share",
+        "header": "Liste des access shares",
+        "deleteAccessShareConfirmationMessage": "Are you sure you want to delete access share",
 
 
 
-    "documentTypeCode": "Code",
+        "code": "Code"
 
 
 
-    "documentTypeLibelle": "Libelle",
+        "libelle": "Libelle",
 
 
 
-    "entiteAdministrative": "EntiteAdministrative",
-    "entiteAdministrativeTabPan": "Entite administrative",
-    "entiteAdministrativeHeader": "Liste des entite administratives",
-    "deleteEntiteAdministrativeConfirmationMessage": "Are you sure you want to delete entite administrative",
+    },
 
+    "documentCategorieField":{
+        "documentCategorieField": "Document categorie field",
+        "tabPan": "Document categorie field",
+        "header": "Liste des document categorie fields",
+        "deleteDocumentCategorieFieldConfirmationMessage": "Are you sure you want to delete document categorie field",
 
 
-    "entiteAdministrativeCode": "Code",
 
+        "field": "Field",
 
+        "fieldPlaceHolder": "Select a Field",
+        "fieldPlaceHolderFilter": "Search by Field",
 
-    "entiteAdministrativeDescription": "Description",
 
+        "documentCategorie": "Document categorie"
 
+        "documentCategoriePlaceHolder": "Select a Document categorie"
+        "documentCategoriePlaceHolderFilter": "Search by Document categorie"
 
-    "entiteAdministrativeLibelle": "Libelle",
 
+        "documentCategorieFieldRule": "Document categorie field rule",
 
+        "documentCategorieFieldRulePlaceHolder": "Select a Document categorie field rule",
+        "documentCategorieFieldRulePlaceHolderFilter": "Search by Document categorie field rule",
 
-    "entiteAdministrativeUtilisateur": "Utilisateur",
 
-    "entiteAdministrativeUtilisateurPlaceHolder": "Select a Utilisateur",
-    "entiteAdministrativeUtilisateurPlaceHolderFilter": "Search by Utilisateur",
+    },
 
+    "documentType":{
+        "documentType": "Document type",
+        "tabPan": "Document type",
+        "header": "Liste des document types",
+        "deleteDocumentTypeConfirmationMessage": "Are you sure you want to delete document type",
 
-    "entiteAdministrativeEntiteAdministrativeType": "Entite administrative type",
 
-    "entiteAdministrativeEntiteAdministrativeTypePlaceHolder": "Select a Entite administrative type",
-    "entiteAdministrativeEntiteAdministrativeTypePlaceHolderFilter": "Search by Entite administrative type",
 
+        "code": "Code"
 
 
-    "from-to": "Elements from {first} to {last} (total {totalRecords})"
 
+        "libelle": "Libelle",
+
+
+
+    },
+
+    "entiteAdministrative":{
+        "entiteAdministrative": "Entite administrative",
+        "tabPan": "Entite administrative",
+        "header": "Liste des entite administratives",
+        "deleteEntiteAdministrativeConfirmationMessage": "Are you sure you want to delete entite administrative",
+
+
+
+        "code": "Code",
+
+
+
+        "description": "Description",
+
+
+
+        "libelle": "Libelle",
+
+
+
+        "utilisateur": "Utilisateur"
+
+        "utilisateurPlaceHolder": "Select a Utilisateur"
+        "utilisateurPlaceHolderFilter": "Search by Utilisateur"
+
+
+        "entiteAdministrativeType": "Entite administrative type",
+
+        "entiteAdministrativeTypePlaceHolder": "Select a Entite administrative type",
+        "entiteAdministrativeTypePlaceHolderFilter": "Search by Entite administrative type",
+
+
+    },
+"appName": "GED"
 }
 
 

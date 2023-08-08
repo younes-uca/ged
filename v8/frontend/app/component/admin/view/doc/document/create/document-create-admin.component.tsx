@@ -397,7 +397,7 @@ const Create = ({ visible, onClose, add, showToast, list, t }) => {
                 <TabPanel header={t("documentTabPan")}>
                     <div className="formgrid grid">
                         <div className="field col-12">
-                            <FileUpload name="file" url={"http://localhost:8038/minio/upload/file/ged"}
+                            <FileUpload name="file" url={"http://localhost:8037/minio/upload/file/ged"}
                                  maxFileSize={1000000} emptyTemplate={<p className="m-0">vous pouvez glisser deposer votre document</p>} />
                         </div>
                         <div className="field col-12">

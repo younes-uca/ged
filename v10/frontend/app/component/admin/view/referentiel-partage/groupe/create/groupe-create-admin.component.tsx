@@ -19,14 +19,14 @@ import {MessageService} from 'app/zynerator/service/MessageService';
 import {GroupeAdminService} from 'app/controller/service/admin/GroupeAdminService.service';
 import  {GroupeDto}  from 'app/controller/model/Groupe.model';
 
-import {UtilisateurDto} from 'app/controller/model/Utilisateur.model';
-import {UtilisateurAdminService} from 'app/controller/service/admin/UtilisateurAdminService.service';
-import {EtatUtilisateurDto} from 'app/controller/model/EtatUtilisateur.model';
-import {EtatUtilisateurAdminService} from 'app/controller/service/admin/EtatUtilisateurAdminService.service';
-import {GroupeUtilisateurDto} from 'app/controller/model/GroupeUtilisateur.model';
-import {GroupeUtilisateurAdminService} from 'app/controller/service/admin/GroupeUtilisateurAdminService.service';
 import {RoleUtilisateurDto} from 'app/controller/model/RoleUtilisateur.model';
 import {RoleUtilisateurAdminService} from 'app/controller/service/admin/RoleUtilisateurAdminService.service';
+import {GroupeUtilisateurDto} from 'app/controller/model/GroupeUtilisateur.model';
+import {GroupeUtilisateurAdminService} from 'app/controller/service/admin/GroupeUtilisateurAdminService.service';
+import {EtatUtilisateurDto} from 'app/controller/model/EtatUtilisateur.model';
+import {EtatUtilisateurAdminService} from 'app/controller/service/admin/EtatUtilisateurAdminService.service';
+import {UtilisateurDto} from 'app/controller/model/Utilisateur.model';
+import {UtilisateurAdminService} from 'app/controller/service/admin/UtilisateurAdminService.service';
 import {TFunction} from "i18next";
 import {Toast} from "primereact/toast";
 
@@ -56,13 +56,12 @@ const Create: React.FC<GroupeCreateAdminType> = ({visible, onClose, add, showToa
     useEffect(() => {
 
         UtilisateurAdminService.getList().then(({data}) => setUtilisateurs(data)).catch(error => console.log(error));
-        EtatUtilisateurAdminService.getList().then(({data}) => setEtatUtilisateurs(data)).catch(error => console.log(error));
-        RoleUtilisateurAdminService.getList().then(({data}) => setRoleUtilisateurs(data)).catch(error => console.log(error));
 
 
         UtilisateurAdminService.getList().then(({data}) => setUtilisateurs(data)).catch(error => console.log(error));
         EtatUtilisateurAdminService.getList().then(({data}) => setEtatUtilisateurs(data)).catch(error => console.log(error));
         RoleUtilisateurAdminService.getList().then(({data}) => setRoleUtilisateurs(data)).catch(error => console.log(error));
+
 
     }, []);
 

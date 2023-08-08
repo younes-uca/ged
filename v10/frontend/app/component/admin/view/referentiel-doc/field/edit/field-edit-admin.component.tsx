@@ -38,12 +38,11 @@ const Edit: React.FC<FieldEditAdminType> = ({visible, onClose, showToast, select
     const [item, setItem] = useState<FieldDto>(selectedItem);
 
 
+        useEffect(() => {
 
 
-    useEffect(() => {
+        }, []);
 
-
-    }, []);
 
 
 

@@ -20,10 +20,10 @@ import  {DocumentCategorieFieldDto}  from 'app/controller/model/DocumentCategori
 
 import {FieldDto} from 'app/controller/model/Field.model';
 import {FieldAdminService} from 'app/controller/service/admin/FieldAdminService.service';
-import {DocumentCategorieFieldRuleDto} from 'app/controller/model/DocumentCategorieFieldRule.model';
-import {DocumentCategorieFieldRuleAdminService} from 'app/controller/service/admin/DocumentCategorieFieldRuleAdminService.service';
 import {DocumentCategorieDto} from 'app/controller/model/DocumentCategorie.model';
 import {DocumentCategorieAdminService} from 'app/controller/service/admin/DocumentCategorieAdminService.service';
+import {DocumentCategorieFieldRuleDto} from 'app/controller/model/DocumentCategorieFieldRule.model';
+import {DocumentCategorieFieldRuleAdminService} from 'app/controller/service/admin/DocumentCategorieFieldRuleAdminService.service';
 import {TFunction} from "i18next";
 import {Toast} from "primereact/toast";
 
@@ -52,8 +52,8 @@ const Create: React.FC<DocumentCategorieFieldCreateAdminType> = ({visible, onClo
     useEffect(() => {
 
         FieldAdminService.getList().then(({data}) => setFields(data)).catch(error => console.log(error));
-        DocumentCategorieFieldRuleAdminService.getList().then(({data}) => setDocumentCategorieFieldRules(data)).catch(error => console.log(error));
         DocumentCategorieAdminService.getList().then(({data}) => setDocumentCategories(data)).catch(error => console.log(error));
+        DocumentCategorieFieldRuleAdminService.getList().then(({data}) => setDocumentCategorieFieldRules(data)).catch(error => console.log(error));
 
     }, []);
 

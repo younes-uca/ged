@@ -46,20 +46,16 @@ const Edit: React.FC<DocumentCategorieEditAgentType> = ({visible, onClose, showT
     const [fields, setFields] = useState<FieldDto[]>([]);
     const [documentCategorieFieldRules, setDocumentCategorieFieldRules] = useState<DocumentCategorieFieldRuleDto[]>([]);
 
-
     const [documentCategorieFields, setDocumentCategorieFields] = useState<DocumentCategorieFieldDto>(new DocumentCategorieFieldDto());
 
-
-    useEffect(() => {
-
-        FieldAgentService.getList().then(({data}) => setFields(data)).catch(error => console.log(error));
-        DocumentCategorieFieldRuleAgentService.getList().then(({data}) => setDocumentCategorieFieldRules(data)).catch(error => console.log(error));
+        useEffect(() => {
 
 
-        FieldAgentService.getList().then(({data}) => setFields(data)).catch(error => console.log(error));
-        DocumentCategorieFieldRuleAgentService.getList().then(({data}) => setDocumentCategorieFieldRules(data)).catch(error => console.log(error));
 
-    }, []);
+    FieldAgentService.getList().then(({data}) => setFields(data)).catch(error => console.log(error));
+    DocumentCategorieFieldRuleAgentService.getList().then(({data}) => setDocumentCategorieFieldRules(data)).catch(error => console.log(error));
+        }, []);
+
 
 
 

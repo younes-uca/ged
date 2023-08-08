@@ -38,12 +38,11 @@ const Edit: React.FC<DocumentCategorieFieldRuleEditAdminType> = ({visible, onClo
     const [item, setItem] = useState<DocumentCategorieFieldRuleDto>(selectedItem);
 
 
+        useEffect(() => {
 
 
-    useEffect(() => {
+        }, []);
 
-
-    }, []);
 
 
 

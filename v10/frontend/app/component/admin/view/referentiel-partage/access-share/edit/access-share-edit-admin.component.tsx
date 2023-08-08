@@ -38,12 +38,11 @@ const Edit: React.FC<AccessShareEditAdminType> = ({visible, onClose, showToast, 
     const [item, setItem] = useState<AccessShareDto>(selectedItem);
 
 
+        useEffect(() => {
 
 
-    useEffect(() => {
+        }, []);
 
-
-    }, []);
 
 
 
