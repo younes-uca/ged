@@ -42,6 +42,7 @@ import { useTranslation } from 'react-i18next';
 import Edit from '../edit/document-edit-admin.component';
 import Create from '../create/document-create-admin.component';
 import View from '../view/document-view-admin.component';
+import Share from "../share/document-share-admin.component";
 
 
 const List = () => {
@@ -87,7 +88,6 @@ const List = () => {
         deleteItemDialogFooter,
         leftToolbarTemplate,
         rightToolbarTemplate,
-        actionBodyTemplate,
         header,
         CustomBooleanCell,
         handleValidateClick,
@@ -122,6 +122,9 @@ const List = () => {
     const entiteAdministrativeAdminService = new EntiteAdministrativeAdminService();
     const documentCategorieModelAdminService = new DocumentCategorieModelAdminService();
 
+
+    const [showShareDialog, setShowShareDialog] = useState<boolean>(false);
+
     useEffect(() => {
 
         documentTypeAdminService.getList().then(({data}) => setDocumentTypes(data)).catch(error => console.log(error));
@@ -132,6 +135,26 @@ const List = () => {
         documentCategorieModelAdminService.getList().then(({data}) => setDocumentCategorieModels(data)).catch(error => console.log(error));
         fetchItems(criteria);
     }, []);
+
+
+    const showShareModal = (item: DocumentDto) => {
+        setSelectedItem(item);
+        setShowShareDialog(true);
+    };
+
+    const actionBodyTemplate = (rowData: DocumentDto) => {
+        return (<div style={{ width: "140px" }}>
+                <Button icon="pi pi-pencil"  severity="info" className="mr-1"
+                        onClick={() => showEditModal(rowData)}/>
+                <Button icon="pi pi-trash"  severity="danger" className="mr-1"
+                        onClick={() => confirmDeleteItem(rowData)}/>
+                <Button icon="pi pi-eye"  severity="secondary" className="mr-1"
+                        onClick={() => showViewModal(rowData)}/>
+                <Button icon="pi pi-share-alt"  severity="success" className="mr-1 mt-1"
+                        onClick={() => showShareModal(rowData)}/>
+            </div>
+        );
+    };
 
     return (
     <div className="grid crud-demo">
@@ -294,6 +317,7 @@ const List = () => {
                 {showCreateDialog && <Create visible={showCreateDialog} onClose={() => setShowCreateDialog(false)} add={add} showToast={toast} list={items} service={service} t={t} />}
 
                 {showEditDialog && <Edit  visible={showEditDialog} onClose={() =>  { setShowEditDialog(false); setSelectedItem(emptyItem); }} showToast={toast} selectedItem={selectedItem} update={update} list={items} service={service}   t={t} />}
+                {showShareDialog && <Share  visible={showShareDialog} onClose={() =>  { setShowShareDialog(false); setSelectedItem(emptyItem); }} showToast={toast} selectedItem={selectedItem} update={update} list={items} service={service}   t={t} />}
 
                 {showViewDialog && <View visible={showViewDialog} onClose={() =>  { setShowViewDialog(false); setSelectedItem(emptyItem); }} selectedItem={selectedItem}   t={t} />}
                 <Dialog visible={deleteItemDialog} style={{width: '450px'}} header={t("confirm")} modal footer={deleteItemDialogFooter} onHide={hideDeleteItemDialog}>
