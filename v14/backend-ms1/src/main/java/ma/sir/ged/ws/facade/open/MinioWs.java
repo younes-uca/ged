@@ -1,6 +1,6 @@
 package ma.sir.ged.ws.facade.open;
 
-import ma.sir.ged.service.facade.open.MinIOService;
+import ma.sir.ged.service.impl.open.minio.MinIOService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;

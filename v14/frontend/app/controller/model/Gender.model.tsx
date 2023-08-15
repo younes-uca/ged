@@ -18,4 +18,10 @@ export class GenderDto extends BaseDto{
         this.description = '';
         }
 
+
+    getClassName() {
+        return "Gender";
+    }
+
+
 }

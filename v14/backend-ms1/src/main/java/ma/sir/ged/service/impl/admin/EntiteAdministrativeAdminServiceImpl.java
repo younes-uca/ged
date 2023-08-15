@@ -10,7 +10,7 @@ import ma.sir.ged.dao.specification.core.EntiteAdministrativeSpecification;
 import ma.sir.ged.service.facade.admin.EntiteAdministrativeAdminService;
 import ma.sir.ged.service.facade.admin.EntiteAdministrativeTypeAdminService;
 import ma.sir.ged.service.facade.admin.UtilisateurAdminService;
-import ma.sir.ged.service.facade.open.MinIOService;
+import ma.sir.ged.service.impl.open.minio.MinIOService;
 import ma.sir.ged.zynerator.service.AbstractServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

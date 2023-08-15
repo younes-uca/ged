@@ -76,4 +76,9 @@ export class DocumentDto extends BaseDto{
         this.documentTags = new Array<DocumentTagDto>();
         }
 
+
+    getClassName() {
+        return "Document";
+    }
+
 }
