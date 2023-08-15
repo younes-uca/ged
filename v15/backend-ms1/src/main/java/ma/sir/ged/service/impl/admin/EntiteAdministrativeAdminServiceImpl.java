@@ -18,6 +18,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Propagation;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.time.LocalDateTime;
 import java.util.List;
 
 @Service
@@ -37,6 +38,7 @@ public class EntiteAdministrativeAdminServiceImpl extends AbstractServiceImpl<En
                 groupeUtilisateur.setUtilisateur(element);
                 utilisateurService.create(element);
                 groupeUtilisateur.setGroupe(groupe);
+                groupeUtilisateur.setDateAjout(LocalDateTime.now());
                 groupeUtilisateurService.create(groupeUtilisateur);
             });
         }
@@ -48,7 +50,7 @@ public class EntiteAdministrativeAdminServiceImpl extends AbstractServiceImpl<En
         Groupe groupe = new Groupe();
         groupe.setCode(t.getCode());
         groupe.setLibelle(t.getLibelle());
-
+        groupe.setUtilisateur(t.getChef());
         return groupe;
     }
 
